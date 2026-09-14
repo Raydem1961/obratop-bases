@@ -51,7 +51,7 @@ def save_base(meta,rows):
     gz=gzip.compress(raw,compresslevel=9)
     safe=re.sub(r"[^A-Za-z0-9_.-]+","-",meta["id"])
     rel=f"bases/{safe}.json.gz"; p=DOCS/rel;p.write_bytes(gz)
-    return {**meta,"status":"ready","count":len(rows),"file":rel,"url":f"https://raw.githubusercontent.com/__GITHUB_USER__/obratop-bases/main/docs/{rel}","sha256":hashlib.sha256(gz).hexdigest(),"normalizedSha256":hashlib.sha256(raw).hexdigest(),"generatedAt":NOW}
+    return {**meta,"status":"ready","count":len(rows),"file":rel,"url":f"https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/{rel}","sha256":hashlib.sha256(gz).hexdigest(),"normalizedSha256":hashlib.sha256(raw).hexdigest(),"generatedAt":NOW}
 
 def header_and_rows(path):
     book=pd.ExcelFile(path)
