@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-22T12:35:28.147829+00:00",
+  "generatedAt": "2026-09-23T12:44:24.381868+00:00",
   "policy": "Only validated positive-price bases are marked ready. Last valid base is preserved on source outages.",
   "bases": []
 }
