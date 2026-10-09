@@ -3,6 +3,9 @@ import requests, re, json, gzip, hashlib, tempfile, shutil, os, pathlib, datetim
 from bs4 import BeautifulSoup
 import pandas as pd
 import py7zr
+import sys, zipfile
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import sinapi_reader
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 DOCS=ROOT/"docs"; BASES=DOCS/"bases"; BASES.mkdir(parents=True,exist_ok=True)
@@ -140,42 +143,59 @@ def discover_sinapi_files():
         except Exception:pass
     return files
 
+def ingest_sinapi_xlsx(xlsx,source_url,entries):
+    """Lê o 'SINAPI_Referência_AAAA_MM.xlsx' (layout oficial) e grava uma base por UF e regime."""
+    ref,res=sinapi_reader.read_sinapi_reference(xlsx)
+    if not re.fullmatch(r"20\d{2}-(0[1-9]|1[0-2])",ref or ""):
+        raise ValueError(f"mês de referência não identificado em {xlsx.name}")
+    year,mm=ref.split("-")
+    ok=0
+    for (uf,regime),rows in sorted(res.items()):
+        sheets={r["sheet"] for r in rows}
+        # Segurança: só publica se vierem insumos E composições e um volume mínimo de itens.
+        if len(rows)<3000 or len(sheets)<2:
+            print("SINAPI descartado (poucos itens)",uf,regime,len(rows),sorted(sheets));continue
+        meta={"id":f"SINAPI-{uf}-{year}-{mm}-{norm(regime).replace(' ','-')}","source":"SINAPI","uf":uf,"year":int(year),"month":mm,"reference":ref,"regime":regime,"type":"mixed","officialUrl":SINAPI_HOME,"publishedAt":"","sourceFile":source_url}
+        e=save_base(meta,rows)
+        if e:entries.append(e);ok+=1
+    print(f"SINAPI {ref}: {ok} base(s) gravada(s)")
+    return ok
+
+def ingest_sinapi_zip(zpath,source_url,entries):
+    with tempfile.TemporaryDirectory() as td:
+        with zipfile.ZipFile(zpath) as z:
+            for n in z.namelist():
+                if n.lower().endswith(".xlsx") and "refer" in norm(n):
+                    z.extract(n,td)
+        found=[p for p in pathlib.Path(td).rglob("*.xlsx") if "refer" in norm(p.name)]
+        if not found:raise ValueError("ZIP sem a planilha SINAPI_Referência_*.xlsx")
+        return ingest_sinapi_xlsx(found[0],source_url,entries)
+
+def update_sinapi_local(entries):
+    """Fonte manual e à prova de falhas: ZIPs do SINAPI colocados na pasta fontes/ do repositório."""
+    folder=ROOT/"fontes"
+    if not folder.exists():return 0
+    n=0
+    for z in sorted(folder.glob("SINAPI*.zip")):
+        try:n+=ingest_sinapi_zip(z,f"fontes/{z.name}",entries)
+        except Exception as e:print("SINAPI local",z.name,e)
+    return n
+
 def update_sinapi(entries):
-    files=discover_sinapi_files()
-    # Only parse packages where year/month can be identified from text or URL.
+    """Descoberta automática no portal da CAIXA (relatórios mensais a partir de 2025)."""
+    try:files=discover_sinapi_files()
+    except Exception as e:
+        print("SINAPI: portal indisponível",e);return
+    seen=set()
     for title,url,page in files:
-        txt=norm(title+" "+url)
-        m=re.search(r"(20\d{2})\D?(0[1-9]|1[0-2])",title+" "+url) or re.search(r"(0[1-9]|1[0-2])\D?(20\d{2})",title+" "+url)
-        if not m:continue
-        if len(m.group(1))==4:year,mm=m.group(1),m.group(2)
-        else:mm,year=m.group(1),m.group(2)
-        if int(year)<2025:continue
+        m=re.search(r"(20\d{2})\D?(0[1-9]|1[0-2])",title+" "+url)
+        if not m or int(m.group(1))<2025 or "xlsx" not in norm(title+" "+url) or url in seen:continue
+        seen.add(url)
         try:
             with tempfile.TemporaryDirectory() as td:
-                f=pathlib.Path(td)/pathlib.Path(urllib.parse.urlparse(url).path).name
-                f.write_bytes(get(url).content)
-                files2=[]
-                if f.suffix.lower()==".zip":
-                    import zipfile
-                    with zipfile.ZipFile(f) as z:z.extractall(td)
-                    files2=[p for p in pathlib.Path(td).rglob("*") if p.suffix.lower() in [".xlsx",".xls"]]
-                elif f.suffix.lower() in [".xlsx",".xls"]:files2=[f]
-                else:continue
-                for uf in UFS:
-                    for regime in ["Não desonerado","Desonerado"]:
-                        allrows=[]
-                        for x in files2:
-                            # Heuristic: prefer file/sheet text mentioning UF, but parse all if package is all-UF.
-                            try:
-                                rs=parse_generic_xlsx(x,"SINAPI",uf,f"{year}-{mm}",regime)
-                                # Filter rows with explicit UF fields is workbook-specific; package parser keeps source trace.
-                                allrows.extend(rs)
-                            except Exception:pass
-                        # Safety: reject huge duplicates and zero-only bases. Future adapters can refine UF-specific columns.
-                        meta={"id":f"SINAPI-{uf}-{year}-{mm}-{norm(regime).replace(' ','-')}","source":"SINAPI","uf":uf,"year":int(year),"month":mm,"reference":f"{year}-{mm}","regime":regime,"type":"mixed","officialUrl":SINAPI_HOME,"publishedAt":"","sourceFile":url}
-                        e=save_base(meta,allrows)
-                        if e:entries.append(e)
-        except Exception as e:print("SINAPI",year,mm,e)
+                f=pathlib.Path(td)/"sinapi.zip";f.write_bytes(get(url).content)
+                if zipfile.is_zipfile(f):ingest_sinapi_zip(f,url,entries)
+        except Exception as e:print("SINAPI",url,e)
 
 def update_orse(entries):
     # The updater discovers ORSE publications but does not publish prices unless the downloaded file is safely parseable.
@@ -196,6 +216,21 @@ def dedupe(entries):
         if not old or (x.get("status")=="ready" and old.get("status")!="ready"):d[x["id"]]=x
     return sorted(d.values(),key=lambda x:(x.get("source",""),x.get("uf",""),x.get("reference","")),reverse=True)
 
+def prune(entries,keep=6):
+    """Mantém só as 'keep' competências mais recentes de cada fonte (evita o repositório crescer sem limite)."""
+    refs={}
+    for x in entries:
+        if x.get("status")=="ready":refs.setdefault(x["source"],set()).add(x["reference"])
+    drop={src:set(sorted(r,reverse=True)[keep:]) for src,r in refs.items()}
+    out=[]
+    for x in entries:
+        if x.get("status")=="ready" and x["reference"] in drop.get(x["source"],set()):
+            try:(DOCS/x["file"]).unlink()
+            except Exception:pass
+            continue
+        out.append(x)
+    return out
+
 def main():
     old=[]
     if CATALOG.exists():
@@ -205,10 +240,12 @@ def main():
     # Preserve previously validated ready bases even if an official site is temporarily unavailable today.
     for x in old:
         if x.get("status")=="ready" and x.get("file") and (DOCS/x["file"]).exists():entries.append(x)
-    update_sicro(entries)
+    update_sinapi_local(entries)
     update_sinapi(entries)
+    update_sicro(entries)
     update_orse(entries)
     entries=dedupe(entries)
+    entries=prune(entries)
     out={"schema":1,"generatedAt":NOW,"policy":"Only validated positive-price bases are marked ready. Last valid base is preserved on source outages.","bases":entries}
     CATALOG.write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding="utf-8")
     print("Catalog entries:",len(entries),"ready:",sum(x.get("status")=="ready" for x in entries))

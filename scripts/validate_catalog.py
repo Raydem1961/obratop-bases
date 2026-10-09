@@ -26,4 +26,21 @@ for b in c["bases"]:
     except Exception as e: errors.append(f"{b.get('id')}: gzip/json inválido {e}")
 if errors:
     print("\n".join(errors)); sys.exit(1)
-print(f"Catálogo válido: {len(c['bases'])} entrada(s).")
+ready=[b for b in c["bases"] if b.get("status")=="ready"]
+by_src={}
+for b in c["bases"]:
+    by_src.setdefault(b.get("source","?"),[0,0])
+    by_src[b.get("source","?")][0]+=1
+    if b.get("status")=="ready": by_src[b.get("source","?")][1]+=1
+print(f"Catálogo válido: {len(c['bases'])} entrada(s), {len(ready)} pronta(s).")
+import os
+resumo=["### Bases oficiais ObraTop", f"- Entradas: {len(c['bases'])} | Prontas: {len(ready)}"]
+for src in ("SINAPI","SICRO3","ORSE-SE"):
+    t,r=by_src.get(src,[0,0]); resumo.append(f"- {src}: {t} entrada(s), {r} pronta(s)")
+if not ready:
+    msg="NENHUMA base de preços ficou pronta nesta execução: SINAPI, SICRO e ORSE não publicaram preços. Verifique o log do passo de coleta."
+    print(f"::warning title=Sem bases prontas::{msg}")
+    resumo.append(f"\n> ⚠️ {msg}")
+sm=os.environ.get("GITHUB_STEP_SUMMARY")
+if sm:
+    with open(sm,"a",encoding="utf-8") as f: f.write("\n".join(resumo)+"\n")
