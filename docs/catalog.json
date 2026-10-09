@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-09T15:38:13.663111+00:00",
+  "generatedAt": "2026-10-09T17:21:05.810541+00:00",
   "policy": "Only validated positive-price bases are marked ready. Last valid base is preserved on source outages.",
   "bases": [
     {
@@ -19,9 +19,9 @@
       "count": 11813,
       "file": "bases/SINAPI-TO-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-TO-2026-08-desonerado.json.gz",
-      "sha256": "3d29aed2be82e2ee95bb5368aeb8d782bb587a52c6abbac8ce3942185433c2d7",
+      "sha256": "7b51f1e2628b2cd9aebaa500f57a54511a1ae46753507cda910a56a7cf849ac9",
       "normalizedSha256": "f24b6bef6bbc584ab70bc1d73b5513a9bcf420e3294b7ffc46b9925d07ae535c",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-TO-2026-08-nao-desonerado",
@@ -39,9 +39,9 @@
       "count": 11813,
       "file": "bases/SINAPI-TO-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-TO-2026-08-nao-desonerado.json.gz",
-      "sha256": "3df64522fcf71a1aeab9f6bbfdcaa4218b8b70b8d24254d70a8058cd7280f8b8",
+      "sha256": "db0f5802f723530451a450d31f2da7135c117ee286cc822855e67b123581ba29",
       "normalizedSha256": "9f57d54f5d7494f646a3c150d51533a094dea081e224c09cc1531a0875d64b04",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-SP-2026-08-desonerado",
@@ -59,9 +59,9 @@
       "count": 13279,
       "file": "bases/SINAPI-SP-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SP-2026-08-desonerado.json.gz",
-      "sha256": "27655741cb5e8a040bbb7b57af49d401e74461b76b150e0091ff39c8c1e5209b",
+      "sha256": "dbe3acd484d0980dfc44bbbf487e177528527d4239c6bcc5fda3a8857585aab9",
       "normalizedSha256": "371c3543bbf9203b7336092c188c47e57afc7b00eb7ede7adfc7f7ab22738c11",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-SP-2026-08-nao-desonerado",
@@ -79,9 +79,9 @@
       "count": 13279,
       "file": "bases/SINAPI-SP-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SP-2026-08-nao-desonerado.json.gz",
-      "sha256": "09b43ffbaf3516d6267d9df2d84fdf822c36e82894a573bcfd9e68738e27a560",
+      "sha256": "0d93dfdf628cb11cd3e238cb355272a4d8ce0111e9789d83139376950a5bacbc",
       "normalizedSha256": "566f8ed614072f51a87b8f255ebb69342449647dedc9a1d6c06fc9255fa0584d",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-SE-2026-08-desonerado",
@@ -99,9 +99,9 @@
       "count": 11416,
       "file": "bases/SINAPI-SE-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SE-2026-08-desonerado.json.gz",
-      "sha256": "baae48b46657cc3670d5ff1b4496a568f72d3710af4abde3ee8714cf58dd202a",
+      "sha256": "8866878c784428eab207b9f0f3cdb6a2383bd89ce9b7dbd3411014bb092acb9d",
       "normalizedSha256": "57722609c3a35dc3cf0d4146bd213207596722a23980772db53520d93333bb38",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-SE-2026-08-nao-desonerado",
@@ -119,9 +119,9 @@
       "count": 11416,
       "file": "bases/SINAPI-SE-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SE-2026-08-nao-desonerado.json.gz",
-      "sha256": "e88e2da456e5a1ee170bb7383f69b4c81815095a6086b4c7294a5630975b3a8f",
+      "sha256": "db83a438340b56374a297f35048eb1725930c5fbe878c3a045c8dc3f5ce1cf53",
       "normalizedSha256": "faab17c18c3d3d705d9b267f80a519d3347444d46f4270dcd4a61b1a4fdeaf7d",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-SC-2026-08-desonerado",
@@ -139,9 +139,9 @@
       "count": 12538,
       "file": "bases/SINAPI-SC-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SC-2026-08-desonerado.json.gz",
-      "sha256": "411e1ff645ca165695aba8d9a1812b9afba7acdd57bb9bae14af7c36b9ae1726",
+      "sha256": "09a05f889438ad39a07db1628f78c45168f8dd941aad2164ea7f10373cfdd79e",
       "normalizedSha256": "bf18d1771f3a614c941248d8c9aae9d0fa726e1250ee144f55113029440df79a",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-SC-2026-08-nao-desonerado",
@@ -159,9 +159,9 @@
       "count": 12538,
       "file": "bases/SINAPI-SC-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SC-2026-08-nao-desonerado.json.gz",
-      "sha256": "258a42eb6d368da5ad2ccd6e43aca69dffb05f7ff775cb2927b6a3996a3a51ed",
+      "sha256": "5103b3363a397d6d7faa00c215c17083f5616f6ac917291a1ecc1549fe238310",
       "normalizedSha256": "99b81b058ad273ad3d4d4563f663f8b566dd394b30ade76f02e97af360849c62",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-RS-2026-08-desonerado",
@@ -179,9 +179,9 @@
       "count": 12724,
       "file": "bases/SINAPI-RS-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RS-2026-08-desonerado.json.gz",
-      "sha256": "51830a350e728942a5c165b4b74098b0f8d130fa98026ca8668f0f8e80a0a22e",
+      "sha256": "52933cc3673a5734204bbd51ac044746573ad9137dec75abe9bc84e148dc3eac",
       "normalizedSha256": "4b74dd5c8e16844020927127a902fc7ee9a5928e8a5ea2ac715412b9fca89c1c",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-RS-2026-08-nao-desonerado",
@@ -199,9 +199,9 @@
       "count": 12724,
       "file": "bases/SINAPI-RS-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RS-2026-08-nao-desonerado.json.gz",
-      "sha256": "5638b24e298b53f7b632a1735250f37df9fda9d3796063cd932cb7ee5a80f085",
+      "sha256": "a28d32f52ccbebab48bacfee5fb85832a4e7d0605ff1dea2975b0b185d674b9d",
       "normalizedSha256": "817fcdd4edc11b1a80ef7b2399baca3be86cc86206ba4a57a84f52273b897c46",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-RR-2026-08-desonerado",
@@ -219,9 +219,9 @@
       "count": 11195,
       "file": "bases/SINAPI-RR-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RR-2026-08-desonerado.json.gz",
-      "sha256": "b42e5fa1ba2f114fdc2826693dac25409e75365b9553858bd6702f409c995cfc",
+      "sha256": "9de0e67d8300469417d12b2aab6c0f818a4f1891ef21db24899f1c30786dfaf2",
       "normalizedSha256": "f2351c84cfd359f3173eff766587fec935a29716e1abf5c150d8b642074e5c42",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-RR-2026-08-nao-desonerado",
@@ -239,9 +239,9 @@
       "count": 11195,
       "file": "bases/SINAPI-RR-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RR-2026-08-nao-desonerado.json.gz",
-      "sha256": "4eb1aa6cfbfc457252f4eec296da946657494ccbfe86d7d16bda491819ca0771",
+      "sha256": "6e83562e4db8710117b64ba5946067afe853fee2519c4094260e7cb7191d0871",
       "normalizedSha256": "f81d5fe57807db34684814ec81ee8dd0066c0f3775dab544d51142e67cc2c34b",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-RO-2026-08-desonerado",
@@ -259,9 +259,9 @@
       "count": 12543,
       "file": "bases/SINAPI-RO-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RO-2026-08-desonerado.json.gz",
-      "sha256": "8975ee369387938e30d9789586803a8ce751cee85c58e969a9e57291b7a56246",
+      "sha256": "2ac4346abc46d45df65c5010440901fd0d1799892a2ac4bcca9427b6272c0439",
       "normalizedSha256": "677b84d6d5e8618271dbc61619a1d8674e625f7e544d3a8ad4b2e7d397f97856",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-RO-2026-08-nao-desonerado",
@@ -279,9 +279,9 @@
       "count": 12543,
       "file": "bases/SINAPI-RO-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RO-2026-08-nao-desonerado.json.gz",
-      "sha256": "9c13bb73b233bb898b6d2d0d573fe0eac8e6094a0fe93b172ddbc6cfe6fb1a2c",
+      "sha256": "c98e8d8aaae56702b0e33fbdbe1d44b294ce3a28cea346b0e720482fa1a10ca6",
       "normalizedSha256": "30f010e8a7d5b57b2c8c236ba0892ffd418169ef70e1d4743ad9b897275e11ff",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-RN-2026-08-desonerado",
@@ -299,9 +299,9 @@
       "count": 12099,
       "file": "bases/SINAPI-RN-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RN-2026-08-desonerado.json.gz",
-      "sha256": "85164ab5cdd40ac26cff6bf81570cfcda58bda692ce4fac4e768a53622d4ea79",
+      "sha256": "d6ed3ce893d6e1ae3fb8449541b9d741ce88575016d8197cf8c058e13fab09b3",
       "normalizedSha256": "07b264441bf4dcf94ba3b50e57d4617e23adc5c912b1ab7e1d3cd7820108ff34",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-RN-2026-08-nao-desonerado",
@@ -319,9 +319,9 @@
       "count": 12099,
       "file": "bases/SINAPI-RN-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RN-2026-08-nao-desonerado.json.gz",
-      "sha256": "3167edaaa81d40a89bc6e786edf7c6c4a75ed88707f89456185315656d2ef42f",
+      "sha256": "abd831ce134f7588fcde3ebd445955a2844a749bdc88754b89bf528844757699",
       "normalizedSha256": "293a106aceef86293a5ce33c3b34dde6c8f2a9a90b454a3dca14460e9f9a0847",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-RJ-2026-08-desonerado",
@@ -339,9 +339,9 @@
       "count": 11882,
       "file": "bases/SINAPI-RJ-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RJ-2026-08-desonerado.json.gz",
-      "sha256": "bf5515bfe8c7d06ddd3bc38e1a6d21c8adfd7b3026cb4bd8a34591aabf12976a",
+      "sha256": "4582b55a76ef32ff1323aa42f6910ec7012b12ab298794839f21da151fc790c9",
       "normalizedSha256": "c6267af72dd625e79a632eeacc1c587ad93f0b007a0053f7258dcc47a182af25",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-RJ-2026-08-nao-desonerado",
@@ -359,9 +359,9 @@
       "count": 11882,
       "file": "bases/SINAPI-RJ-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RJ-2026-08-nao-desonerado.json.gz",
-      "sha256": "f9726b557511975ca1a9602ac7686d03388a754b16886a1a6841cd4396576e19",
+      "sha256": "233e5054d0ca6babf53e048ea5dc2915473fcaba6bf7c698bbb6dc7e476b44ce",
       "normalizedSha256": "1f16e150c5e1caa6c043e56a7c25012672d08d86d4e816185edf4ae82aaae858",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-PR-2026-08-desonerado",
@@ -379,9 +379,9 @@
       "count": 11774,
       "file": "bases/SINAPI-PR-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PR-2026-08-desonerado.json.gz",
-      "sha256": "1af42695daee9bb44bba8788f592db39a2287d826431ec1811788da6101cdc6a",
+      "sha256": "06819928f76b6c1908b0c8f415de2a0739a247f39a2f33482e04f65347b0b39f",
       "normalizedSha256": "e29b62be2241e64be44b1e6b0ccbba9bd9c3d40b0c6f576e132fff83be7aa932",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-PR-2026-08-nao-desonerado",
@@ -399,9 +399,9 @@
       "count": 11774,
       "file": "bases/SINAPI-PR-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PR-2026-08-nao-desonerado.json.gz",
-      "sha256": "63f9bac4f224ff6779583d6fac10c0ad196472fe5b056dc60e13797af77a3e7a",
+      "sha256": "e0afb3863b4200772fd47fa5b126a21815d8706008c9f5314ec6d85279e1d259",
       "normalizedSha256": "5c143507b0ae5836f085fda063f33dbee0a0d1d3608b96a68204af3bb23dd30a",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-PI-2026-08-desonerado",
@@ -419,9 +419,9 @@
       "count": 12051,
       "file": "bases/SINAPI-PI-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PI-2026-08-desonerado.json.gz",
-      "sha256": "81cd720901393904b5da47fe25cf45ee2dd3186eddca2ac09e84507e68b7e088",
+      "sha256": "ec30767ef36602ba22ffeeebe904607efe80d1a5aa5188b45256c217f0673cc0",
       "normalizedSha256": "7c4e6fffb01fa998a07bb11fcfc5007f4c0b5f4222930808b2cc1f4d252297af",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-PI-2026-08-nao-desonerado",
@@ -439,9 +439,9 @@
       "count": 12051,
       "file": "bases/SINAPI-PI-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PI-2026-08-nao-desonerado.json.gz",
-      "sha256": "1ad144c97c610065151aca19947ce3ee4d1903f35e89c7476cf807b50eabb6fb",
+      "sha256": "5e6e5df5b5cd0279af32cd24712826e1e849544d4ce90fff23d017da67867c23",
       "normalizedSha256": "ff83e7dc2a35999b1877960ff2d3ed4d8c8ba331c954890ec92ae788b7f9d171",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-PE-2026-08-desonerado",
@@ -459,9 +459,9 @@
       "count": 11862,
       "file": "bases/SINAPI-PE-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PE-2026-08-desonerado.json.gz",
-      "sha256": "778ffe04c02b312ad5508358d1a834c9d5cba330fdfaa855d5140a2cd511ea68",
+      "sha256": "bdb54a3e084e02c6afff9dadfb55f40cca05f2bfdb45c4509c0aa85c677d1deb",
       "normalizedSha256": "f18ddb7901d26c36bcbcb56d915f138da0715cbf5350e2bfdc0b00123b473070",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-PE-2026-08-nao-desonerado",
@@ -479,9 +479,9 @@
       "count": 11862,
       "file": "bases/SINAPI-PE-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PE-2026-08-nao-desonerado.json.gz",
-      "sha256": "62c352940027629d8035ce4981296a303d1103531bad087e6140d8499cc5723e",
+      "sha256": "86e31b2b09975ee75ed91695151b7f33a1e3d795e944eeb97ff80f57a003191c",
       "normalizedSha256": "f76fa82fbb038e5560524f08ad744fde27d400bb731f02d13c66e830b4794ac2",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-PB-2026-08-desonerado",
@@ -499,9 +499,9 @@
       "count": 11361,
       "file": "bases/SINAPI-PB-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PB-2026-08-desonerado.json.gz",
-      "sha256": "18ca6e588e6c23abdf0702b286adfdad8ffcc6e14b5acebb165ae3e7415a9dae",
+      "sha256": "396b15ea717d2d32df6fda0dc11cefe707cd0fa4e0b045c4c49aa21f2ba6d79d",
       "normalizedSha256": "39ae0847df1baea015f7942c0c8ced62a28f0769c93b8d9550f4f03eb236a675",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-PB-2026-08-nao-desonerado",
@@ -519,9 +519,9 @@
       "count": 11361,
       "file": "bases/SINAPI-PB-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PB-2026-08-nao-desonerado.json.gz",
-      "sha256": "242a5437d6cdc81ed90508b3c5022cd885c7dceed663bf9fed1d08796297fdb0",
+      "sha256": "91661ccde414def8f7bb9a6e68ee9dd175efd9adf30b172beaec5962a11cb8b0",
       "normalizedSha256": "aebb777441e099fb66aafd5b6033072fbe4e03bb435369df05281cbbafb31124",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-PA-2026-08-desonerado",
@@ -539,9 +539,9 @@
       "count": 12451,
       "file": "bases/SINAPI-PA-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PA-2026-08-desonerado.json.gz",
-      "sha256": "63105051e9c160c1418d1426c1e18215fb785b362e688e67a55e5151641b621a",
+      "sha256": "225c0790d9c7621c415ccce5df4fb5d1efe53ff9df1c73dbc7a6629ec8320de0",
       "normalizedSha256": "95fbf098730857878f218799e3f304ec638a40b4cd481d11e27ef76a62b23500",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-PA-2026-08-nao-desonerado",
@@ -559,9 +559,9 @@
       "count": 12451,
       "file": "bases/SINAPI-PA-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PA-2026-08-nao-desonerado.json.gz",
-      "sha256": "efca535d2eec08ce485227bec4afd455017182b6c3117c9e0702d389c0868094",
+      "sha256": "7d3de44308af1cd54c1a00f07fa40456b8653dbdd887ec8fc1a549cd53fa5cda",
       "normalizedSha256": "d4d4782b4e76f6275f83ff82cdacc8a8dbf4a4b01f38e67eefc7a3bce94b6537",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-MT-2026-08-desonerado",
@@ -579,9 +579,9 @@
       "count": 12130,
       "file": "bases/SINAPI-MT-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MT-2026-08-desonerado.json.gz",
-      "sha256": "718eb1aa36ffe1c236b5158860fc6f0f0d0939b7a6bb621aa7eb7bf96b80c3a0",
+      "sha256": "e85e2d24acc8ec742427a7e85067a95a910560ffa1239b62bee5b1925bb0c4c5",
       "normalizedSha256": "fc53f0bc65a4d328e1a766bbc796cd231f0d683eeca15d352c0c1d01cf3240b7",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-MT-2026-08-nao-desonerado",
@@ -599,9 +599,9 @@
       "count": 12130,
       "file": "bases/SINAPI-MT-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MT-2026-08-nao-desonerado.json.gz",
-      "sha256": "e649e602c038c0efadec100fb44a05f596967dfd3001f45aec4b6f6e84cb3f33",
+      "sha256": "fca34123612c01ce978d2b19c68ee3ecb7c52094e41ca3ae704be0eeec3ea48f",
       "normalizedSha256": "3970d73311bd94323095c9f424f20a5f8a3a1f3ecb92aabb517ab68228f5f22a",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-MS-2026-08-desonerado",
@@ -619,9 +619,9 @@
       "count": 12091,
       "file": "bases/SINAPI-MS-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MS-2026-08-desonerado.json.gz",
-      "sha256": "2f66ec5933a1294590beb1369130dc44e9c6cad87baad9a89369a8f6ccd01f10",
+      "sha256": "36ed8e5a05d38b74d5c7eb5a8e63e3157a89a5c810a8606f382f5bc739592780",
       "normalizedSha256": "17c4767616cdf1623fd67f742c350b06162d33af069ee9fd4f040f5c53f57c25",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-MS-2026-08-nao-desonerado",
@@ -639,9 +639,9 @@
       "count": 12091,
       "file": "bases/SINAPI-MS-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MS-2026-08-nao-desonerado.json.gz",
-      "sha256": "bdd6df3670e5852ecec911dbfc0d357450a3333c1087c3ad4d333fba46718f53",
+      "sha256": "0af32cf2c2c2efc5c80f2d8229170e7990320344f33b8c04579e70a47630ad55",
       "normalizedSha256": "5e94960d9febb6a622b83a44d32af08f9f18c73dc5024e9a3df8d9bcbfc65ff5",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-MG-2026-08-desonerado",
@@ -659,9 +659,9 @@
       "count": 12822,
       "file": "bases/SINAPI-MG-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MG-2026-08-desonerado.json.gz",
-      "sha256": "ee79d37b25013ad7b1c21e3f3c4f82d799d0067a853bb05f8e8ba61a2cca5dcd",
+      "sha256": "40ba59eca883540eacc5ef072492b83a60304d39f04b294cad85a32234cc58ef",
       "normalizedSha256": "e8bf4c03e86409b413255d6599e3debbd9b78edf2c115d73bde535e4120c33c6",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-MG-2026-08-nao-desonerado",
@@ -679,9 +679,9 @@
       "count": 12822,
       "file": "bases/SINAPI-MG-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MG-2026-08-nao-desonerado.json.gz",
-      "sha256": "54079f7ba0cb56021b0f36e3e2f929e6701d856528bfaaf62a9f5ba5da8d793a",
+      "sha256": "7df2799876d874d19b9fb04f988fd94f9d4ea73e0744dffeea8236d8c9071988",
       "normalizedSha256": "ecda9332e354a75d21bd1bac88c29854d38774ef76d4d62f73d3065e7b7d19b7",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-MA-2026-08-desonerado",
@@ -699,9 +699,9 @@
       "count": 11571,
       "file": "bases/SINAPI-MA-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MA-2026-08-desonerado.json.gz",
-      "sha256": "375573058b08c34469e1526015cab9871c1d159a1fef935c2a029d8b2dbd2a27",
+      "sha256": "3b7cf1965c60e6b2b4cd9f9c0bef6a95edc5cb3d3675faee3972be4f6b93920b",
       "normalizedSha256": "3dcd280cbcbe96e24560b4a9227bc036277fc5d372962d7e6b664541d8c15f82",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-MA-2026-08-nao-desonerado",
@@ -719,9 +719,9 @@
       "count": 11571,
       "file": "bases/SINAPI-MA-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MA-2026-08-nao-desonerado.json.gz",
-      "sha256": "d70b223475c92aeebe6e94300f2b490142ca447c88feb9ad95b1bac6ee0102f2",
+      "sha256": "df40a7a3a6b4c399b8fce6d5df1e0a79226940fea7b57cdd886056c0d957e643",
       "normalizedSha256": "b6a28d98a49c7dae4263171ed616c63258abc730dfa52a014ea59d7644537b2d",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-GO-2026-08-desonerado",
@@ -739,9 +739,9 @@
       "count": 12113,
       "file": "bases/SINAPI-GO-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-GO-2026-08-desonerado.json.gz",
-      "sha256": "9e2ba143b905f3a005b4d27b269d812ecf314e783ada4f0f8f874e3538812f67",
+      "sha256": "11eb49a6c8715ebf03207f1693761c07cf847c32d6558e98aa9ff924d0bf15e0",
       "normalizedSha256": "484559dd2d80ac51e7472f602cf8ef4a786ae0482fedbac3a8006164234c111c",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-GO-2026-08-nao-desonerado",
@@ -759,9 +759,9 @@
       "count": 12113,
       "file": "bases/SINAPI-GO-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-GO-2026-08-nao-desonerado.json.gz",
-      "sha256": "e588ad7a95f9307200fc3bca40bb485091aca9b8bc28cecdaadea724e061c8bb",
+      "sha256": "f2048aab1959c55cfc218bcb9ca06dd321a61a7ed11d435217a586db152a1acc",
       "normalizedSha256": "c68b83482a95c4d57c06161e32939865372fc058bb40052ca65869bc86af2371",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-ES-2026-08-desonerado",
@@ -779,9 +779,9 @@
       "count": 12679,
       "file": "bases/SINAPI-ES-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-ES-2026-08-desonerado.json.gz",
-      "sha256": "8cc4ff46171bc79b7ab2ac51a974494ea80d4c445a8ebcaa0c2b4b1d4c4ecaa7",
+      "sha256": "242a6eb0e9e08349d3a07e2cb30f606ae268a91001786b5d19826f2f53e12f05",
       "normalizedSha256": "b08337882d8051fc0c43615b054867fe93a1a2426c6216cf70febbea16c902f5",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-ES-2026-08-nao-desonerado",
@@ -799,9 +799,9 @@
       "count": 12679,
       "file": "bases/SINAPI-ES-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-ES-2026-08-nao-desonerado.json.gz",
-      "sha256": "9ae18ac74463859628c23b3fed32f18eaf099cdf727e1f9729e5d77f39b30a7a",
+      "sha256": "99bc98dc2a2350891dcd6ca1a036efca439d61f3eadaa6a357ec83df9196138a",
       "normalizedSha256": "e9e849f1262c850538c149b02d63ba6890796fcd420cc96f69b75c8d9cd6378d",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-DF-2026-08-desonerado",
@@ -819,9 +819,9 @@
       "count": 11878,
       "file": "bases/SINAPI-DF-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-DF-2026-08-desonerado.json.gz",
-      "sha256": "dc060ddfc4d4f59768a5dccaf547144ee5e529a316d34f17a960a53cfc3e78c8",
+      "sha256": "b31407b3174ac47f04cb5db01300c4e8593b3e397a7d506bbb9e201596aaa2b7",
       "normalizedSha256": "75d6960e7c4fbe0eeb3407f322bbd0a1a5d44c44444463e0c55e3187143a984e",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-DF-2026-08-nao-desonerado",
@@ -839,9 +839,9 @@
       "count": 11878,
       "file": "bases/SINAPI-DF-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-DF-2026-08-nao-desonerado.json.gz",
-      "sha256": "7012f1ec067d0c5fd67c643f8f44cfbabedb4549a3708581e815943c0c740c6d",
+      "sha256": "91e1c1fa2518e1a694bf88b0680ab569ec52cf0ae00b86810c332225d600c552",
       "normalizedSha256": "326dd0bfbd5b3dc5bc50ed848617cb305323b07e95f2d843ed96300a394920d5",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-CE-2026-08-desonerado",
@@ -859,9 +859,9 @@
       "count": 11627,
       "file": "bases/SINAPI-CE-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-CE-2026-08-desonerado.json.gz",
-      "sha256": "8220c1f607ee1d4dffffc9e569eec603188db7743454c604ed041bf353ba2ac6",
+      "sha256": "f9b1217a9069ea20e71688036eb11877f71dab14d362c77b102bc2a2049eb7bf",
       "normalizedSha256": "ff579e79218a3a7ff98eabb0643f4412d25a27791d6adf6cd17b1c1065756423",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-CE-2026-08-nao-desonerado",
@@ -879,9 +879,9 @@
       "count": 11627,
       "file": "bases/SINAPI-CE-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-CE-2026-08-nao-desonerado.json.gz",
-      "sha256": "3bfd9666032967cfe40c6bb08d9f55b0b40b04da06cdc99e16f8b86a9ac2a1bc",
+      "sha256": "a1e6c29f10c521b103e67401c7c7709ef6c68faa4ae2fe70ae05c66cb24a82fc",
       "normalizedSha256": "8d20f9c33ec358ca0a54bb9cebd6e225084d7c97239808bc9387901198456446",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-BA-2026-08-desonerado",
@@ -899,9 +899,9 @@
       "count": 12917,
       "file": "bases/SINAPI-BA-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-BA-2026-08-desonerado.json.gz",
-      "sha256": "56de4d6fa6295c182f673298e0f41da1c286d488d8eb557460f2f22cebfe086c",
+      "sha256": "d12c1da70f436abfea1aa1ba4c44b7c69752ac5dbfe08d5222af3040c3ab565f",
       "normalizedSha256": "36bd7f87f5280a74e0901e425f23f0dd17143c0f82bf67c82e42200340773464",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-BA-2026-08-nao-desonerado",
@@ -919,9 +919,9 @@
       "count": 12917,
       "file": "bases/SINAPI-BA-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-BA-2026-08-nao-desonerado.json.gz",
-      "sha256": "fd433bbbf3a1dcaee2290092e04c69ce07f7db476e0d4911e5460be9d2ae2564",
+      "sha256": "2f981d0a0bb24c8f5b7d43cf3f30dfdb82a148dd190e905fce9bd857de596fec",
       "normalizedSha256": "749856f334c119e8a60bf4077c593aa98d84737f7b94b5b9169513edb6044cec",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-AP-2026-08-desonerado",
@@ -939,9 +939,9 @@
       "count": 11553,
       "file": "bases/SINAPI-AP-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AP-2026-08-desonerado.json.gz",
-      "sha256": "4e6619d823a357cdad513944d3e5625b4135b8c43a5bb1faa616312a1f3800e9",
+      "sha256": "1629aa1dff65b16df305d11761c764719817a91ab158c1cb756bd7aa97cb2289",
       "normalizedSha256": "882c27124e0ba1064e933b8b0723a3d973fc2891bad903c5a087b7ec9fc6d842",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-AP-2026-08-nao-desonerado",
@@ -959,9 +959,9 @@
       "count": 11553,
       "file": "bases/SINAPI-AP-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AP-2026-08-nao-desonerado.json.gz",
-      "sha256": "3b073aa0c712e2f65ffa46f2645706b5bbc41c8eb724d59cdc21cde3749113c0",
+      "sha256": "b5a18354b67162a0e64b92cb7c22301bff52b5e4c9a80b8c4287c507e616cc8f",
       "normalizedSha256": "a8f23be56250420326ba430c521c766f6345ded552d1c5178c124393fb8e30f4",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-AM-2026-08-desonerado",
@@ -979,9 +979,9 @@
       "count": 11380,
       "file": "bases/SINAPI-AM-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AM-2026-08-desonerado.json.gz",
-      "sha256": "4e27fc96683d351111f7e162cbf644213105628af2c24e1973abcc51fc7446b2",
+      "sha256": "b3df3ff9cd144700549b4fb0c47dcc2819eb48809856e98592dca85e5b64facd",
       "normalizedSha256": "910244d0209bed2d0c65b22626cc1e6d28f74b186dca144d69a0bab6d4c7f4d8",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-AM-2026-08-nao-desonerado",
@@ -999,9 +999,9 @@
       "count": 11380,
       "file": "bases/SINAPI-AM-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AM-2026-08-nao-desonerado.json.gz",
-      "sha256": "c7b80a5c7bd2eb97189059868840bd0baa6568493052f7a93f5d7addfc512a8c",
+      "sha256": "25b4dacc28195dec9d3b02547b4a6c1ccad174bb1819ce09b3bfc001d8b45b6d",
       "normalizedSha256": "c37cf327ae48761203a4dbda3353f1c1e93aecb8ab39f88f697884c027e819d8",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-AL-2026-08-desonerado",
@@ -1019,9 +1019,9 @@
       "count": 11680,
       "file": "bases/SINAPI-AL-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AL-2026-08-desonerado.json.gz",
-      "sha256": "2b06f2ab684481f25098be0f984735e2ea18932fce49670427bf5cffbc8397cf",
+      "sha256": "a4cf63b504e32e8231c17c0bc3463d0d1015f266002ce5121ff869bf5b78c486",
       "normalizedSha256": "bc8d1749800c60af71a9565b33f7dae72bc625a4dee81f877b8374aefd7f0b2a",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-AL-2026-08-nao-desonerado",
@@ -1039,9 +1039,9 @@
       "count": 11680,
       "file": "bases/SINAPI-AL-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AL-2026-08-nao-desonerado.json.gz",
-      "sha256": "c9ca98af6b0e7dc13de42b18ff9e76910c0cc415649c8c6a7fda74b712a5a6d6",
+      "sha256": "89e34485abcba518bb496a2b2c71388107a57dbf32085b2fa7e4ce1e58002472",
       "normalizedSha256": "d69d0a166761d17af67f2b82b96be2926868f7e5e8b3846331311409eeb5075b",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-AC-2026-08-desonerado",
@@ -1059,9 +1059,9 @@
       "count": 12333,
       "file": "bases/SINAPI-AC-2026-08-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AC-2026-08-desonerado.json.gz",
-      "sha256": "243c6fe1cdbee8acd9a671933d052418c78a1c7a3b715e721800cd2e3a2d18b8",
+      "sha256": "8523828f30a47630495a93e8db49d06c70677fa0f73ab22e6bfc92641190b40e",
       "normalizedSha256": "7c00b6f2fd000e0f8cb7e746185f4d32fadef1d2d0b3b4b7622ee91d80e0d4dd",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     },
     {
       "id": "SINAPI-AC-2026-08-nao-desonerado",
@@ -1079,9 +1079,49 @@
       "count": 12333,
       "file": "bases/SINAPI-AC-2026-08-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AC-2026-08-nao-desonerado.json.gz",
-      "sha256": "a1508e39792feb568e9b73f3fb73b0bf9688f18af3871186319fefd06597ee4c",
+      "sha256": "fec07db0f60533d7e88cc2acac8863f3e5f9459ac8625307c2469f98fedf23ee",
       "normalizedSha256": "28977a394740808860d368f2cb30a37fe1b6a13d3dd7ebe5a2b56f5ea2ba8e67",
-      "generatedAt": "2026-10-09T15:38:13.663111+00:00"
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
+    },
+    {
+      "id": "SICRO3-BA-2026-07-nao-desonerado",
+      "source": "SICRO3",
+      "uf": "BA",
+      "year": 2026,
+      "month": "07",
+      "reference": "2026-07",
+      "regime": "Não desonerado",
+      "type": "mixed",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "publishedAt": "",
+      "sourceFile": "fontes/ba-07-2026.7z",
+      "status": "ready",
+      "count": 8966,
+      "file": "bases/SICRO3-BA-2026-07-nao-desonerado.json.gz",
+      "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-BA-2026-07-nao-desonerado.json.gz",
+      "sha256": "f473f1b97ed1e6ca71e421e40d555f786a2ef54168648d17b82279b522734714",
+      "normalizedSha256": "9a385b11b04c12c3e2a790c63fe3c3d322e2b692473c6a15232095edd4a9d203",
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
+    },
+    {
+      "id": "SICRO3-BA-2026-07-desonerado",
+      "source": "SICRO3",
+      "uf": "BA",
+      "year": 2026,
+      "month": "07",
+      "reference": "2026-07",
+      "regime": "Desonerado",
+      "type": "mixed",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "publishedAt": "",
+      "sourceFile": "fontes/ba-07-2026.7z",
+      "status": "ready",
+      "count": 2351,
+      "file": "bases/SICRO3-BA-2026-07-desonerado.json.gz",
+      "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-BA-2026-07-desonerado.json.gz",
+      "sha256": "ec48a6a31cc373ff9b57983fa6845d31859debaa92e9eddd232a291a9589b871",
+      "normalizedSha256": "93e15ad77bb3172dcc967209841278951bfe1bbdbd7e2df40d80f66c379081f9",
+      "generatedAt": "2026-10-09T17:21:05.810541+00:00"
     }
   ]
 }
