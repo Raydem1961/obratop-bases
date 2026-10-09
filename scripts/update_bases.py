@@ -51,7 +51,7 @@ def save_base(meta,rows):
     if not rows:return None
     payload={"meta":meta,"rows":rows}
     raw=json.dumps(payload,ensure_ascii=False,separators=(",",":")).encode()
-    gz=gzip.compress(raw,compresslevel=9)
+    gz=gzip.compress(raw,compresslevel=9,mtime=0)
     safe=re.sub(r"[^A-Za-z0-9_.-]+","-",meta["id"])
     rel=f"bases/{safe}.json.gz"; p=DOCS/rel;p.write_bytes(gz)
     return {**meta,"status":"ready","count":len(rows),"file":rel,"url":f"https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/{rel}","sha256":hashlib.sha256(gz).hexdigest(),"normalizedSha256":hashlib.sha256(raw).hexdigest(),"generatedAt":NOW}
@@ -234,7 +234,7 @@ def dedupe(entries):
     d={}
     for x in entries:
         old=d.get(x["id"])
-        if not old or (x.get("status")=="ready" and old.get("status")!="ready"):d[x["id"]]=x
+        if not old or x.get("status")=="ready" or old.get("status")!="ready":d[x["id"]]=x
     return sorted(d.values(),key=lambda x:(x.get("source",""),x.get("uf",""),x.get("reference","")),reverse=True)
 
 def prune(entries,keep=6):
