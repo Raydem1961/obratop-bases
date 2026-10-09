@@ -1,0 +1,4 @@
+ObraTop 3.18.1.1 — Integração Segura por Confiança
+
+Ajuste de segurança solicitado durante homologação da Engenharia Inteligente.
+Pendências de confiança/preço permanecem fora da integração até revisão manual.

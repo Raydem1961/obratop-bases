@@ -1,0 +1,13 @@
+{
+  "release": "3.18.6.1",
+  "result": "PASS",
+  "checks": [
+    "natural EAP sort 1..9..10..14",
+    "category-to-discipline mapping",
+    "spreadsheet technicalValidation pending",
+    "Importação 100% wording",
+    "corrupt PDF protection preserved",
+    "root/public mirrors",
+    "javascript syntax"
+  ]
+}

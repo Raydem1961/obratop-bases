@@ -1,0 +1,15 @@
+{
+  "release": "3.19.1",
+  "result": "PASS",
+  "checks": [
+    "SICRO UF selector",
+    "SICRO UF required",
+    "available UFs from installed bases",
+    "source/reference filters",
+    "matching threshold selector",
+    "no cross-UF SICRO fallback",
+    "association audit",
+    "root/public mirrors",
+    "javascript syntax"
+  ]
+}

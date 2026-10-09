@@ -1,0 +1,10 @@
+{
+  "name": "obratop",
+  "version": "3.25.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check public/app.js && node --check public/sw.js",
+    "test": "node --test tests/unit/calc.test.mjs tests/unit/backup.test.mjs tests/unit/branding.test.mjs tests/unit/templates.test.mjs tests/unit/mobile.test.mjs tests/unit/bases.test.mjs tests/unit/bases.xlsx.test.mjs tests/unit/orcamento.test.mjs tests/unit/msproject.test.mjs && node tests/economics.test.mjs"
+  }
+}

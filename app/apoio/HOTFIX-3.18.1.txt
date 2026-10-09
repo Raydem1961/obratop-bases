@@ -1,0 +1,8 @@
+ObraTop 3.18.1 — Engenharia Inteligente de Projetos
+Integração Estruturada da Obra
+- Prévia detalhada do impacto antes da gravação
+- Alimentação seletiva de Orçamento, EAP/Cronograma, Estoque, Compras, Pessoal, Equipamentos, Documentos e Financeiro
+- Ponto de restauração obrigatório antes da integração
+- Progresso 0–100% durante a alimentação
+- Lote rastreável e auditoria reforçada
+- Mantém análise PDF, quantitativos, recursos e layout compacto da 3.18.0.3

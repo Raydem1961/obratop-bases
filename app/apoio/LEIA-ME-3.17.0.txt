@@ -1,0 +1,28 @@
+ObraTop 3.17.0 — Release de Estabilização
+Data: 13/09/2026
+Ambiente: Produção
+
+Objetivo
+- Estabilizar a versão de produção sem alterar o visual aprovado.
+
+Principais correções
+1. Curva S real: passa a registrar snapshots diários de avanço físico/financeiro por obra. O histórico realizado usa snapshots reais em vez de reconstruir o passado com o progresso atual.
+2. Indicadores de prazo: cálculo físico ponderado pela duração das atividades (ou peso explícito, quando existir), reduzindo distorção da média simples.
+3. Exclusão definitiva de obra: obra principal só é removida ao final. Exclusões grandes são registradas em systemOperations, processadas em lotes e podem ser repetidas com segurança após interrupção.
+4. Restauração profissional: operações grandes passam a ter journal de operação e retomada segura. Backups novos usam schema 2 e incluem o histórico da Curva S. Backups schema 1 permanecem compatíveis.
+5. Auditoria: criação/edição/exclusão lógica e ações críticas de usuários passam a gravar o evento de auditoria no mesmo batch do registro sempre que aplicável.
+6. Hosting: somente a pasta public é publicada. Arquivos de QA, documentação interna e versões antigas deixam de ser expostos pelo Hosting.
+7. Segurança Firestore: regras reforçadas com validação de percentuais, números não negativos, referências de obra, snapshots e operações do sistema.
+8. Storage: caminho novo de anexos inclui a obra e regras preparadas para limitar upload à obra atribuída. Anexos antigos continuam legíveis. ATENÇÃO: no plano Spark, não publicar Storage até habilitar o recurso/plano compatível.
+9. PWA: ícones PNG 192/512 e Apple Touch Icon adicionados, mantendo o ícone SVG.
+10. Datas: data local do dispositivo substitui o corte UTC, evitando mudança de dia antecipada no Brasil.
+11. Limpeza técnica: referências legadas de versões/perfis removidas da interface/código operacional.
+
+Publicação segura no projeto atual
+- Projeto a manter: obratop-v3-teste
+- Publicar SOMENTE hosting e firestore enquanto o projeto estiver no plano Spark.
+- Não executar firebase deploy sem --only, pois storage pode exigir Blaze.
+
+Observação sobre histórico da Curva S
+- O ObraTop começa a formar histórico real a partir da primeira execução da 3.17.0.
+- O sistema não inventa pontos históricos anteriores. O avanço atual continua disponível nos indicadores, e os snapshots reais passam a formar a linha histórica ao longo do tempo.

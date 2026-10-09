@@ -1,0 +1,3 @@
+ObraTop 3.18.0.3 — Layout Compacto e Responsivo
+Correção visual do módulo Projetos e Quantitativos Inteligentes.
+Reduz larguras mínimas, compacta cartões e tabelas e restringe rolagem horizontal aos casos estritamente necessários.

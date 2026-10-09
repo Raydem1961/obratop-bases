@@ -1,0 +1,38 @@
+ARQUIVOS (3.26.0.0)
+- firestore.rules.minima-3.26 : as regras ATUAIS + colecao dailyLogs (Diario de Obra) + perfis Consulta, Gestor e Financeiro. Nao muda a leitura. E a que eu recomendo publicar primeiro.
+- firestore.rules.proposta    : versao estrita (v2): alem do acima, leitura por obra e pontos de restauracao so do administrador.
+- storage.rules.proposta      : anexos por obra.
+NENHUMA foi testada em emulador. Teste no Simulador de Regras do console e, se possivel, com tests/rules/firestore.rules.test.mjs.
+
+O QUE LIBERA CADA UMA
+- Diario de Obra no app: so aparece depois que a regra libera a colecao dailyLogs (o app detecta sozinho).
+- Perfis Gestor, Financeiro e Consulta: convites e mudanca de perfil so funcionam depois da regra nova.
+
+REGRAS PROPOSTAS v2 (3.25.0.0) — OPCIONAIS, NAO PUBLICADAS AUTOMATICAMENTE, NAO TESTADAS EM EMULADOR
+
+O script PUBLICAR_OBRATOP_3.25.0.0.cmd publica SOMENTE o Hosting. O app 3.25.0.0 funciona com as regras ATUAIS.
+Estas regras so passam a valer quando voce as publica de proposito.
+
+O QUE MUDA (compare firestore.rules com regras-propostas/firestore.rules.proposta)
+1. Leitura por obra: usuario de obra e perfil Consulta leem so registros da obra atribuida (o app 3.25 ja consulta assim).
+2. Perfil Consulta (viewer): le a propria obra e nao escreve; convites e membros aceitam os perfis project_user e viewer.
+3. Pontos de restauracao: so o administrador le (antes, qualquer membro).
+4. E-mail verificado para criar empresa e aceitar convite; auditoria com e-mail do usuario, horario do servidor e tamanho limitado.
+5. Financeiro: tipo so Receita/Despesa e descricao de ate 2000 caracteres.
+6. storage.rules.proposta: anexos so do administrador e da obra atribuida; Consulta le e nao envia.
+
+LIMITES
+- Nao foram executadas em emulador neste ambiente. Teste no Simulador de Regras do console e com tests/rules/firestore.rules.test.mjs (precisa de Java).
+- Fornecedores, engenharia (projetos e levantamentos) e operacoes de sistema continuam legiveis por qualquer membro.
+- Dados antigos sem workId deixam de ser lidos por usuarios de obra (so o administrador os ve).
+
+QUANDO PUBLICAR
+Somente depois de a versao 3.25.0.0 estar no ar e funcionando e de voce ter feito um backup profissional.
+
+COMO PUBLICAR
+Console > Firestore > Regras: cole firestore.rules.proposta e publique. Storage > Regras: cole storage.rules.proposta.
+Ou no Cloud Shell, depois de copiar os arquivos propostos por cima de firestore.rules e storage.rules:
+  firebase deploy --only firestore:rules,storage --project obratop-v3-teste
+
+COMO DESFAZER
+Console > Regras > Historico: escolha a versao anterior e republique.

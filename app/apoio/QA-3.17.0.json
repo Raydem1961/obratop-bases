@@ -1,0 +1,31 @@
+{
+  "status": "APROVADO_ESTATICAMENTE",
+  "checks": {
+    "release_3170": true,
+    "snapshots": true,
+    "restore_journal": true,
+    "purge_journal": true,
+    "backup_schema2": true,
+    "backup_v1_compat": true,
+    "local_date": true,
+    "no_old_version_ui": true
+  },
+  "public_files": [
+    "ObraTop_Super_Planilha_Base.xlsx",
+    "app.js",
+    "apple-touch-icon.png",
+    "firebase-config.js",
+    "icon-192.png",
+    "icon-512.png",
+    "icon.svg",
+    "index.html",
+    "manifest.webmanifest",
+    "styles.css",
+    "sw.js"
+  ],
+  "notes": [
+    "Sintaxe JavaScript validada por node --check",
+    "Hosting isolado em public",
+    "Validação visual online deve ser confirmada após deploy no Firebase"
+  ]
+}

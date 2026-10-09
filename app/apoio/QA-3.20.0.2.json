@@ -1,0 +1,17 @@
+{
+  "release": "3.20.0.2",
+  "result": "PASS",
+  "checks": [
+    "engineeringLoadProjects restored",
+    "all engineering prerequisite helpers restored",
+    "renderEngineering exists exactly once",
+    "renderEngineeringBody exists exactly once",
+    "engineering route target exists",
+    "V3.20 base manager retained",
+    "budget updater retained",
+    "SICRO UF selector retained",
+    "ES module syntax",
+    "no duplicate top-level functions",
+    "root/public parity"
+  ]
+}

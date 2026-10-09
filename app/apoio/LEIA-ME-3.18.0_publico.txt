@@ -1,0 +1,21 @@
+OBRATOP 3.18.0 — ENGENHARIA INTELIGENTE DE PROJETOS
+
+Módulo novo: Projetos e Quantitativos Inteligentes.
+
+Fluxo:
+1. Selecione uma obra existente.
+2. Importe um ou vários PDFs.
+3. O navegador lê a camada textual dos PDFs e identifica disciplina, escala, revisão e quantitativos com unidade.
+4. O ObraTop classifica os itens em EAP e atribui nível de confiança.
+5. Materiais, mão de obra, equipamentos/máquinas e ferramental são estimados por composição preliminar.
+6. Opcionalmente importe um banco de preços Excel/CSV (SINAPI, SICRO, fornecedor ou próprio).
+7. Revise/edite os quantitativos.
+8. Administrador aprova a integração.
+9. Antes da gravação é criado ponto de restauração automático.
+10. A estrutura pode alimentar Orçamento, Cronograma/EAP, Estoque, Compras/cotação, Pessoal previsto, Equipamentos previstos, Documentos e Financeiro opcional.
+
+LIMITAÇÃO TÉCNICA IMPORTANTE
+PDF escaneado sem camada textual pode ser importado, mas não terá levantamento geométrico automático confiável nesta versão. Para geometria e escala de alta precisão, usar PDF vetorial, DXF/DWG ou IFC em evolução futura. O ObraTop não inventa quantitativos quando não há informação mensurável suficiente.
+
+PREÇOS
+Os preços internos são referências preliminares editáveis. Para orçamento real, importe banco de preços atualizado ou valide preços de mercado antes da aprovação.

@@ -1,0 +1,21 @@
+BACKUP EXTERNO AGENDADO (sem Cloud Functions)
+
+O QUE FAZ
+Toda segunda-feira (e quando voce clicar em "Run workflow") o GitHub Actions le o Firestore, grava um arquivo .json.gz com todas as colecoes da empresa (menos os pontos de restauracao) e um arquivo .sha256, e guarda por 90 dias. E um backup FORA do Firebase, que o plano gratuito nao oferece de forma agendada.
+
+COMO ATIVAR (uma vez)
+1. Crie um repositorio PRIVADO no GitHub e envie esta pasta do projeto (inclui .github/workflows e tools/).
+2. Console do Google Cloud > IAM > Contas de servico > Criar: nome "obratop-backup". Papel: "Leitor do Cloud Datastore" (roles/datastore.viewer) — somente leitura.
+3. Na conta criada: Chaves > Adicionar chave > JSON. Guarde o arquivo; nao o envie ao repositorio.
+4. No GitHub: Settings > Secrets and variables > Actions > New repository secret:
+     FIREBASE_SERVICE_ACCOUNT = conteudo do JSON da chave
+     PROJECT_ID               = obratop-v3-teste (ou o projeto de producao)
+     ORG_ID                   = (opcional) o codigo da empresa; vazio = todas
+5. Aba Actions > "Backup externo do ObraTop (semanal)" > Run workflow. Baixe o artefato e confira.
+6. Apague a chave JSON do seu computador depois de cadastrar o segredo.
+
+CUIDADOS
+- NAO FOI EXECUTADO contra o Firebase real neste ambiente; so a conversao dos dados tem teste automatico (npm test). Rode uma vez manualmente e confira os numeros antes de confiar nele.
+- O arquivo contem dados pessoais (salarios, e-mails): repositorio privado, 90 dias de retencao e acesso restrito.
+- Consome leituras do Firestore (cota gratuita de 50 mil por dia): uma empresa pequena gasta uma fracao disso por semana.
+- Para restaurar, use o arquivo para conferir/recuperar dados; o app nao importa este formato automaticamente (o app restaura os pontos de restauracao dele).

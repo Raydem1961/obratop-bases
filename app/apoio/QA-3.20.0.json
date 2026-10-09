@@ -1,0 +1,15 @@
+{
+  "release": "3.20.0",
+  "result": "PASS",
+  "checks": [
+    "source/year/month/UF/regime selectors",
+    "official links",
+    "zero-price base block",
+    "budget preview",
+    "selective budget update",
+    "price history fields",
+    "audit",
+    "ES module syntax",
+    "root/public mirrors"
+  ]
+}

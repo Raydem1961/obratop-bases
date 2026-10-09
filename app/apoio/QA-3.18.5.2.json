@@ -1,0 +1,15 @@
+{
+  "release": "3.18.5.2",
+  "result": "PASS",
+  "checks": [
+    "legacy text revalidation",
+    "blocked confidence override",
+    "project integration block",
+    "runtime integration block",
+    "pricebook block",
+    "safe review-only delete",
+    "takeoff cascade delete",
+    "integrated project delete refusal",
+    "root/public mirror"
+  ]
+}

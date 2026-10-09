@@ -1,0 +1,14 @@
+{
+  "version": "3.24.0",
+  "date": "2026-09-14",
+  "base": "ObraTop_V3.23.0_Economia_Custos.zip",
+  "checks": {
+    "javascriptSyntax": "passed",
+    "economicsCalculations": "25 checks passed",
+    "rootPublicParity": "passed",
+    "firebaseWritesFromDemo": "none",
+    "currencyFormat": "BRL with two decimals",
+    "missingDataGuidance": "implemented"
+  },
+  "deployment": "not performed"
+}

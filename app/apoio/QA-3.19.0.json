@@ -1,0 +1,17 @@
+{
+  "release": "3.19.0",
+  "result": "PASS",
+  "checks": [
+    "IndexedDB cost base storage",
+    "SINAPI metadata",
+    "SICRO3 metadata",
+    "ORSE-SE metadata",
+    "UF/reference traceability",
+    "unit-aware matching",
+    "context source priority",
+    "55% auto-match threshold",
+    "association audit",
+    "root/public mirrors",
+    "javascript syntax"
+  ]
+}

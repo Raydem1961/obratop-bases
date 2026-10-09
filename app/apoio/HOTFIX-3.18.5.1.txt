@@ -1,0 +1,6 @@
+ObraTop V3.18.5.1
+- Detecta camada textual corrompida em PDFs.
+- Bloqueia falso nível de confiança alto para texto ilegível.
+- Não grava quantitativos quando o PDF não pode ser interpretado com segurança.
+- Bloqueia integração de registros legados cuja descrição/origem esteja corrompida.
+- Mantém módulos, Gantt, estoque planejado, filtros e regras existentes.

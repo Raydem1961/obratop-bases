@@ -1,0 +1,4 @@
+ObraTop 3.18.0.1 — Hotfix de Inicialização
+
+Corrige erro de sintaxe na integração Financeiro da Engenharia Inteligente que impedia o carregamento do módulo JavaScript e deixava a tela em “Conectando ao serviço online...”.
+Nenhum dado do Firestore é alterado por este hotfix.

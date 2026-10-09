@@ -1,0 +1,13 @@
+{
+  "release": "3.17.1",
+  "scope": "Consolidação das Curvas ABC",
+  "checks": {
+    "javascript_root": "passed",
+    "javascript_public": "passed",
+    "hosting_public_directory": "passed",
+    "abc_grouping_materials": "implemented",
+    "abc_grouping_staff": "implemented",
+    "abc_grouping_equipment": "implemented",
+    "visual_layout_changed": false
+  }
+}

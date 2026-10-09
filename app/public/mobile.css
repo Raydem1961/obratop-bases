@@ -1,0 +1,169 @@
+/* ==========================================================================
+   ObraTop Mobile — visualização para smartphone (V3.29)
+   Ativada pela classe html.vm-mobile (definida por mobile.mjs). Vertical e horizontal.
+   ========================================================================== */
+.bottomNav,.drawerBack,.filtersToggle,.drawerFoot{display:none}
+html.vm-mobile{--f-top:calc(52px + env(safe-area-inset-top,0px));--vm-w:100%;--bn-h:calc(60px + env(safe-area-inset-bottom,0px))}
+html.vm-frame{--vm-w:430px}
+html.vm-mobile body{overflow-x:hidden;-webkit-text-size-adjust:100%;touch-action:manipulation}
+
+/* ----- moldura de celular (visualização de smartphone escolhida num monitor) ----- */
+html.vm-frame{background:#cdd3da}
+html.vm-frame[data-theme="dark"]{background:#0c0c0c}
+html.vm-frame body{width:var(--vm-w);margin:0 auto;min-height:100vh;position:relative;box-shadow:0 0 0 1px rgba(0,0,0,.18),0 28px 80px rgba(0,0,0,.4)}
+
+/* ----- barra superior compacta ----- */
+html.vm-mobile body .topbar{height:var(--f-top);padding:env(safe-area-inset-top,0px) calc(6px + env(safe-area-inset-right,0px)) 0 calc(6px + env(safe-area-inset-left,0px));gap:2px}
+html.vm-mobile .context,html.vm-mobile .user,html.vm-mobile #logoutBtn,html.vm-mobile #themeBtn{display:none!important}
+html.vm-mobile .topbar .grow{flex:1}
+html.vm-mobile .iconbtn{width:44px;height:44px}
+html.vm-mobile .brand{gap:7px}
+html.vm-mobile .orgLogo{max-height:26px;max-width:84px;padding-left:8px;margin-left:4px}
+html.vm-mobile body .topbar>#syncStatus.badge{display:inline-flex!important}
+html.vm-mobile body #syncStatus.badge{font-size:0!important;line-height:0;padding:0;width:10px;height:10px;min-width:10px;max-width:10px;overflow:hidden;flex:none;border-radius:50%;margin:0 8px;border:0;background:var(--f-warn);color:transparent}
+html.vm-mobile body #syncStatus.badge.ok{background:var(--f-ok)}html.vm-mobile body #syncStatus.badge.bad{background:var(--f-bad)}
+
+/* ----- menu lateral vira gaveta ----- */
+html.vm-mobile body .layout{display:block;min-height:0}
+html.vm-mobile body .sidebar{position:fixed;top:0;bottom:0;left:calc(50% - var(--vm-w)/2);height:auto;width:min(calc(var(--vm-w)*.86),320px);z-index:90;transform:translateX(-104%);visibility:hidden;transition:transform .22s ease,visibility .22s;padding:calc(10px + env(safe-area-inset-top,0px)) 8px calc(18px + env(safe-area-inset-bottom,0px));overflow:auto;box-shadow:var(--f-shadow3)}
+html.vm-mobile body .sidebar.open{left:calc(50% - var(--vm-w)/2);transform:none;visibility:visible}
+html.vm-mobile .navbtn{height:46px}
+html.vm-mobile .drawerBack{display:block;position:fixed;top:0;bottom:0;left:calc(50% - var(--vm-w)/2);width:var(--vm-w);z-index:85;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:opacity .2s}
+html.vm-mobile .drawerBack.show{opacity:1;pointer-events:auto}
+html.vm-mobile .drawerFoot{display:grid;gap:8px;margin:16px 6px 0;padding-top:14px;border-top:1px solid var(--f-stroke)}
+html.vm-mobile .drvUser{display:grid;gap:2px;font-size:13px;word-break:break-all}
+html.vm-mobile .drvUser small{color:var(--f-text2)}
+html.vm-mobile .drawerFoot .btn{justify-content:flex-start}
+
+/* ----- barra de navegação inferior ----- */
+html.vm-mobile .bottomNav{display:flex;position:fixed;bottom:0;left:calc(50% - var(--vm-w)/2);width:var(--vm-w);z-index:70;height:var(--bn-h);padding:0 calc(4px + env(safe-area-inset-right,0px)) env(safe-area-inset-bottom,0px) calc(4px + env(safe-area-inset-left,0px));background:var(--f-bar);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-top:1px solid var(--f-stroke)}
+.bnItem{position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:0;min-height:48px;border:0;background:none;color:var(--f-text2);font:inherit;font-size:11px;cursor:pointer;border-radius:8px}
+.bnItem .ico{display:block}
+.bnItem.active{color:var(--f-accent);font-weight:600}
+.bnItem.active::before{content:"";position:absolute;top:0;left:30%;right:30%;height:3px;border-radius:0 0 3px 3px;background:var(--f-accent)}
+.bnItem:active{background:var(--f-press)}
+.bnBadge{position:absolute;top:5px;left:calc(50% + 6px);min-width:16px;height:16px;padding:0 4px;box-sizing:border-box;border-radius:8px;background:var(--f-bad);color:#fff;font:600 10px/16px var(--f-font);font-style:normal;text-align:center}
+.bnBadge:empty{display:none}
+
+/* ----- conteúdo ----- */
+html.vm-mobile body .content{padding:14px calc(12px + env(safe-area-inset-right,0px)) calc(var(--bn-h) + 28px) calc(12px + env(safe-area-inset-left,0px))}
+html.vm-mobile body .appCopyright{font-size:11px;padding:8px 14px calc(var(--bn-h) + 10px)}
+html.vm-mobile body .hero{flex-direction:column;align-items:stretch;gap:10px;margin-bottom:14px}
+html.vm-mobile body #content .hero h1{font-size:22px}
+html.vm-mobile body #content .module-actions{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;padding-bottom:4px;margin:0 -2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+html.vm-mobile body .module-actions::-webkit-scrollbar{display:none}
+html.vm-mobile body .module-actions .btn{flex:none;white-space:nowrap}
+html.vm-mobile body .card{padding:14px}
+html.vm-mobile body .kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+html.vm-mobile body #content .kpi strong{font-size:17px}
+html.vm-mobile body #content .metricstrip{grid-template-columns:repeat(2,minmax(0,1fr))}
+html.vm-mobile body .grid.charts,html.vm-mobile body .dashboardCharts,html.vm-mobile body .financialChartGrid,html.vm-mobile body .grid.two{grid-template-columns:1fr!important}
+html.vm-mobile body .decision,html.vm-mobile body .executiveFinancial{padding:14px}
+html.vm-mobile body .financialMode{width:100%}
+html.vm-mobile .hbarRow{grid-template-columns:1fr auto;grid-template-areas:"l v" "t t"}
+html.vm-mobile .hbarLabel{grid-area:l}html.vm-mobile .hbarVal{grid-area:v}html.vm-mobile .hbarTrack{grid-area:t}
+html.vm-mobile body .alert{grid-template-columns:1fr auto;grid-template-areas:"b d" "t t" "a a"}
+html.vm-mobile body .alert .badge{grid-area:b;justify-self:start}html.vm-mobile body .alertDate{grid-area:d}html.vm-mobile body .alertText{grid-area:t}html.vm-mobile body .alert .btn{grid-area:a;justify-self:start}
+
+/* ----- botões e campos para toque ----- */
+html.vm-mobile body .btn{min-height:44px;padding:0 16px}
+html.vm-mobile body .btn.small{min-height:40px;padding:0 12px}
+html.vm-mobile body .btn.tiny{min-height:34px}
+html.vm-mobile body input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=range]),html.vm-mobile body select,html.vm-mobile body textarea{font-size:16px;min-height:44px}
+html.vm-mobile body input[type=checkbox],html.vm-mobile body input[type=radio]{width:22px;height:22px}
+html.vm-mobile #addRecord{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(var(--bn-h) + 14px);z-index:60;min-height:52px;border-radius:26px;padding:0 22px;box-shadow:var(--f-shadow3)}
+html.vm-frame #addRecord{right:auto;left:calc(50% + var(--vm-w)/2 - 16px);transform:translateX(-100%)}
+
+/* ----- filtros recolhíveis ----- */
+html.vm-mobile body .filtersToggle{display:flex;align-items:center;gap:10px;width:100%;min-height:46px;padding:0 14px;border:0;border-bottom:1px solid var(--f-stroke);background:var(--f-surface);color:var(--f-text);font:inherit;font-size:14px;text-align:left;position:sticky;top:var(--f-top);z-index:30;cursor:pointer}
+html.vm-mobile .ftLabel{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+html.vm-mobile .ftCaret{color:var(--f-text2)}
+html.vm-mobile body .filters{display:none;position:static;padding:10px 12px;border-bottom:1px solid var(--f-stroke)}
+html.vm-mobile body .filters.open{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+html.vm-mobile body .filters #filterWork,html.vm-mobile body .filters #filterSearch,html.vm-mobile body .filters #clearFilters{grid-column:1/-1}
+html.vm-mobile body .filters input,html.vm-mobile body .filters select{max-width:none;width:100%;height:44px}
+
+/* ----- tabelas viram cartões ----- */
+html.vm-mobile body .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+html.vm-mobile body .tablewrap:has(table.mcards){overflow:visible;border:0;background:transparent;box-shadow:none}
+html.vm-mobile table.mcards,html.vm-mobile table.mcards tbody{display:block;min-width:0!important;width:100%}
+html.vm-mobile table.mcards thead{display:none}
+html.vm-mobile table.mcards tbody{display:grid;gap:10px}
+html.vm-mobile table.mcards tr{display:block;position:relative;background:var(--f-surface);border:1px solid var(--f-stroke);border-radius:10px;padding:8px 12px;box-shadow:var(--f-shadow1)}
+html.vm-mobile body table.mcards td{display:flex;gap:12px;justify-content:space-between;align-items:baseline;padding:6px 0;border:0;background:none!important;text-align:right;overflow-wrap:anywhere;font-size:14px}
+html.vm-mobile table.mcards td::before{content:attr(data-label);flex:0 0 38%;max-width:42%;text-align:left;font-size:12px;font-weight:600;color:var(--f-text2)}
+html.vm-mobile table.mcards td:not([data-label])::before{display:none}
+html.vm-mobile body table.mcards td.bulkCol{justify-content:flex-start;padding:2px 0 8px;border-bottom:1px solid var(--f-stroke);margin-bottom:4px}
+html.vm-mobile table.mcards td.bulkCol::before{display:none}
+html.vm-mobile table.mcards td[data-label="Ações"]{justify-content:flex-end;flex-wrap:wrap;gap:8px;margin-top:6px;padding-top:10px;border-top:1px solid var(--f-stroke)}
+html.vm-mobile table.mcards td[data-label="Ações"]::before{display:none}
+html.vm-mobile .tablewrap table:not(.mcards){min-width:640px}
+
+/* ----- janelas em tela cheia ----- */
+html.vm-mobile body .modalback{padding:0;place-items:stretch;left:calc(50% - var(--vm-w)/2);right:auto;width:var(--vm-w)}
+html.vm-mobile body .dialog{width:100%;max-width:none;height:100vh;height:100dvh;max-height:none;border-radius:0;border:0;padding:16px calc(16px + env(safe-area-inset-right,0px)) 0 calc(16px + env(safe-area-inset-left,0px));overflow:auto}
+html.vm-mobile body .dialog .actions{position:sticky;bottom:0;margin:16px -16px 0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:var(--f-surface);z-index:2}
+html.vm-mobile body .dialog .actions .btn{flex:1}
+html.vm-mobile body .formgrid{grid-template-columns:1fr}
+html.vm-mobile body .field.full{grid-column:auto}
+html.vm-mobile body .formatgrid{grid-template-columns:1fr}
+html.vm-mobile #toastRoot .toast{bottom:calc(var(--bn-h) + 12px)}
+html.vm-frame #toastRoot .toast{left:50%;transform:translateX(-50%)}
+
+/* ----- cronograma: dica para virar o aparelho ----- */
+html.vm-mobile:not(.vm-landscape) .ganttTop::before{content:"Dica: gire o aparelho para a horizontal para ver mais do cronograma.";display:block;margin-bottom:8px;padding:8px 10px;border-radius:6px;background:var(--f-info-bg);color:var(--f-text);font-size:12.5px}
+html.vm-mobile body .ganttProject{border-radius:8px}
+html.vm-mobile body .ganttHScroll{bottom:var(--bn-h)}
+
+/* ----- celular na horizontal: menu vira barra lateral ----- */
+html.vm-landscape{--f-top:calc(44px + env(safe-area-inset-top,0px));--rail:calc(76px + env(safe-area-inset-left,0px))}
+html.vm-landscape body .bottomNav{top:var(--f-top);bottom:0;left:0;width:var(--rail);height:auto;flex-direction:column;justify-content:flex-start;gap:4px;padding:6px 0 6px env(safe-area-inset-left,0px);border-top:0;border-right:1px solid var(--f-stroke);overflow-y:auto}
+html.vm-landscape .bnItem{flex:none;width:100%;min-height:54px;font-size:10.5px}
+html.vm-landscape .bnItem.active::before{top:12px;bottom:12px;left:0;right:auto;width:3px;height:auto;border-radius:0 3px 3px 0}
+html.vm-landscape .bnBadge{left:calc(50% + 4px)}
+html.vm-landscape body .content{padding:12px calc(14px + env(safe-area-inset-right,0px)) 24px calc(var(--rail) + 12px)}
+html.vm-landscape body .appCopyright{padding:8px 14px 12px var(--rail)}
+html.vm-landscape body .topbar{height:var(--f-top)}
+html.vm-landscape body .filtersToggle{margin-left:var(--rail);width:calc(100% - var(--rail))}
+html.vm-landscape body .filters{margin-left:var(--rail);width:auto}
+html.vm-landscape body .filters.open{grid-template-columns:2fr 1fr 1fr 2fr auto}
+html.vm-landscape body .filters #filterWork,html.vm-landscape body .filters #filterSearch,html.vm-landscape body .filters #clearFilters{grid-column:auto}
+html.vm-landscape body .kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
+html.vm-landscape body #content .metricstrip{grid-template-columns:repeat(4,minmax(0,1fr))}
+html.vm-landscape #addRecord{bottom:16px;min-height:46px}
+html.vm-landscape #toastRoot .toast{bottom:16px}
+html.vm-landscape body .ganttHScroll{bottom:0}
+html.vm-landscape body .sidebar{top:0}
+html.vm-landscape body .modalback{padding:0}
+html.vm-landscape body .formgrid{grid-template-columns:1fr 1fr}
+html.vm-landscape body .dialog{padding-top:12px}
+html.vm-landscape body .hero{flex-direction:row;align-items:center}
+html.vm-landscape body #content .hero h1{font-size:20px}
+
+/* ----- visualização de smartphone em tela grande (moldura): barras fixas dentro do "aparelho" ----- */
+html.vm-frame body .topbar{position:sticky}
+@media print{.bottomNav,.drawerBack,.filtersToggle{display:none!important}}
+
+/* ----- Configurações: opções de visualização ----- */
+.viewOptions{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:10px 0}
+.viewOpt{display:grid;gap:3px;padding:10px 12px;border:1.5px solid var(--f-stroke);border-radius:8px;cursor:pointer;background:var(--f-surface)}
+.viewOpt input{position:absolute;opacity:0;pointer-events:none}
+.viewOpt.on{border-color:var(--f-accent);background:var(--f-accent-bg)}
+.viewOpt small{color:var(--f-text2)}
+
+html.vm-mobile table.mcards .mval{min-width:0;text-align:right;overflow-wrap:anywhere}
+html.vm-mobile table.mcards td[data-label="Ações"] .mval{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;width:100%}
+
+/* ----- cronograma compacto no celular (o gráfico sobe; textos de apoio ficam recolhidos) ----- */
+html.vm-mobile body .ganttTop{display:flex;flex-direction:column;gap:8px}
+html.vm-mobile body .ganttTop .muted,html.vm-mobile body .ganttTop .ganttSiglas,html.vm-mobile body .ganttTop .ganttNotice{display:none}
+html.vm-mobile body .ganttTop .ganttMeta{font-size:12.5px}
+html.vm-mobile body .ganttTools{display:flex;flex-wrap:wrap;gap:6px}
+html.vm-mobile body .ganttTools .btn{min-height:38px;font-size:13px;padding:0 10px}
+html.vm-mobile body .ganttProject{padding:10px}
+html.vm-landscape body .ganttTop .ganttMeta{display:none}
+
+html.vm-mobile body .releaseBar{padding:6px calc(12px + env(safe-area-inset-right,0px)) 0 calc(12px + env(safe-area-inset-left,0px));justify-content:flex-start}
+html.vm-mobile body .releaseBar .releaseIdentity{justify-content:flex-start;gap:5px}
+html.vm-mobile body .releaseBar .releaseIdentity strong,html.vm-mobile body .releaseBar .releaseIdentity span{font-size:11px;padding:3px 8px}
+html.vm-landscape body .releaseBar{padding-left:calc(var(--rail) + 12px)}

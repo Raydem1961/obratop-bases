@@ -1,0 +1,22 @@
+SIMULADOR PARA TESTES NO NAVEGADOR (uso do desenvolvimento)
+Roda o app inteiro no Chromium com um Firebase simulado em memoria. Requisitos: Python 3, playwright (pip install playwright; playwright install chromium) e o SheetJS em /tmp/vendor/xlsx.full.min.js para os testes que importam planilhas.
+Ajuste o caminho '/tmp/fb/' dentro de harness.py para a pasta onde estes arquivos estiverem.
+  python3 baseline.py ../../public                      abre as telas e procura erros
+  python3 t_features.py ../../public                    fluxos entre modulos, alertas, Curva S, auditoria
+  python3 t_security.py ../../public                    permissoes, verificacao de e-mail, backup
+  python3 t_nomes.py ../../public a.xlsx b.xlsx         nomes completos e fontes dos graficos
+  python3 t_custos_cronograma.py ../../public a.xlsx    cabecalho congelado, vinculo ao orcamento, linha de base, MS Project, retencao, contrato, caixa
+  python3 t_perfis_protecao.py ../../public             dados por obra, perfil Consulta, convite, App Check, restauracao semanal
+O simulador NAO executa as regras do Firestore.
+Testes de calculo (sem navegador): na raiz, npm test
+  python3 gerar_imagens_teste.py && python3 t_logo.py ../../public     logo da empresa: envio, recusas, cabecalho, impressao, PDF, Word, entrada
+  python3 t_ambiente.py ../../public                     selo Homologacao/Producao e data da versao
+  python3 t_assistente_lote.py ../../public               assistente de nova obra (4 modelos, em branco, falha no meio, permissoes) e edicao em lote
+  python3 capturas_shoot.py ../../public prefixo [dark]   capturas de tela (1600x960) para conferir o visual
+  python3 capturas_shoot2.py ../../public prefixo [dark]  capturas em 1366x768
+  python3 t_smartphone.py ../../public                   smartphone: vertical, horizontal, alternancia, moldura, gaveta, cartoes (emulacao de celular)
+  python3 t_engenheiro_responsavel.py ../../public       relatorio executivo (CSV/PDF/Excel/Word): coluna Engº Responsavel
+  python3 t_cabecalho_graficos.py ../../public           faixa de versao, valores dos graficos, Curva S, cabecalho da empresa na impressao/PDF/Word
+  node gerar_fixtures_orcamento.mjs /tmp/fb/fx /tmp/vendor/xlsx.full.min.js  (gera arquivos SINAPI/ORSE de teste)
+  python3 t_orcamento.py ../../public                    sub-aba Criar novo orcamento (usa os arquivos de /tmp/fb/fx)
+  python3 t_orcamento_planejamento.py ../../public       etapas, CPU, planilha no modelo, geracao do planejamento, curva S, ABC e quantitativos

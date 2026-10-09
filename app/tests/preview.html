@@ -1,0 +1,6 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../public/styles.css"><link rel="stylesheet" href="../public/economics.css"><body style="padding:24px"><main id="content"></main><script type="module">
+import{mountEconomics}from'../public/economics-ui.mjs';
+const work={id:'demo',name:'Obra demonstrativa — teste local',value:1200000,economics:{initialCash:50000,remainingCost:600000,estimateDate:'2026-09-15',estimateNote:'Quantidades restantes verificadas'}};
+window.saved=null;window.downloads=[];
+mountEconomics({container:document.querySelector('main'),work,cutoff:'2026-09-15',ready:true,editable:true,orgId:'qa',data:{budgets:[{id:'b',workId:'demo',qty:100,unitValue:8000,bdi:20}],finance:[{id:'f',workId:'demo',type:'Despesa',status:'Pago',date:'2026-07-01',paymentDate:'2026-07-10',value:200000,category:'Materiais'},{id:'g',workId:'demo',type:'Receita',status:'Recebido',date:'2026-08-01',paymentDate:'2026-08-10',value:350000}]},onSave:async x=>window.saved=x,download:(b,n)=>window.downloads.push(n)});
+</script></body></html>

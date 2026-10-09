@@ -1,0 +1,99 @@
+/* ObraTop — leitor do Manual Técnico em páginas (A4) */
+.man{--man-navy:#0a1f34;--man-ink:#2b2c2e;--man-line:#d3dde6;--man-soft:#eff4f8}
+.man .man-toolbar{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:10px 12px;margin:6px 0 10px;border-radius:12px;background:var(--panel,#fff);border:1px solid var(--line,#dce5eb);box-shadow:0 4px 18px #17324a14}
+.man .man-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.man .man-nav select{max-width:min(46vw,380px)}
+.man .man-info{font-weight:650;white-space:nowrap}
+.man .man-find{flex:1 1 180px;min-width:150px}
+.man .man-find input{width:100%;box-sizing:border-box}
+.man .man-actions{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+.man .man-hits{display:flex;flex-wrap:wrap;gap:8px;align-items:center;min-height:0;margin:0 0 8px}
+.man .man-hits:empty{display:none}
+.man .man-chip{border:1px solid var(--line,#dce5eb);background:var(--panel,#fff);color:inherit;border-radius:999px;padding:4px 12px;cursor:pointer;font:inherit}
+.man .man-chip:hover,.man .man-chip:focus-visible{border-color:var(--brand2,#117a9e);outline:none}
+.man .man-tip{margin:12px 0 4px;text-align:center;font-size:.85em;opacity:.75}
+
+/* Palco e folha */
+.man .man-stage{background:rgba(127,127,127,.14);border-radius:14px;padding:clamp(8px,2.2vw,22px)}
+.man .man-frame{container-type:inline-size;max-width:880px;margin:0 auto}
+.man .man-frame.man-off{display:none}
+.man .man-sheet{position:relative;display:flex;flex-direction:column;width:100%;aspect-ratio:210/297;background:#fff;color:var(--man-ink);box-shadow:0 10px 36px #0a1f3440;border-radius:2px;font-family:"Segoe UI",Roboto,"DejaVu Sans",Arial,sans-serif;font-size:1.72cqw;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.man .man-frame:not(.man-off){animation:manIn .22s ease-out}
+@keyframes manIn{from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.man .man-frame:not(.man-off){animation:none}}
+.man .man-cover{aspect-ratio:auto}
+.man .man-cover img{display:block;width:100%;height:auto}
+
+.man .man-ph{background:var(--man-navy);color:#fff;font-weight:700;font-size:.82em;padding:1.35em 3.4em;letter-spacing:.01em}
+.man .man-pb{flex:1;padding:1.2em 3.4em .6em}
+.man .man-pf{display:flex;justify-content:space-between;gap:1em;padding:.5em 3.4em;font-size:.72em;color:#6a7480}
+.man .man-pband{display:flex;align-items:center;justify-content:center;position:relative;background:var(--man-navy);color:#fff;font-size:.56em;padding:.9em 3em;text-align:center}
+.man .man-pband b{position:absolute;right:2.6em;font-size:1.05em}
+
+.man .man-sec{margin:0 0 1.15em}
+.man .man-sec h2{margin:.55em 0 .45em;font-size:1.72em;line-height:1.22;color:var(--man-navy);font-weight:800;border:0;padding:0}
+.man .man-sec p{margin:.35em 0;font-size:.92em}
+.man .man-sec ul{margin:.35em 0 .5em;padding-left:1.4em;font-size:.92em}
+.man .man-sec li{margin:.2em 0}
+.man .man-call{margin:.7em 0 .3em;padding:.65em .95em;background:var(--man-soft);border:1px solid var(--man-navy);border-radius:.3em;font-size:.92em;break-inside:avoid}
+.man .man-call b{display:block;color:var(--man-navy);font-weight:700}
+.man .man-call p{margin:.2em 0 0}
+.man .man-end{margin-top:1.1em!important;font-style:italic;color:#4a5560}
+
+.man .man-scroll{max-width:100%;overflow-x:auto}
+.man .man-table{width:100%;border-collapse:collapse;font-size:.84em;margin:.5em 0}
+.man .man-table th{background:var(--man-navy);color:#dbe5ee;text-align:left;font-weight:600;padding:.42em .65em;border:1px solid var(--man-navy);line-height:1.35}
+.man .man-table td{padding:.36em .65em;border:1px solid var(--man-line);color:#3a4650;background:#fff;vertical-align:middle;line-height:1.35}
+.man .man-table tbody tr:nth-child(even) td{background:#f7fafc}
+.man .man-table tr.man-done td{background:#eff9ef}
+.man .man-table .btn.small{padding:2px 9px;font-size:.92em;white-space:nowrap}
+.man .man-check{display:inline-flex;align-items:center;gap:.5em;cursor:pointer;white-space:nowrap}
+.man .man-check input{width:1.15em;height:1.15em;flex:none;accent-color:var(--man-navy)}
+.man .man-who{display:block;font-size:.8em;color:#6a7480;margin-top:.1em}
+.man .man-hint-row{margin-top:.25em}
+.man .man-progress-head{display:flex;justify-content:space-between;align-items:center;gap:.6em;flex-wrap:wrap;margin:.4em 0 .4em;font-size:.9em}
+.man .man-muted{color:#6a7480}
+.man .man-bar{position:relative;height:1.4em;border-radius:.7em;background:#e4e9ee;overflow:hidden;margin-bottom:.7em}
+.man .man-bar i{display:block;height:100%;background:#1d7d3b;transition:width .25s}
+.man .man-bar span{position:absolute;inset:0;display:grid;place-items:center;font-size:.78em;font-weight:700;color:#0a1f34;text-shadow:0 0 3px #fff}
+.man .man-note{margin:.5em 0;padding:.6em .9em;border-radius:.4em;background:rgba(17,122,158,.1);border:1px solid rgba(17,122,158,.25);font-size:.88em}
+.man .man-status{min-height:1.2em;font-size:.82em;color:#a96600}
+.man mark.man-mark{background:#ffe08a;color:inherit;padding:0 .08em;border-radius:.15em}
+.man .badge{font-size:.78em}
+
+/* Telas estreitas: a folha acompanha o conteúdo, com fonte legível e tabelas roláveis */
+@container (max-width:620px){
+ .man .man-sheet:not(.man-cover){aspect-ratio:auto;font-size:max(2.9cqw,12.5px)}
+ .man .man-ph,.man .man-pf{padding-left:1.3em;padding-right:1.3em}
+ .man .man-pb{padding:1em 1.3em .4em}
+ .man .man-pband{font-size:.62em;padding:.8em 2.6em .8em 1em}
+ .man .man-pf{flex-direction:column;gap:.1em}
+}
+
+/* Barra compacta em celulares */
+@media(max-width:640px){
+ .man .man-toolbar{position:static;padding:8px}
+ .man .man-nav{display:grid;grid-template-columns:1fr 1fr;gap:6px;width:100%}
+ .man .man-nav select{grid-column:1/-1;order:-1;max-width:none;width:100%;min-width:0}
+ .man .man-info{grid-column:1/-1;text-align:center}
+ .man .man-find{flex:1 1 100%}
+ .man .man-actions{width:100%;margin-left:0}
+ .man .man-actions .btn{flex:1 1 auto;padding-left:8px;padding-right:8px}
+}
+
+/* Impressão: capa + páginas em A4, uma por folha */
+@media print{
+ .man .man-screen,.man .man-toolbar,.man .man-hits,.man .man-tip{display:none!important}
+ .man .man-stage{background:none;padding:0;border-radius:0}
+ .man .man-frame{max-width:none;width:210mm;margin:0;animation:none!important}
+ .man .man-frame.man-off{display:block!important}
+ .man.man-print-one .man-frame.man-off{display:none!important}
+ .man .man-sheet{width:210mm;height:297mm;aspect-ratio:auto;box-shadow:none;border-radius:0;font-size:10.3pt;break-after:page;page-break-after:always;break-inside:avoid}
+ .man .man-cover{height:297mm;width:210mm}
+ .man .man-cover img{width:210mm;height:297mm;object-fit:cover}
+ .man .man-frame:last-child .man-sheet,.man.man-print-one .man-sheet{break-after:auto;page-break-after:auto}
+ .man mark.man-mark{background:none}
+}
+
+.man-cover-rev{position:absolute;left:0;right:0;bottom:0;padding:8px 14px;background:rgba(12,34,54,.88);color:#fff;font-size:13px;font-weight:700;text-align:center;letter-spacing:.2px}
+.man-cover{position:relative}

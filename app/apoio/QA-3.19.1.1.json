@@ -1,0 +1,13 @@
+{
+  "release": "3.19.1.1",
+  "result": "PASS",
+  "checks": [
+    "single openEngineeringPriceBook declaration",
+    "ES module syntax validation",
+    "classic JS syntax validation",
+    "boot() retained",
+    "wireAuth() retained",
+    "SICRO UF selector retained",
+    "root/public mirrors"
+  ]
+}

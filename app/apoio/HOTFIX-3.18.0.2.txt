@@ -1,0 +1,4 @@
+ObraTop 3.18.0.2 — Hotfix Análise + Progresso
+- Barra progressiva com percentual de leitura/análise.
+- Etapas visíveis: preparação, leitura por página, interpretação, consolidação, salvamento e conclusão.
+- Botão Analisar projetos com feedback imediato e estado de erro visível.

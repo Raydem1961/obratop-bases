@@ -1,0 +1,16 @@
+ObraTop 3.17.1 — Correção de Curvas ABC
+
+Correção pontual da Release 3.17.0, sem alteração do visual aprovado.
+
+Alterações:
+- Materiais iguais são consolidados por nome antes da classificação ABC.
+- Pessoas com o mesmo Nome + Função são consolidadas antes da classificação ABC.
+- Máquinas/equipamentos com o mesmo nome são consolidados antes da classificação ABC.
+- Valores consolidados são somados antes do cálculo do percentual acumulado e das classes A/B/C.
+- Curvas S, Gantt, Painel Executivo, Backup/Restauração e demais módulos permanecem inalterados.
+- Cache PWA atualizado para 3.17.1.
+
+Publicação recomendada no projeto de produção:
+firebase deploy --only hosting,firestore --project obratop-v3-teste
+
+Não publicar Storage enquanto o projeto permanecer no plano Spark.

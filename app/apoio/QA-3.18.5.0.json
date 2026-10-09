@@ -1,0 +1,13 @@
+{
+  "release": "3.18.5.0",
+  "date": "2026-09-13",
+  "static_checks": {"passed": 65, "failed": 0},
+  "randomized_invariant_checks": {"passed": 1000000, "failed": 0},
+  "javascript_gantt_schedule_unit_test": "PASS",
+  "node_syntax": "PASS",
+  "root_public_mirror": "PASS",
+  "firebase_json": "PASS",
+  "manifest_json": "PASS",
+  "css_parse": "PASS",
+  "html_duplicate_ids": "PASS"
+}

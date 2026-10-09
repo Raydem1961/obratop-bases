@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ObraTop">
+  <rect width="512" height="512" rx="112" fill="#0B3654"/>
+  <circle cx="256" cy="256" r="145" fill="none" stroke="#F8FBFF" stroke-width="54"/>
+  <path d="M190 215h132M256 215v120" fill="none" stroke="#F3A712" stroke-width="43" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M239 165h34" stroke="#42B8D2" stroke-width="15" stroke-linecap="round"/>
+</svg>

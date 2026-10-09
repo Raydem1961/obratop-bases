@@ -1,0 +1,14 @@
+{
+  "release": "3.20.0.1",
+  "result": "PASS",
+  "checks": [
+    "renderEngineering restored",
+    "renderEngineeringBody restored",
+    "engineering route calls existing function",
+    "V3.20 manager retained",
+    "budget updater retained",
+    "ES module syntax",
+    "no duplicate top-level functions",
+    "root/public parity"
+  ]
+}

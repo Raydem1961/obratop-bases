@@ -1,0 +1,1 @@
+Novo ícone vetorial OT nas cores azul-marinho, branco e dourado. Aplicado à marca no login e cabeçalho, favicon e atalhos PWA (192, 512 e Apple Touch). Nenhuma regra ou dado do Firebase alterado.

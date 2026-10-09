@@ -1,0 +1,35 @@
+RELATÓRIO DE AUDITORIA — OBRATOP 3.18.5.0
+Data: 13/09/2026
+
+ESCOPO
+Auditoria estática, estrutural e de invariantes sobre a aplicação completa entregue no pacote. A auditoria abrange interface, filtros, Gantt/EAP, formatação monetária, estoque/compras, Engenharia Inteligente, exclusão em cascata, backup/restauração, integridade, cache/PWA e espelhamento dos arquivos publicados.
+
+PRINCIPAIS INCONSISTÊNCIAS ENCONTRADAS NESTA RODADA E CORRIGIDAS
+1. Exclusão de obra não abrangia engineeringProjects/takeoffs.
+2. Backup profissional e backup externo não abrangiam Engenharia Inteligente.
+3. Pontos de restauração não abrangiam Engenharia Inteligente.
+4. Campos numéricos zero podiam aparecer como “—”.
+5. Seletores podiam oferecer obras/fornecedores excluídos para novos vínculos.
+6. Engenharia Inteligente não seguia integralmente o filtro global de obra.
+7. Centro de Integridade não auditava órfãos da Engenharia Inteligente.
+8. Fontes abaixo do piso de legibilidade ainda existiam em seletores de alta especificidade CSS.
+9. Sequências automáticas de cronograma usavam a mesma data do término da predecessora ao pedir “+1”, devido à semântica inclusiva de addWorkdays().
+10. Alertas globais poderiam ser contaminados por uma obra demonstrativa.
+11. Fornecedor demonstrativo CAIXA poderia permanecer órfão após exclusão da demonstração.
+12. Exportações de usuário não garantiam apresentação monetária R$ com 2 casas em todos os formatos.
+13. Cópia public/firestore.rules estava defasada em relação à regra efetivamente usada pelo Firebase; o pacote foi sincronizado.
+14. Clique em abas da Engenharia Inteligente podia recarregar takeoffs logicamente excluídos.
+15. Metadado totalRecords dos pontos de restauração não incluía Engenharia Inteligente.
+
+VALIDAÇÕES
+- 65 verificações estruturais: 65 aprovadas, 0 falhas.
+- 1.000.000 verificações aleatórias de invariantes: 1.000.000 aprovadas.
+- Teste unitário JavaScript do Gantt e calendário útil: aprovado para EAP rasa e detalhada.
+- node --check em app.js/public/app.js/sw.js/public/sw.js: aprovado.
+- Espelhos app.js/styles.css/sw.js root/public: aprovados.
+- firebase.json e manifest.webmanifest: JSON válido.
+- CSS: parser estrutural sem erro de topo.
+- index.html: sem IDs duplicados.
+
+LIMITAÇÃO HONESTA
+Nenhuma auditoria de software pode provar matematicamente ausência absoluta de qualquer bug futuro. Também não é possível, nesta sessão, reproduzir a sua autenticação e banco de produção dentro do navegador real do usuário. O pacote, porém, passou por validações determinísticas, unitárias e aleatórias sobre os fluxos críticos identificados e não modifica dados durante o deploy.

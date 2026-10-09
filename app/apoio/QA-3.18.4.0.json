@@ -1,0 +1,26 @@
+{
+  "release": "3.18.4.0",
+  "base": "3.18.2.2 fonte enviada pelo usuário",
+  "scope": "estabilização consolidada",
+  "checks": [
+    "app.js syntax",
+    "public/app.js syntax",
+    "sw.js syntax",
+    "public/sw.js syntax",
+    "firebase.json parse",
+    "root/public app.js identical",
+    "root/public styles.css identical",
+    "root/public sw.js identical",
+    "release version present",
+    "global work filter uses onchange",
+    "gantt summary key source is centralized",
+    "gantt collapse/expand uses exact same keys",
+    "gantt zoom mode persists",
+    "dashboard demo KPI isolation",
+    "finance/contract monetary columns",
+    "planned resource visual state",
+    "document source link",
+    "purchase type distinction",
+    "BRL 2 decimal formatter"
+  ]
+}

@@ -1,0 +1,32 @@
+ATUALIZAÇÃO MENSAL DA BASE SINAPI (BAHIA) NO OBRATOP
+=====================================================
+Como funciona
+- O SINAPI é publicado todo mês pela CAIXA em https://www.caixa.gov.br/sinapi (Relatórios Mensais), em dois ZIPs (XLSX e PDF) com todas as UF.
+- O aplicativo (navegador) não pode baixar direto do site da CAIXA: o site bloqueia acessos automáticos e a política de segurança do ObraTop só permite conexões ao próprio ObraTop e ao Firebase.
+- Por isso há dois caminhos, que podem ser combinados:
+  1) POR APARELHO: na tela Orçamentos > Criar novo orçamento > SINAPI, baixe o ZIP XLSX do site e use "Importar arquivo". A base fica guardada no navegador (IndexedDB).
+  2) PARA TODOS OS APARELHOS: rode este script no Cloud Shell; ele gera a base Bahia em public/bases/ e, depois de publicar o Hosting,
+     qualquer aparelho carrega com "Carregar base do servidor".
+
+Passo a passo no Cloud Shell (uma vez por mês)
+  cd ~/ObraTop_V3.31.0.0
+  curl -fL -o public/vendor/xlsx.full.min.js https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js     (só na primeira vez de cada pacote)
+  node tools/sinapi/atualizar-sinapi.mjs --uf BA
+  firebase deploy --only hosting --project obratop-v3-teste
+
+Se o download automático for bloqueado, baixe o ZIP XLSX no site e use:
+  node tools/sinapi/atualizar-sinapi.mjs --uf BA --arquivo ~/SINAPI-2026-08-formato-xlsx.zip
+
+Opções: --uf (padrão BA)  --mes AAAA-MM  --arquivo CAMINHO  --xlsx CAMINHO_DA_BIBLIOTECA
+O script mantém as 3 últimas referências por UF e atualiza public/bases/index.json.
+
+O que é lido do arquivo da CAIXA (e o que é ignorado)
+- O ZIP traz vários arquivos; só a planilha de REFERÊNCIA é lida. Famílias/Coeficientes, Manutenções, Percentual de Mão de Obra e catálogos são ignorados (o relatório do script mostra o diagnóstico).
+- Abas ISD/ICD/ISE (insumos) e CSD/CCD/CSE (composições sintéticas), nos três regimes: sem desoneração, com desoneração e sem encargos.
+- Para cada item: código, discriminação, unidade, preço/custo da UF escolhida e origem do preço.
+- Composições analíticas (coeficientes) ainda não são importadas nesta versão.
+
+Aviso importante
+- O layout real do arquivo da CAIXA não pôde ser conferido automaticamente (o site bloqueia robôs). O leitor foi construído com base na documentação publicada e aceita as variações conhecidas (arquivo único com todas as UF ou arquivo por UF).
+- Se a importação não reconhecer as colunas, o ObraTop abre a tela "Conferir colunas da planilha" para você indicar manualmente onde estão código, discriminação, unidade e preço.
+- Confira sempre a referência (mês) e o regime de desoneração antes de usar os preços em licitação.

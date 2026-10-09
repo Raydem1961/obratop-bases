@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f5f5">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="ObraTop - Gestão de obras com Engenharia Inteligente de Projetos">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://www.google.com/recaptcha/ https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js https://cdn.jsdelivr.net/npm/pdfjs-dist@6.3.289/; connect-src 'self' https://www.google.com/recaptcha/ https://*.googleapis.com https://*.firebaseio.com https://*.firebaseapp.com wss://*.firebaseio.com wss://*.googleapis.com; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; frame-src https://*.firebaseapp.com https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; worker-src 'self' blob: https://cdn.jsdelivr.net/npm/pdfjs-dist@6.3.289/; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icon-192.png" sizes="192x192" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=3.39.3.0">
+  <title>ObraTop — Gestão de Obras e Contratos</title>
+<link rel="stylesheet" href="./economics.css?v=3.39.3.0">
+<link rel="stylesheet" href="./manual.css?v=3.39.3.0">
+  <link rel="stylesheet" href="./fluent.css?v=3.39.3.0">
+  <link rel="stylesheet" href="./mobile.css?v=3.39.3.0">
+</head>
+<body>
+  <section id="loginView" class="login">
+    <div class="loginbox">
+      <img id="authLogo" class="authLogo" alt="" hidden><div class="logo"><img src="icon.svg" width="56" height="56" alt="Ícone ObraTop"></div><h1>ObraTop</h1>
+      <p>Gestão empresarial de obras, contratos e resultados.</p>
+      <div id="setupNotice" class="notice">Conectando ao serviço online…</div>
+      <label>E-mail<input id="loginEmail" type="email" autocomplete="username" required></label>
+      <label>Senha<input id="loginPass" type="password" autocomplete="current-password" minlength="6" required></label>
+      <div class="loginActions"><button id="loginBtn" class="btn primary">Entrar</button><button id="registerBtn" class="btn">Criar conta</button></div>
+      <button id="resetBtn" class="btn full">Recuperar senha</button>
+      <div class="loginCopyright">Criado por <strong>Eng. Civil Raydem Rabello Santana</strong><br>© 2026 Raydem Rabello Santana. Todos os direitos reservados.<br><button type="button" class="legalLink" id="loginLegalBtn">Direitos Autorais e Licença de Uso</button></div>
+    </div>
+  </section>
+
+  <section id="blockedView" class="login hidden">
+    <div class="loginbox">
+      <h1>Acesso bloqueado</h1><p id="blockedMsg">Seu acesso ao ObraTop foi bloqueado.</p>
+      <p class="muted">Procure o Administrador geral do sistema para solicitar um novo acesso.</p>
+      <div class="loginActions"><button class="btn primary" id="blockedBack" type="button">Voltar ao login</button></div>
+    </div>
+  </section>
+
+  <section id="onboardingView" class="login hidden">
+    <div class="loginbox wide">
+      <h1>Configure sua empresa</h1><p>Crie um ambiente novo ou entre em uma equipe por convite.</p>
+      <div id="verifyBox" class="hidden"><div class="notice"><b>Confirme seu e-mail para continuar.</b><br>Para criar uma empresa ou entrar por convite, verifique o endereço <b id="verifyEmail"></b>. <span id="verifyMsg"></span></div><div class="loginActions"><button class="btn primary" id="verifyCheck" type="button">Já verifiquei</button><button class="btn" id="verifyResend" type="button">Reenviar e-mail</button></div></div>
+      <div id="onboardingForms">
+      <div class="tabs"><button class="tab active" data-onboard="create">Criar empresa</button><button class="tab" data-onboard="join">Entrar por convite</button></div>
+      <form id="createOrgForm" class="stack">
+        <label>Nome da empresa<input name="name" required maxlength="120"></label>
+        <label>CNPJ<input name="cnpj" inputmode="numeric" maxlength="18"></label>
+        <button class="btn primary">Criar ambiente</button>
+      </form>
+      <form id="joinOrgForm" class="stack hidden">
+        <label>Código do convite<input name="code" required minlength="12"></label>
+        <button class="btn primary">Entrar na equipe</button>
+      </form>
+      </div>
+      <button class="btn full" id="onboardingSignOut">Sair</button>
+    </div>
+  </section>
+
+  <div id="appView" class="app hidden">
+    <div id="printBrand" class="printBrand" aria-hidden="true"></div>
+    <header class="topbar">
+      <button id="menuBtn" class="iconbtn" aria-label="Abrir menu"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <div class="brand"><img src="icon.svg" width="26" height="26" alt=""> <strong>ObraTop</strong></div>
+      <img id="orgLogo" class="orgLogo" alt="" hidden>
+      <div class="context"><b id="orgLabel"></b><span id="projectLabel">Todas as obras</span></div>
+      <div class="grow"></div>
+      <button id="themeBtn" class="iconbtn" aria-label="Alternar tema" title="Alternar claro/escuro"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+      <button id="viewBtn" class="iconbtn" aria-label="Alternar visualização" title="Alternar visualização computador/smartphone"></button>
+      <button id="alertsBtn" class="iconbtn" aria-label="Alertas"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 7H4c0-1 2-2 2-7z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><i id="alertCount"></i></button>
+      <span id="syncStatus" class="badge warn">Conectando…</span>
+      <div class="user"><span id="userLabel"></span><small id="roleLabel"></small></div>
+      <button id="logoutBtn" class="btn small">Sair</button>
+    </header>
+    <nav id="bottomNav" class="bottomNav" aria-label="Navegação principal"></nav>
+    <div id="drawerBack" class="drawerBack"></div>
+    <div class="layout">
+      <aside id="sidebar" class="sidebar"></aside>
+      <main>
+        <div id="releaseBar" class="releaseBar"></div>
+        <button id="filtersToggle" class="filtersToggle" type="button" aria-expanded="false"></button>
+        <div id="globalFilters" class="filters"></div>
+        <div id="content" class="content"></div>
+        <footer class="appCopyright">ObraTop • Criado por <strong>Eng. Civil Raydem Rabello Santana</strong> • © 2026 Raydem Rabello Santana • Todos os direitos reservados. <button class="legalLink" id="footerLegalBtn">Direitos Autorais e Licença</button></footer>
+      </main>
+    </div>
+  </div>
+  <div id="drawerRoot"></div><div id="modalRoot"></div><div id="toastRoot"></div>
+  <script src="vendor/xlsx.full.min.js"></script>
+  <script src="vendor-loader.js"></script>
+  <script src="vendor/jspdf.umd.min.js"></script>
+  <script src="cost-bases.config.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "release":"3.18.5.1",
+  "date":"2026-09-13",
+  "node_syntax":"PASS",
+  "root_public_app_mirror":"PASS",
+  "root_public_sw_mirror":"PASS",
+  "firebase_json":"PASS",
+  "manifest_json":"PASS",
+  "gantt_expand_handler_present":"PASS",
+  "gantt_collapse_handler_present":"PASS",
+  "planned_inventory_guard_present":"PASS",
+  "corrupted_pdf_guard_present":"PASS",
+  "legacy_corrupted_takeoff_integration_guard":"PASS"
+}

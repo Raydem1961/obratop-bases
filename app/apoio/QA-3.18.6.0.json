@@ -1,0 +1,15 @@
+{
+  "release": "3.18.6.0",
+  "checks": [
+    "PDF",
+    "XLS",
+    "XLSX",
+    "CSV",
+    "Google Sheets link",
+    "column mapping",
+    "basic/minimum quantity mode",
+    "review before integration",
+    "corrupt PDF block"
+  ],
+  "result": "PASS"
+}

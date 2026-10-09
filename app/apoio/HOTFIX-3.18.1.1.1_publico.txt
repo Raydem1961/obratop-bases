@@ -1,0 +1,12 @@
+HOTFIX 3.18.1.1.1 — ESTOQUE PLANEJADO
+Data: 2026-09-13
+
+Defeito corrigido:
+Materiais gerados pela Engenharia Inteligente eram classificados como CRÍTICO quando currentStock=0 e safetyStock=0.
+
+Regra nova:
+Material planejado + saldo físico zero + ausência de política operacional (mínimo/segurança/ponto de pedido/consumo/lead time) = PLANEJADO.
+Não cria compra automática nem alerta crítico.
+
+Compatibilidade:
+A regra reconhece registros antigos pela categoria e novos registros pelo campo stockMode='planned'.

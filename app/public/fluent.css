@@ -1,0 +1,614 @@
+/* ==========================================================================
+   ObraTop Fluent — camada visual V3.28 (estilo Windows 11)
+   Carregada por último: unifica cores, tipografia, componentes e tema escuro.
+   ========================================================================== */
+:root{
+  --f-font:"Segoe UI Variable Text","Segoe UI Variable","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --f-display:"Segoe UI Variable Display","Segoe UI Variable","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  --f-top:56px;
+  --f-bg:#f5f5f5;--f-surface:#fff;--f-surface2:#fafafa;--f-surface3:#f0f0f0;--f-bar:rgba(255,255,255,.86);
+  --f-stroke:#e5e5e5;--f-stroke2:#d1d1d1;--f-stroke3:#8a8a8a;
+  --f-text:#1a1a1a;--f-text2:#424242;--f-text3:#5a5a5a;
+  --f-accent:#0f6cbd;--f-accent-h:#115ea3;--f-accent-p:#0f548c;--f-accent-bg:rgba(15,108,189,.10);--f-on-accent:#fff;
+  --f-ok:#107c10;--f-ok-bg:#e8f5e8;--f-warn:#8a5a00;--f-warn-bg:#fff4ce;--f-bad:#c42b1c;--f-bad-bg:#fdeceb;--f-info:#0f6cbd;--f-info-bg:#e5f1fb;
+  --f-hover:rgba(0,0,0,.045);--f-press:rgba(0,0,0,.075);--f-select:rgba(15,108,189,.08);
+  --f-shadow1:0 1px 2px rgba(0,0,0,.05);--f-shadow2:0 4px 14px rgba(0,0,0,.09);--f-shadow3:0 18px 48px rgba(0,0,0,.22);
+  /* compatibilidade com o CSS anterior */
+  --bg:var(--f-bg);--panel:var(--f-surface);--ink:var(--f-text);--muted:var(--f-text2);--brand:var(--f-surface);--brand2:var(--f-accent);--accent:var(--f-accent);
+  --line:var(--f-stroke);--ok:var(--f-ok);--warn:var(--f-warn);--bad:var(--f-bad);--shadow:var(--f-shadow2);
+  --win-accent:var(--f-accent);--win-accent-hover:var(--f-accent-h);--win-ink:var(--f-text);--win-muted:var(--f-text2);--win-bg:var(--f-bg);--win-panel:var(--f-surface);--win-panel-solid:var(--f-surface);--win-border:var(--f-stroke);--win-sidebar:var(--f-surface2);
+  --dashboard-font:var(--f-font);
+}
+html[data-theme="dark"]{
+  --f-bg:#1b1b1b;--f-surface:#292929;--f-surface2:#242424;--f-surface3:#333;--f-bar:rgba(32,32,32,.86);
+  --f-stroke:#3b3b3b;--f-stroke2:#4a4a4a;--f-stroke3:#9a9a9a;
+  --f-text:#f5f5f5;--f-text2:#dedede;--f-text3:#bdbdbd;
+  --f-accent:#479ef5;--f-accent-h:#6cb2f7;--f-accent-p:#8cc3f9;--f-accent-bg:rgba(71,158,245,.16);--f-on-accent:#06223d;
+  --f-ok:#6ccb5f;--f-ok-bg:rgba(108,203,95,.14);--f-warn:#fcd116;--f-warn-bg:rgba(252,209,22,.13);--f-bad:#ff8a80;--f-bad-bg:rgba(255,138,128,.14);--f-info:#6cb2f7;--f-info-bg:rgba(71,158,245,.16);
+  --f-hover:rgba(255,255,255,.06);--f-press:rgba(255,255,255,.09);--f-select:rgba(71,158,245,.16);
+  --f-shadow1:0 1px 2px rgba(0,0,0,.35);--f-shadow2:0 6px 18px rgba(0,0,0,.4);--f-shadow3:0 20px 56px rgba(0,0,0,.6);
+}
+html{color-scheme:light}html[data-theme="dark"]{color-scheme:dark}
+html body{font-family:var(--f-font);font-size:14px;line-height:1.45;color:var(--f-text);background:var(--f-bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+html[data-theme="dark"] body{background:var(--f-bg);color:var(--f-text)}
+a{color:var(--f-accent)}
+::selection{background:var(--f-accent-bg)}
+:focus-visible{outline:2px solid var(--f-accent);outline-offset:2px;border-radius:4px}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:none}
+*{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--f-text) 28%,transparent) transparent}
+*::-webkit-scrollbar{width:11px;height:11px}*::-webkit-scrollbar-track{background:transparent}
+*::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--f-text) 26%,transparent);border-radius:8px;border:3px solid transparent;background-clip:content-box}
+*::-webkit-scrollbar-thumb:hover{background:color-mix(in srgb,var(--f-text) 42%,transparent);background-clip:content-box;border:3px solid transparent}
+
+/* ---------- barra superior ---------- */
+html body .topbar{height:var(--f-top);padding:0 14px;gap:10px;background:var(--f-bar);backdrop-filter:saturate(180%) blur(22px);-webkit-backdrop-filter:saturate(180%) blur(22px);border-bottom:1px solid var(--f-stroke);box-shadow:none;color:var(--f-text)}
+html body .brand{gap:9px;font-size:15px}
+html body .brand img{width:24px;height:24px}
+html body .brand strong{font-family:var(--f-display);font-size:15px;font-weight:600;letter-spacing:-.01em}
+html body .context{padding-left:12px;border-left:1px solid var(--f-stroke);line-height:1.25}
+html body .context b{font-size:13px;font-weight:600}
+html body .context span,html body .user small{font-size:12px;color:var(--f-text2);opacity:1}
+html body .user{line-height:1.25;font-size:13px;padding:0 4px}
+html body .user span{font-weight:600}
+html body .iconbtn{width:36px;height:36px;padding:0;display:inline-grid;place-items:center;border-radius:6px;color:var(--f-text);font-size:16px;transition:background .12s}
+html body .iconbtn:hover{background:var(--f-hover)}html body .iconbtn:active{background:var(--f-press)}
+html body .iconbtn .ico{display:block}
+html body .iconbtn i{right:3px;top:3px;min-width:16px;height:16px;border-radius:8px;background:var(--f-bad);font:600 10px/16px var(--f-font);padding:0 4px;box-sizing:border-box;text-align:center}
+html body #syncStatus.badge{font-size:12px;padding:3px 10px}
+html body .orgLogo{border-left-color:var(--f-stroke)}
+
+/* ---------- estrutura ---------- */
+html body .layout{grid-template-columns:264px minmax(0,1fr);min-height:calc(100vh - var(--f-top))}
+html body .sidebar{top:var(--f-top);height:calc(100vh - var(--f-top));background:var(--f-surface2);backdrop-filter:none;-webkit-backdrop-filter:none;border-right:1px solid var(--f-stroke);color:var(--f-text);padding:8px 8px 20px;font-size:14px}
+html body .navgroup{margin:16px 12px 4px;font-size:12px;font-weight:600;letter-spacing:0;text-transform:none;color:var(--f-text3);opacity:1}
+html body .navbtn{height:38px;padding:0 12px;margin:1px 0;gap:12px;border-radius:6px;font-size:14px;font-weight:400;color:var(--f-text);transition:background .12s}
+html body .navbtn .navico{width:20px;height:20px;flex:none;display:inline-grid;place-items:center;color:var(--f-text2)}
+html body .navbtn:hover{background:var(--f-hover);color:var(--f-text)}
+html body .navbtn.active{background:var(--f-press);font-weight:600;color:var(--f-text)}
+html body .navbtn.active .navico{color:var(--f-accent)}
+html body .navbtn.active::before{left:0;top:10px;bottom:10px;width:3px;border-radius:2px;background:var(--f-accent)}
+html body .filters{top:var(--f-top);padding:8px 28px;gap:8px;background:var(--f-bar);backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);border-bottom:1px solid var(--f-stroke)}
+html body .content{max-width:1680px;padding:24px 32px 40px}
+html body .appCopyright{color:var(--f-text3);font-size:12px}
+
+/* ---------- cabeçalho de página ---------- */
+html body .hero{align-items:center;margin-bottom:18px;gap:16px}
+html body #content .hero h1{font-family:var(--f-display);font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.2}
+html body .hero .muted{font-size:13.5px;margin-top:3px}
+html body .module-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+html body .releaseIdentity strong{font-size:12px;font-weight:600;color:var(--f-accent);background:var(--f-info-bg);border:1px solid transparent}
+html body .releaseIdentity span{font-size:12px;background:var(--f-surface3);border:1px solid transparent;color:var(--f-text2)}
+
+/* ---------- cartões e indicadores ---------- */
+html body .card{background:var(--f-surface);backdrop-filter:none;-webkit-backdrop-filter:none;border:1px solid var(--f-stroke);outline:none;border-radius:8px;box-shadow:var(--f-shadow1);padding:16px 18px;color:var(--f-text)}
+html body #content .sectiontitle{font-family:var(--f-font);font-size:15px;font-weight:600;line-height:1.3;margin-bottom:12px}
+html body .muted{color:var(--f-text2)}
+html body .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+html body .kpi{border-left:0;padding:14px 16px;min-height:0;overflow:visible}
+html body .kpi::after{display:none}
+html body .kpi>span:first-child,html body .kpi .muted{font-size:12.5px;color:var(--f-text2)}
+html body .kpi strong{font-size:22px;font-weight:600;letter-spacing:-.015em;margin-top:2px;font-variant-numeric:tabular-nums}
+html body .kpilink{transition:border-color .12s,box-shadow .12s,transform .12s}
+html body .kpilink:hover{border-color:var(--f-accent);box-shadow:var(--f-shadow2)}
+html body .kpilink small{color:var(--f-accent);font-weight:600;font-size:12px;margin-top:6px}
+html body .metricstrip{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+html body .miniMetric{background:var(--f-surface);outline:none;box-shadow:var(--f-shadow1);padding:12px 14px}
+html body .miniMetric span{font-size:12px}
+html body .miniMetric b{font-size:16px;font-weight:600}
+html body .miniMetric.bad{border-bottom:2px solid var(--f-bad)}html body .miniMetric.ok{border-bottom:2px solid var(--f-ok)}
+html body .decision{background:var(--f-surface);border-left:3px solid var(--f-accent);padding:14px 18px}
+html body .decision::before{display:none}
+html body .decision .sectiontitle{font-size:16px}
+html body .glossaryCard,html body details.glossaryDetails{background:var(--f-surface)}
+html body .glossaryItem b{color:var(--f-accent)!important}
+html body details.glossaryDetails>summary{color:var(--f-text)}
+html body .attention,html body .cashCard{background:var(--f-surface)}
+
+/* ---------- tabelas ---------- */
+html body .tablewrap{border:1px solid var(--f-stroke);border-radius:8px;background:var(--f-surface);box-shadow:var(--f-shadow1)}
+html body table{font-size:13.5px}
+html body th{background:var(--f-surface2);color:var(--f-text2);font-size:12.5px;font-weight:600;letter-spacing:0;text-transform:none;padding:10px 12px;border-bottom:1px solid var(--f-stroke2)}
+html body td{padding:10px 12px;border-bottom:1px solid var(--f-stroke);font-size:13.5px;color:var(--f-text)}
+html body tbody tr:last-child td{border-bottom:0}
+html body tr:hover td{background:var(--f-hover)}
+html body tr:has(.bulkChk:checked) td{background:var(--f-select)}
+html body .tablewrap td .btn+.btn{margin-left:4px}
+html body .bulkBar{background:var(--f-accent-bg);border:1px solid var(--f-accent)}
+
+/* ---------- selos ---------- */
+html body .badge{padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;line-height:1.5;border:1px solid transparent;background:var(--f-surface3);color:var(--f-text2)}
+html body .badge.ok{background:var(--f-ok-bg);color:var(--f-ok)}
+html body .badge.warn{background:var(--f-warn-bg);color:var(--f-warn)}
+html body .badge.bad{background:var(--f-bad-bg);color:var(--f-bad)}
+html body .badge.info{background:var(--f-info-bg);color:var(--f-info);border-color:transparent}
+
+/* ---------- botões ---------- */
+html body .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:32px;padding:0 14px;border:1px solid var(--f-stroke2);border-radius:4px;background:var(--f-surface);color:var(--f-text);font-family:inherit;font-size:14px;font-weight:500;line-height:1.2;text-decoration:none;box-shadow:none;cursor:pointer;transition:background .1s,border-color .1s}
+html body .btn:hover{background:var(--f-hover);filter:none;box-shadow:none}
+html body .btn:active{background:var(--f-press);transform:none}
+html body .btn:disabled{opacity:.5;cursor:not-allowed}
+html body .btn.primary{background:var(--f-accent);border-color:var(--f-accent);color:var(--f-on-accent);font-weight:600}
+html body .btn.primary:hover{background:var(--f-accent-h);border-color:var(--f-accent-h)}html body .btn.primary:active{background:var(--f-accent-p);border-color:var(--f-accent-p)}
+html body .btn.danger,html body .module-actions .btn.danger{background:var(--f-surface);color:var(--f-bad);border-color:var(--f-stroke2)}
+html body .btn.danger:hover{background:var(--f-bad-bg);border-color:var(--f-bad)}
+html body .btn.ok{background:var(--f-surface);color:var(--f-ok);border-color:var(--f-stroke2)}
+html body .btn.small{min-height:28px;padding:0 10px;font-size:13px}
+html body .btn.tiny{min-height:22px;padding:0 6px;font-size:12px}
+html body .btn.full{width:100%}
+
+/* ---------- campos ---------- */
+html body input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=range]):not([type=color]),html body select,html body textarea{min-height:32px;padding:5px 10px;border:1px solid var(--f-stroke2);border-bottom-color:var(--f-stroke3);border-radius:4px;background:var(--f-surface);color:var(--f-text);font-family:inherit;font-size:14px;transition:border-color .1s}
+html body textarea{padding:7px 10px;min-height:80px}
+html body input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=range]):focus,html body select:focus,html body textarea:focus{outline:none;border-bottom-color:var(--f-accent);box-shadow:inset 0 -1px 0 var(--f-accent)}
+html body input::placeholder,html body textarea::placeholder{color:var(--f-text3)}
+html body input[type=checkbox],html body input[type=radio]{accent-color:var(--f-accent);width:16px;height:16px}
+html body .field{gap:5px}
+html body .field label,html body .loginbox>label,html body .stack label{font-size:13px;font-weight:600;color:var(--f-text)}
+html body .filters input,html body .filters select{max-width:230px}
+html body input[type=file]{font-family:inherit;font-size:13px}
+
+/* ---------- janelas ---------- */
+html body .modalback{background:rgba(0,0,0,.38);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+html body .dialog{background:var(--f-surface);backdrop-filter:none;-webkit-backdrop-filter:none;border:1px solid var(--f-stroke);border-radius:8px;box-shadow:var(--f-shadow3);padding:24px;color:var(--f-text)}
+html body .dialog h2{font-family:var(--f-display);font-size:20px;font-weight:600;letter-spacing:-.01em;margin:0 0 8px}
+html body .dialog .actions{display:flex;justify-content:flex-end;gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid var(--f-stroke)}
+html body .drawer{background:var(--f-surface);color:var(--f-text);border-left:1px solid var(--f-stroke)}
+html body #toast,html body .toast{border-radius:8px;box-shadow:var(--f-shadow3)}
+
+/* ---------- entrada ---------- */
+html body .login{background:radial-gradient(1200px 600px at 12% -10%,color-mix(in srgb,var(--f-accent) 16%,transparent),transparent 60%),radial-gradient(900px 500px at 100% 110%,color-mix(in srgb,var(--f-accent) 12%,transparent),transparent 60%),var(--f-bg)}
+html body .loginbox{background:var(--f-surface);backdrop-filter:none;-webkit-backdrop-filter:none;border:1px solid var(--f-stroke);border-radius:12px;box-shadow:var(--f-shadow3);padding:32px}
+html body .loginbox h1{font-family:var(--f-display);font-size:26px;font-weight:600;letter-spacing:-.02em;margin:6px 0 2px}
+html body .loginbox>p{color:var(--f-text2);margin:0 0 6px}
+html body .loginbox .logo img{border-radius:12px}
+html body .loginCopyright{border-top-color:var(--f-stroke);color:var(--f-text3)}
+html body .tab{border-radius:4px}
+
+/* ---------- cronograma (apenas cores e cantos; a estrutura não muda) ---------- */
+html body .ganttProject{border-radius:8px}
+html body .ganttLeftHead,html body .ganttYears,html body .ganttMonths,html body .ganttDays{background:var(--f-surface2);color:var(--f-text2)}
+html body .ganttNotice{border-radius:6px}
+html body .ganttSiglas b,html body .ganttMeta b{color:var(--f-accent)}
+html body .ganttHScroll{background:var(--f-surface)}
+
+/* ---------- refinamentos ---------- */
+html body #content .kpi strong,html body #content .executive-kpis .kpi strong{font-size:clamp(19px,1.5vw,22px);font-weight:600;letter-spacing:-.015em;line-height:1.25;white-space:normal;overflow-wrap:anywhere;margin-top:3px}
+html body #content .kpi>.muted,html body #content .kpi>span:first-child{font-size:12.5px}
+html body #content .miniMetric b{font-size:clamp(14px,1.05vw,16px);font-weight:600;letter-spacing:0}
+html body #content .miniMetric span{font-size:12px}
+html body .executive-kpis,html body .kpis.executive-kpis{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+html body .executiveFinancial{background:var(--f-surface);border:1px solid var(--f-stroke);border-radius:8px;box-shadow:var(--f-shadow1);padding:18px}
+html body .financialMissing,html body .financialSelectNotice{min-height:0;padding:18px 20px;border:1px solid color-mix(in srgb,var(--f-warn) 30%,transparent);border-left:3px solid var(--f-warn);border-radius:6px;background:var(--f-warn-bg);color:var(--f-text);gap:4px}
+html body .financialMissing b,html body .financialSelectNotice b{color:var(--f-warn)}
+html body .financialMode button{border-radius:4px}
+html body .filters input,html body .filters select{height:34px;min-height:34px;padding:0 10px}
+html body .filters .btn{height:34px}
+html body .formgrid{gap:14px 16px}
+html body td{vertical-align:middle}
+html body .tablewrap td:last-child:has(.btn){white-space:nowrap}
+html body th:last-child{white-space:nowrap}
+html body .notice{border-radius:6px;background:var(--f-info-bg);color:var(--f-text);border:1px solid color-mix(in srgb,var(--f-info) 25%,transparent)}
+html body .notice.bad{background:var(--f-bad-bg);border-color:color-mix(in srgb,var(--f-bad) 30%,transparent)}
+html body .empty{color:var(--f-text2);text-align:center;padding:28px}
+html body .purchaseLegend{font-size:13px}
+html body .tab.active{background:var(--f-accent);color:var(--f-on-accent)}
+html body .segmented button,html body .financialMode button{border:1px solid var(--f-stroke2);background:var(--f-surface);color:var(--f-text)}
+html body .financialMode button.active{background:var(--f-accent);border-color:var(--f-accent);color:var(--f-on-accent)}
+
+html body #content .metricstrip{grid-template-columns:repeat(auto-fit,minmax(165px,1fr))}
+html body #content .metricstrip .miniMetric b{white-space:normal;overflow:visible;text-overflow:clip;font-size:clamp(13px,.95vw,15px);overflow-wrap:anywhere}
+/* tema escuro: substitui as regras escuras antigas por tokens únicos */
+html[data-theme="dark"] body .card,html[data-theme="dark"] body .tablewrap{background:var(--f-surface);border-color:var(--f-stroke);outline:none}
+html[data-theme="dark"] body .decision,html[data-theme="dark"] body .miniMetric{background:var(--f-surface)}
+html[data-theme="dark"] body th{background:var(--f-surface2);color:var(--f-text2)}
+html[data-theme="dark"] body tr:hover td{background:var(--f-hover)}
+html[data-theme="dark"] body .btn{background:var(--f-surface);color:var(--f-text);border-color:var(--f-stroke2)}
+html[data-theme="dark"] body .btn:hover{background:var(--f-hover)}
+html[data-theme="dark"] body .btn.primary{background:var(--f-accent);border-color:var(--f-accent);color:var(--f-on-accent)}
+html[data-theme="dark"] body .btn.primary:hover{background:var(--f-accent-h);border-color:var(--f-accent-h)}
+html[data-theme="dark"] body .btn.danger{color:var(--f-bad);background:var(--f-surface)}
+html[data-theme="dark"] body .sidebar{background:var(--f-surface2);color:var(--f-text)}
+html[data-theme="dark"] body .navbtn{color:var(--f-text)}
+html[data-theme="dark"] body .navbtn:hover{background:var(--f-hover)}
+html[data-theme="dark"] body .navbtn.active{background:var(--f-press)}
+html[data-theme="dark"] body .topbar,html[data-theme="dark"] body .filters{background:var(--f-bar);color:var(--f-text);border-color:var(--f-stroke)}
+html[data-theme="dark"] body .dialog,html[data-theme="dark"] body .drawer{background:var(--f-surface);color:var(--f-text)}
+html[data-theme="dark"] body .loginbox{background:var(--f-surface);border-color:var(--f-stroke)}
+html[data-theme="dark"] body .login{background:radial-gradient(1200px 600px at 12% -10%,color-mix(in srgb,var(--f-accent) 16%,transparent),transparent 60%),var(--f-bg)}
+html[data-theme="dark"] body .executiveFinancial{background:var(--f-surface)}
+html[data-theme="dark"] body .releaseIdentity strong{color:var(--f-accent)}
+html body .hbarList,html body .hbarList *{font-family:var(--f-font)}
+html body .alert{display:grid;grid-template-columns:max-content minmax(0,1fr) max-content max-content;gap:6px 14px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--f-stroke);border-radius:6px}
+html body .alert:hover{background:var(--f-hover)}
+html body .alert:last-child{border-bottom:0}
+html body .alertText{font-weight:500}
+html body .alertDate{color:var(--f-text2);font-size:13px}
+html body .economics h1{font-family:var(--f-display);font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.2}
+html body .economics h2,html body .eco-report h2{font-family:var(--f-font);font-size:17px;font-weight:600;margin:20px 0 10px}
+html body .eco-kpis strong{font-size:clamp(18px,1.45vw,21px);font-weight:600;letter-spacing:-.015em;margin-top:6px;overflow-wrap:break-word;font-variant-numeric:tabular-nums}
+html body .economics .card,html body .eco-kpis .card{padding:14px 16px}
+html body .nw{white-space:nowrap}
+html body .btnico{display:inline-grid;place-items:center;flex:none}
+html body .btn.backupBtn,html body .btn.restoreBtn{background:var(--f-surface);color:var(--f-text);border-color:var(--f-stroke2)}
+html body .btn.restoreBtn:hover,html body .btn.backupBtn:hover{background:var(--f-hover)}
+
+/* ---------- barra de título integrada do Windows (PWA instalado) ---------- */
+@media (display-mode:window-controls-overlay){
+  html body .topbar{height:max(var(--f-top),env(titlebar-area-height,33px));padding-left:max(14px,env(titlebar-area-x,0px));padding-right:calc(100vw - env(titlebar-area-x,0px) - env(titlebar-area-width,100vw) + 8px);-webkit-app-region:drag;app-region:drag}
+  html body .topbar button,html body .topbar a,html body .topbar select,html body .topbar input,html body .topbar .user,html body .topbar .badge,html body .topbar img{-webkit-app-region:no-drag;app-region:no-drag}
+}
+@media (max-width:900px){
+  html body .layout{grid-template-columns:1fr}
+  html body .sidebar{position:fixed;left:-290px;top:var(--f-top);z-index:60;width:270px;transition:left .2s;box-shadow:var(--f-shadow3)}
+  html body .sidebar.open{left:0}
+  html body .content{padding:16px 14px 32px}html body .filters{padding:8px 12px}
+  html body #content .hero h1{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+@media print{html body{background:#fff;color:#000}html body .card,html body .tablewrap{box-shadow:none;border-color:#ccc}}
+
+/* ===== V3.30 — faixa de versão em todas as telas e cabeçalho de impressão em todas as páginas ===== */
+html body .releaseBar{display:flex;justify-content:flex-end;padding:8px 32px 0}
+html body .releaseBar .releaseIdentity{justify-content:flex-end}
+html body .envTag.hom{background:var(--f-warn-bg);color:var(--f-warn);font-weight:600}
+html body .envTag.prod{background:var(--f-ok-bg);color:var(--f-ok);font-weight:600}
+html body .chartNote{font-size:12px;margin-top:6px}
+html body svg text.cfVal{paint-order:stroke;stroke:var(--f-surface);stroke-width:3px;stroke-linejoin:round}
+@media print{
+  .releaseBar{display:none!important}
+  /* Chrome/Edge 131+: o cabeçalho é desenhado nas margens da página (@page) e repete em todas as páginas */
+  html.printMB body .printBrand{display:none!important}
+  /* reserva para navegadores sem caixas de margem: cabeçalho fixo (repete nas páginas, exceto a última) */
+  html.printFx body .printBrand{display:flex!important;position:fixed;top:-35mm;left:0;right:0;height:31mm;margin:0;padding:0 0 2mm;align-items:center;gap:14px;border-bottom:2px solid #0b3654;background:#fff;overflow:hidden}
+  html.printFx body .printBrandIn{display:flex;align-items:center;gap:14px;width:100%}
+  html.printHdr body .printBrand img{max-height:22mm;max-width:60mm;object-fit:contain}
+  html.printHdr body .printBrand .printOrg{flex:1;font-size:11px;line-height:1.35}
+  html.printHdr body .printBrand .printOrg b{font-size:15px}
+  html.printHdr body .printBrand .printMeta{text-align:right;font-size:11px;line-height:1.35;max-width:62mm}
+  html.printHdr table{page-break-inside:auto}html.printHdr tr{page-break-inside:avoid}html.printHdr thead{display:table-header-group}
+  html.printHdr body,html.printHdr body .layout,html.printHdr body main,html.printHdr body .content{background:#fff!important}
+  html.printHdr body .layout{display:block!important;min-height:0!important}
+  html.printHdr body .sidebar{display:none!important}
+  html.printHdr body .content{padding:0!important;max-width:none!important;margin:0!important}
+  html.printHdr body main{width:100%!important;max-width:none!important}
+  html.printHdr body .tablewrap{border:0!important;box-shadow:none!important}
+  html.printHdr body table{width:100%!important;min-width:0!important}
+  html.printHdr .noPrint,html.printHdr .bulkCol,html.printHdr .bulkBar,html.printHdr .filtersToggle,html.printHdr .module-actions,html.printHdr .bottomNav,html.printHdr #addRecord,html.printHdr .appCopyright .btn{display:none!important}
+}
+
+
+/* valores coloridos nos gráficos de fluxo de caixa e rótulos finais da Curva S */
+html body svg text.cfVal[fill="#15803d"]{fill:#15803d!important}
+html body svg text.cfVal[fill="#b91c1c"]{fill:#b91c1c!important}
+html[data-theme="dark"] body svg text.cfVal[fill="#15803d"]{fill:#7fe08a!important}
+html[data-theme="dark"] body svg text.cfVal[fill="#b91c1c"]{fill:#ff9a90!important}
+html body svg g.sCurveEndLabels text[fill="#ff6a00"]{fill:#e65c00!important}
+html body svg g.sCurveEndLabels text[fill="#0066ff"]{fill:#0057d9!important}
+html[data-theme="dark"] body svg g.sCurveEndLabels text[fill="#ff6a00"]{fill:#ff9a4d!important}
+html[data-theme="dark"] body svg g.sCurveEndLabels text[fill="#0066ff"]{fill:#6aa8ff!important}
+html body .chartNote{font-size:12px!important;line-height:1.35}
+
+/* ===== V3.31 — Criar novo orçamento (SINAPI / ORSE / itens próprios) ===== */
+html body .subtabs{display:flex;gap:4px;margin:0 0 16px;border-bottom:1px solid var(--f-stroke);overflow-x:auto}
+html body .subtab{appearance:none;border:0;background:transparent;color:var(--f-text2);font:inherit;font-weight:600;padding:10px 16px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap;border-radius:6px 6px 0 0}
+html body .subtab:hover{background:var(--f-hover);color:var(--f-text)}html body .subtab.active{color:var(--f-accent);border-bottom-color:var(--f-accent)}
+html body .bb .card{margin-bottom:14px}
+html body .bbSources{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin:8px 0 12px}
+html body .bbSrc{display:flex;gap:12px;align-items:center;padding:12px 14px;border:1.5px solid var(--f-stroke);border-radius:8px;cursor:pointer;background:var(--f-surface)}
+html body .bbSrc:has(input:checked){border-color:var(--f-accent);background:var(--f-accent-bg)}
+html body .bbSrc span{display:grid;gap:2px}html body .bbSrc small{color:var(--f-text2);font-size:12.5px}
+html body .bbPanel{border:1px solid var(--f-stroke);border-radius:8px;padding:14px 16px;margin:10px 0;background:var(--f-surface2)}
+html body .bbPanel[hidden]{display:none}
+html body .bbPanelHead{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;margin-bottom:6px}
+html body .bbSteps{margin:6px 0 12px 18px;padding:0;color:var(--f-text2);line-height:1.5;font-size:13.5px}
+html body .bbRow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}
+html body .bbSel label{display:flex;gap:6px;align-items:center;font-size:13px;font-weight:600}
+html body .bbDet{margin:8px 0}html body .bbDet>summary{cursor:pointer;font-weight:600;color:var(--f-accent)}
+html body .bbCode{background:var(--f-surface3);border-radius:6px;padding:10px 12px;overflow:auto;font-size:12.5px;margin:8px 0}
+html body .bbQuery{flex:1;min-width:240px}
+html body #bbRes td:nth-child(3),html body #bbTab td:nth-child(4){min-width:260px}
+html body .bbQtyAdd,html body .bbQ,html body .bbP{width:96px;text-align:right}
+html body .bbManual{margin:10px 0}
+html body .bbTotals{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:14px 0}
+html body .bbTotals>div{display:grid;gap:2px;padding:10px 14px;border:1px solid var(--f-stroke);border-radius:8px;background:var(--f-surface2)}
+html body .bbTotals span{font-size:12.5px;color:var(--f-text2)}html body .bbTotals b{font-size:18px}
+html body .bbTotals .bbGrand{border-color:var(--f-accent);background:var(--f-accent-bg)}html body .bbTotals .bbGrand b{font-size:22px}
+@media print{.subtabs{display:none!important}}
+
+/* o atributo hidden deve sempre esconder, mesmo em botões e cartões com display próprio */
+html body [hidden]{display:none!important}
+
+/* ===== V3.32 — etapas do orçamento, composições analíticas e planejamento ===== */
+html body .etList{display:grid;gap:6px;margin:10px 0}
+html body .etRow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:6px 10px;border:1px solid var(--f-stroke);border-radius:8px;background:var(--f-surface)}
+html body .etNo{min-width:34px;color:var(--f-accent)}html body .etName{flex:1;min-width:200px}html body .etInfo{white-space:nowrap}
+html body #bbTab tr.bbHead td{background:var(--f-surface2)}html body #bbTab tr.bbEtapa td{border-top:2px solid var(--f-stroke);font-size:14px}
+html body .bbTag{font-size:10.5px;font-weight:700;padding:1px 6px;border-radius:10px;background:var(--f-accent-bg);color:var(--f-accent);vertical-align:middle;white-space:nowrap}
+html body .bbTag.warn{background:var(--f-warn-bg);color:var(--f-warn)}
+html body .bbEt,html body .bbSub{display:block;width:100%;min-width:140px;margin:2px 0}
+html body .bbExt{font-size:12.5px;margin:0 0 8px}html body .bbChk{display:flex;gap:8px;align-items:center;margin:6px 0}
+html body .plTop{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end}
+html body .plSeg{display:flex;flex-wrap:wrap;gap:6px}
+html body .plSegBtn{appearance:none;border:1px solid var(--f-stroke);background:var(--f-surface);color:var(--f-text);font:inherit;font-weight:600;padding:7px 14px;border-radius:999px;cursor:pointer}
+html body .plSegBtn:hover{background:var(--f-hover)}html body .plSegBtn.active{background:var(--f-accent);border-color:var(--f-accent);color:#fff}
+html body .plHead{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:8px}
+html body .plCards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:0 0 14px}
+html body .plCards>div{display:grid;gap:2px;padding:10px 14px;border:1px solid var(--f-stroke);border-radius:8px;background:var(--f-surface2)}
+html body .plCards span{font-size:12.5px;color:var(--f-text2)}html body .plCards b{font-size:18px}
+html body .plTab th,html body .plTab td{padding:6px 9px;font-size:13px}html body .plTab tr.plEt td{background:var(--f-surface2)}
+html body .plWide .plM{min-width:96px}html body .plWide .plR{background:var(--f-accent-bg)}
+html body .plBar{display:block;height:4px;border-radius:2px;background:var(--f-stroke);margin-top:3px}html body .plBar i{display:block;height:100%;border-radius:2px;background:var(--f-accent)}
+html body .plWarn{padding:10px 14px;border-radius:8px;background:var(--f-warn-bg);color:var(--f-warn);font-weight:600}
+html body .plRealIn{width:110px;text-align:right}
+html.vm-mobile body table.mcards td:empty{display:none!important}
+
+/* ===== V3.33 — cabeçalho fixo em todas as telas (faixa de versão, filtros, título, sub-abas, total e colunas) ===== */
+html body .pinBtn{appearance:none;border:1px solid var(--f-stroke);background:var(--f-surface);color:var(--f-text2);font:inherit;font-size:12px;padding:3px 10px;border-radius:999px;cursor:pointer;margin-left:8px}
+html body .pinBtn:hover{background:var(--f-hover);color:var(--f-text)}
+html body .releaseBar{align-items:center}
+html.pinned body .pin{position:sticky!important;background:var(--f-bg,var(--bg))}
+html.pinned body #releaseBar.pin{z-index:47;padding-top:6px;padding-bottom:4px}
+html.pinned body #globalFilters.pin{z-index:46}
+html.pinned body #content > .hero.pin{z-index:45;margin:0;padding:8px 0 6px;align-items:center}
+html.pinned body #content > .hero.pin h1{font-size:24px;margin:0}
+html.pinned body #content > .hero.pin .muted{font-size:12.5px}
+html.pinned body #content > .subtabs.pin{z-index:44;margin:0;padding-top:2px}
+html.pinned body #content > .toolbar.pin{z-index:43;margin:0;padding:6px 0}
+html.pinned body .tablewrap.pinFit{overflow:visible}
+html.pinned body .tablewrap.pinFit thead th{position:sticky;top:var(--pin-bottom);z-index:20;background:var(--f-surface2)}
+html.pinned body .tablewrap.pinWide{overflow:auto}
+html.pinned body .tablewrap.pinWide thead th{position:sticky;top:0;z-index:20;background:var(--f-surface2)}
+@media (max-height:900px){html.pinned body #content > .hero.pin .muted{display:none}}
+@media print{.pinBtn{display:none!important}}
+
+/* ===== V3.34 — leitura: fontes um pouco maiores e cinzas mais escuros; item ativo do menu em amarelo-creme com marcador laranja ===== */
+html body .muted{font-size:14px}
+html body .hero .muted{font-size:15px;margin-top:4px}
+html body #content .kpi>span:first-child{font-size:13.5px}
+html body th{font-size:13.5px}
+html body .sectiontitle{font-size:16.5px}
+html body .badge{font-size:12.5px}
+html body .appCopyright,html body .loginCopyright{font-size:13.5px;line-height:1.5}
+html body .appCopyright strong,html body .loginCopyright strong{font-weight:700;color:var(--f-text)}
+html.pinned body #content > .hero.pin .muted{font-size:13.5px}
+html body .navbtn.active{background:var(--f-warn-bg);color:#4a2f00;font-weight:700;box-shadow:inset 0 0 0 1px rgba(240,138,0,.38)}
+html body .navbtn.active::before{background:#f08a00;width:4px}
+html body .navbtn.active .navico{color:#c46a00}
+html body .navbtn.active:hover{background:#ffedb3}
+html[data-theme="dark"] body .navbtn.active{background:rgba(255,185,0,.17);color:#ffe2a3;box-shadow:inset 0 0 0 1px rgba(255,185,0,.42)}
+html[data-theme="dark"] body .navbtn.active::before{background:#ffb100}
+html[data-theme="dark"] body .navbtn.active .navico{color:#ffb100}
+html[data-theme="dark"] body .navbtn.active:hover{background:rgba(255,185,0,.24)}
+
+/* ----- V3.34 (ajustes de especificidade e textos pequenos) ----- */
+html:root[data-theme="dark"] body .navbtn.active,html:root[data-theme="dark"] body .navbtn.active:hover{background:rgba(255,185,0,.17);color:#ffe2a3;box-shadow:inset 0 0 0 1px rgba(255,185,0,.42)}
+html:root[data-theme="dark"] body .navbtn.active:hover{background:rgba(255,185,0,.24)}
+html:root[data-theme="dark"] body .navbtn.active .navico{color:#ffb100}
+html body .loginCopyright,html body .loginbox .loginCopyright,html body #loginView .loginCopyright,html body #authView .loginCopyright{font-size:13.5px!important;line-height:1.5;color:var(--f-text3)}
+html body .financialHead p,html body .executiveFinancial p{font-size:15px;color:var(--f-text2);margin:3px 0 0}
+html body .navgroup{font-size:11.5px;font-weight:700;letter-spacing:.2px;color:var(--f-text2)}
+html body #content .miniMetric span,html body .miniMetric span,html body .kpilink small,html body .chartNote,html body .btn.tiny,html body .context span,html body .user small{font-size:13px}
+html body .charttype{font-size:11.5px}
+html body .engineeringTable th,html body .engineeringResource th{font-size:12px}
+html body .engineeringTable small{font-size:12px}
+
+/* ===== V3.34.1 — totais em destaque (ex.: "Total R$ 161.916.770,32" em Orçamentos) ===== */
+/* (o CSS antigo fixa .badge em 12px com !important; por isso estas regras também usam !important) */
+html body .badge{font-size:13px!important}
+html body #content .toolbar > .badge{font-size:18px!important;font-weight:800;padding:6px 16px;border-radius:999px;letter-spacing:.2px;line-height:1.25}
+html body #content .toolbar > .badge.ok{color:#0a5a22!important;background:#dff3e4!important;box-shadow:inset 0 0 0 1px rgba(10,90,34,.25)}
+html[data-theme="dark"] body #content .toolbar > .badge.ok{color:#9be7b1!important;background:rgba(46,160,67,.2)!important;box-shadow:inset 0 0 0 1px rgba(155,231,177,.35)}
+html body #content .toolbar > .badge.warn{color:#6b3f00!important}html body #content .toolbar > .badge.bad{color:#8f1d1a!important}
+
+/* ===== V3.34.2 — tamanho da letra: escala única (--k). Padrão "grande" (+12%); botão "Letra" na faixa de versão alterna normal/grande/extra ===== */
+html{--k:1.12}
+html[data-fs="normal"]{--k:1}
+html[data-fs="grande"]{--k:1.12}
+html[data-fs="extra"]{--k:1.26}
+html body{font-size:calc(14px*var(--k))}
+html body .navbtn,html body .subtab,html body .btn,html body input,html body select,html body textarea{font-size:calc(14px*var(--k))}
+html body .btn.small,html body .btn.tiny,html body label{font-size:calc(13px*var(--k))}
+html body .navgroup{font-size:calc(12px*var(--k))!important}
+html body #content td{font-size:calc(14px*var(--k))}
+html body th{font-size:calc(13.5px*var(--k))}
+html body #content .hero h1{font-size:calc(24px*var(--k))}
+html body .hero .muted,html body #content > .hero .muted,html.pinned body #content > .hero.pin .muted{font-size:calc(14.5px*var(--k))}
+html body .muted,html body .financialHead p,html body .executiveFinancial p{font-size:calc(14px*var(--k))}
+html body .sectiontitle{font-size:calc(16.5px*var(--k))}
+html body .badge{font-size:calc(13px*var(--k))!important}
+html body #content .toolbar > .badge{font-size:calc(18px*var(--k))!important}
+html body .releaseIdentity span,html body .releaseIdentity strong,html body .pinBtn{font-size:calc(12.5px*var(--k))}
+html body .appCopyright,html body .loginCopyright{font-size:calc(13.5px*var(--k))!important}
+html body .user,html body .user small,html body .context span{font-size:calc(13px*var(--k))!important}
+html body .navlbl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* ajustes da escala de letra (regras antigas mais específicas) */
+html body .filters input,html body .filters select,html body .filters .btn,html body #globalFilters input,html body #globalFilters select{font-size:calc(14px*var(--k))!important}
+html body .filters input,html body .filters select,html body .filters .btn{height:calc(34px*var(--k))}
+html.pinned body #content > .hero.pin h1{font-size:calc(24px*var(--k))}
+html body .navbtn{height:auto;min-height:38px;padding-top:6px;padding-bottom:6px;line-height:1.2}
+html body .navlbl{white-space:normal;overflow:visible;text-overflow:clip}
+
+html body .financialHead p,html body .executiveFinancial p{font-size:calc(15px*var(--k))}
+
+/* ===== V3.35 — Gantt: barras alegres e vibrantes (no prazo, atrasada, crítica, concluída, etapa) + legenda ===== */
+html body .taskBar{border-radius:7px;color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.35);box-shadow:0 2px 6px rgba(0,0,0,.18)}
+html body .taskBar>i{background:rgba(0,0,0,.26);opacity:1}
+html body .taskBar.active{background:linear-gradient(90deg,#00dcc0,#00b8a2);box-shadow:0 2px 7px rgba(0,184,162,.45)}
+html body .taskBar.late{background:linear-gradient(90deg,#ffb824,#ff8a00);box-shadow:0 2px 7px rgba(255,138,0,.5)}
+html body .taskBar.crit{background:linear-gradient(90deg,#ff5a7a,#ff1f57);box-shadow:0 2px 8px rgba(255,31,87,.5)}
+html body .taskBar.done{background:linear-gradient(90deg,#9be34a,#5fc41c);box-shadow:0 2px 7px rgba(95,196,28,.45)}
+html body .taskBar.summary{background:linear-gradient(90deg,#5b5bff,#a042ff);box-shadow:0 2px 7px rgba(110,70,255,.45);border-radius:3px}
+html body .taskBar.summary>i{background:rgba(0,0,0,.2)}
+html body .baseBar{background:repeating-linear-gradient(90deg,#8a6bff 0 6px,#c3b3ff 6px 9px);height:6px;opacity:.95}
+html body .ganttLegend{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;margin:4px 0 10px;padding:8px 12px;border:1px solid var(--f-stroke);border-radius:8px;background:var(--f-surface);font-size:calc(13px*var(--k,1));font-weight:600}
+html body .ganttLegend span{display:inline-flex;align-items:center;gap:6px}
+html body .ganttLegend b{font-weight:800}
+html body .ganttLegend small{flex-basis:100%;font-weight:400;color:var(--f-text2);font-size:calc(12px*var(--k,1))}
+html body .ganttLegend .lg{display:inline-block;width:26px;height:12px;border-radius:5px}
+html body .ganttLegend .lg.active{background:linear-gradient(90deg,#00dcc0,#00b8a2)}
+html body .ganttLegend .lg.late{background:linear-gradient(90deg,#ffb824,#ff8a00)}
+html body .ganttLegend .lg.crit{background:linear-gradient(90deg,#ff5a7a,#ff1f57)}
+html body .ganttLegend .lg.done{background:linear-gradient(90deg,#9be34a,#5fc41c)}
+html body .ganttLegend .lg.summary{background:linear-gradient(90deg,#5b5bff,#a042ff)}
+html body .ganttLegend .lg.base{height:6px;background:repeating-linear-gradient(90deg,#8a6bff 0 6px,#c3b3ff 6px 9px)}
+@media print{.ganttLegend small{display:none}}
+
+/* ===== V3.36 — Cronograma no layout do MS Project: tabela (Nº, EAP, Nome da tarefa, Duração, Início, Término, Predecessoras, Recursos, % Concl.), setas de dependência, marcos, rótulos de recursos e caminho crítico ===== */
+html body .ganttGridInner .ganttLeftHead,html body .ganttGridInner .ganttLeftRow{grid-template-columns:46px 78px minmax(250px,1fr) 82px 104px 104px 130px 150px 64px 74px}
+html body .ganttLeftHead span,html body .ganttLeftRow span{font-size:calc(12.5px*var(--k,1))}
+html body .ganttNo{text-align:center;color:var(--f-text2);font-weight:600}
+html body .ganttActs{display:flex;gap:4px;align-items:center;justify-content:center;padding:0 4px!important}
+html body .ganttActs .btn.tiny{min-width:26px;padding:0 6px}
+html body .ganttLeftRow.cp .ganttTaskName{color:#d6124b;font-weight:700}
+html body .ganttLeftRow.cp{box-shadow:inset 3px 0 0 #ff1f57}
+html body .barLabel{position:absolute;top:11px;font-style:normal;font-size:calc(11.5px*var(--k,1));white-space:nowrap;color:var(--f-text2);pointer-events:none;z-index:2}
+html body .taskMs{position:absolute;top:11px;width:18px;height:18px;transform:rotate(45deg);border-radius:3px;box-shadow:0 2px 5px rgba(0,0,0,.25);z-index:3}
+html body .taskMs.active{background:linear-gradient(135deg,#00dcc0,#00b8a2)}
+html body .taskMs.late{background:linear-gradient(135deg,#ffb824,#ff8a00)}
+html body .taskMs.crit{background:linear-gradient(135deg,#ff5a7a,#ff1f57)}
+html body .taskMs.done{background:linear-gradient(135deg,#9be34a,#5fc41c)}
+html body .taskBar.cp{outline:2px solid #ff1f57;outline-offset:1px}
+html body .taskMs.cp{outline:2px solid #ff1f57;outline-offset:2px}
+html body .taskBar.summary{top:13px;height:14px;border-radius:0;clip-path:polygon(0 0,100% 0,100% 100%,calc(100% - 8px) 58%,8px 58%,0 100%)}
+html body .ganttLinks{position:absolute;left:0;top:0;pointer-events:none;color:#5b6b7f;z-index:4;overflow:visible}
+html body .ganttLinks path{fill:none;stroke:#5b6b7f;stroke-width:1.3}
+html body .ganttLinks path.cp{stroke:#ff1f57;stroke-width:1.9}
+html body .ganttLinks marker path{fill:#5b6b7f;stroke:none}
+html[data-theme="dark"] body .ganttLinks path{stroke:#9fb0c3}html[data-theme="dark"] body .ganttLinks marker path{fill:#9fb0c3}
+@media print{.ganttLinks{display:block}}
+
+/* linha de base no Planejamento */
+html body .plBase{margin-bottom:12px}
+html body .plLate{color:#d6124b;font-weight:700}html body .plEarly{color:#0a7d3e;font-weight:700}
+
+/* o CSS antigo do Gantt usa !important nas colunas e na fonte; o layout MS Project precisa vencê-lo */
+html body .ganttGridInner .ganttLeftHead,html body .ganttGridInner .ganttLeftRow{grid-template-columns:46px 78px minmax(250px,1fr) 86px 128px 128px 124px 140px 64px 74px!important}
+html body .ganttLeftHead span,html body .ganttLeftRow span{font-size:calc(13px*var(--k,1))!important}
+html body .ganttProjectSplit{grid-template-columns:760px minmax(720px,1fr);min-width:1480px}
+
+html body .ganttLeftHead span:nth-child(2),html body .ganttLeftRow span:nth-child(2){left:46px!important}
+html body .ganttLeftHead span:nth-child(1),html body .ganttLeftRow span:nth-child(1){left:0!important}
+
+/* ===== V3.37 — Cronograma: bloco superior congelado ao rolar na vertical; colunas Nº, EAP e Nome fixas e opacas na rolagem horizontal ===== */
+html body .ganttProject{overflow:visible}
+html body #content > .ganttProject{padding-top:0}
+html.pinned body #content > .ganttProject > .ganttTop.pin{background:var(--f-surface);margin:0;padding:8px 6px;z-index:42;border-bottom:1px solid var(--f-stroke);gap:8px}
+html.pinned body #content > .ganttProject > .ganttTop.pin .sectiontitle{font-size:calc(15px*var(--k,1));margin:0}
+html.pinned body #content > .ganttProject > .ganttTop.pin > div > .muted{display:none}
+html.pinned body #content > .ganttProject > .ganttLegend.pin{z-index:41;margin:0;border-radius:0;border-left:0;border-right:0;padding:6px 8px}
+html.pinned body #content > .ganttProject > .ganttLegend.pin small{display:none}
+html body .ganttInfo{margin:8px 0;padding:6px 10px;border:1px dashed var(--f-stroke);border-radius:8px;background:var(--f-surface2)}
+html body .ganttInfo>summary{cursor:pointer;font-weight:700;color:var(--f-accent)}
+html body .ganttInfo[open]>summary{margin-bottom:8px}
+/* três primeiras colunas fixas, com fundo opaco (sem sobreposição de texto na rolagem horizontal) */
+html body .ganttLeftRow>span:nth-child(-n+3),html body .ganttLeftHead>span:nth-child(-n+3){position:sticky;z-index:3;background:#fff;background-clip:padding-box}
+html body .ganttLeftRow>span:nth-child(1),html body .ganttLeftHead>span:nth-child(1){left:0!important}
+html body .ganttLeftRow>span:nth-child(2),html body .ganttLeftHead>span:nth-child(2){left:46px!important}
+html body .ganttLeftRow>span:nth-child(3),html body .ganttLeftHead>span:nth-child(3){left:124px!important;box-shadow:2px 0 0 #cfd9e0}
+html body .ganttLeftHead>span:nth-child(-n+3){background:#f4f7f9;z-index:6}
+html body .ganttLeftRow:nth-child(even)>span:nth-child(-n+3){background:#fbfcfd}
+html body .ganttLeftRow.summary>span:nth-child(-n+3){background:#eaf3fb}
+html body .ganttLeftRow.legacy>span:nth-child(-n+3){background:#fff7ed}
+html[data-theme="dark"] body .ganttLeftRow>span:nth-child(-n+3){background:#141a20}
+html[data-theme="dark"] body .ganttLeftHead>span:nth-child(-n+3){background:#1c252d}
+html[data-theme="dark"] body .ganttLeftRow.summary>span:nth-child(-n+3){background:#183047}
+
+/* ===== V3.37.1 — botão Atualizar aplicativo (destacado quando há versão nova) ===== */
+html body .pinBtn.updateAvail{background:var(--f-warn-bg);border-color:#f08a00;color:#6b3f00;font-weight:700;box-shadow:0 0 0 0 rgba(240,138,0,.5);animation:updPulse 2s ease-out infinite}
+@keyframes updPulse{0%{box-shadow:0 0 0 0 rgba(240,138,0,.55)}70%{box-shadow:0 0 0 9px rgba(240,138,0,0)}100%{box-shadow:0 0 0 0 rgba(240,138,0,0)}}
+@media (prefers-reduced-motion:reduce){html body .pinBtn.updateAvail{animation:none}}
+
+/* ===== V3.37.2 — as duas barras de rolagem horizontal do Gantt (tabela e linha do tempo) ficam fixas na base da tela, com o mesmo visual e comportamento ===== */
+html body .ganttHBars{position:sticky;bottom:0;z-index:40;display:flex;align-items:flex-end;margin-top:-1px;background:var(--f-surface);border-radius:0 0 10px 10px;box-shadow:0 -6px 12px rgba(15,35,55,.10)}
+html body .ganttHBars .ganttHScroll{position:static;flex:0 0 auto;margin-top:0;border-radius:0;box-shadow:none}
+html body .ganttHBars .ganttHScroll+.ganttHScroll{border-left:1px solid var(--line,#dce5eb)}
+html body .ganttProjectViewport.hasHScrollL .ganttGridLeft{scrollbar-width:none}
+html body .ganttProjectViewport.hasHScrollL .ganttGridLeft::-webkit-scrollbar{display:none}
+html body .ganttProjectSplit{grid-template-columns:clamp(460px,48%,760px) minmax(0,1fr);min-width:0}
+
+/* ===== V3.38 — todas as tabelas largas: barra horizontal fixa na base da tela (mesmo visual da do Cronograma); o cabeçalho acompanha a rolagem da página ===== */
+html body .tablewrap.hbOn{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;max-height:none}
+html body .tablewrap.hbOn::-webkit-scrollbar{display:none;height:0}
+html body .tablewrap.hbOn thead th{background:var(--f-surface2);box-shadow:0 1px 0 var(--f-stroke)}
+html.pinned body .tablewrap.pinWide{overflow-x:auto!important;overflow-y:hidden!important;max-height:none!important}
+html.pinned body .tablewrap.pinWide thead th{position:relative;top:auto}
+html body .hbarWrap{position:sticky;bottom:0;z-index:30;background:var(--f-surface);box-shadow:0 -6px 12px rgba(15,35,55,.10);margin-top:-1px;margin-bottom:12px;border-radius:0 0 10px 10px}
+html body .hbarWrap .tblHScroll{position:static;display:block;margin:0;border-radius:0 0 10px 10px;box-shadow:none;overflow-x:scroll;overflow-y:hidden;height:18px;background:var(--f-surface);border:1px solid var(--line,#dce5eb);scrollbar-color:#6b7f92 #e6edf2;scrollbar-width:auto}
+html body .card:has(> .hbarWrap),html body .card:has(> .tablewrap.hbOn){overflow:visible}
+@media print{html body .hbarWrap{display:none}}
+
+/* V3.38.3 — botões da faixa de versão: maiores e cada um com sua cor */
+html body #releaseBar .pinBtn{font-size:calc(14.5px*var(--k,1))!important;font-weight:700;padding:9px 16px!important;border-radius:10px!important;border:0!important;color:#334155!important;margin-left:10px;box-shadow:0 1px 2px rgba(0,0,0,.10);letter-spacing:.1px}
+html body #releaseBar #pinBtn{background:#dbe7ff!important;color:#1e3a8a!important}
+html body #releaseBar #fsBtn{background:#d4f1e2!important;color:#065f46!important}
+html body #releaseBar #updBtn{background:#ebe2fc!important;color:#5b21b6!important}
+html body #releaseBar #updBtn.updateAvail{background:#ff6a00!important;animation:updPulse 1.6s ease-in-out infinite}
+html body #releaseBar .pinBtn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+html body #releaseBar .pinBtn:focus-visible{outline:3px solid #f2b46b;outline-offset:2px}
+@keyframes updPulse{0%,100%{box-shadow:0 2px 5px rgba(0,0,0,.18)}50%{box-shadow:0 0 0 5px rgba(255,106,0,.35)}}
+@media (prefers-reduced-motion:reduce){html body #releaseBar #updBtn.updateAvail{animation:none}}
+
+/* V3.38.4 — caixas de identificação da versão: maiores e coloridas */
+html body #releaseBar .releaseIdentity{gap:10px}
+html body #releaseBar .releaseIdentity strong,html body #releaseBar .releaseIdentity span{font-size:calc(14.5px*var(--k,1))!important;font-weight:700;padding:9px 16px!important;border-radius:10px!important;border:0!important;color:#334155!important;box-shadow:0 1px 2px rgba(0,0,0,.10)}
+html body #releaseBar .releaseIdentity strong{background:#d6e4fa!important;color:#17407a!important}
+html body #releaseBar .releaseIdentity .envTag.hom{background:#d97706!important}
+html body #releaseBar .releaseIdentity .envTag.prod{background:#d8f2de!important;color:#14532d!important}
+html body #releaseBar .releaseIdentity span:not(.envTag){background:#d3eef4!important;color:#0b4a5c!important}
+
+/* ===== V3.39 — caixas coloridas em todo o aplicativo (botões, selos e menu lateral) ===== */
+html body .btn,html body button.btn,html body a.btn{background:#d3eef4!important;border:0!important;border-radius:10px!important;font-weight:700!important;font-size:calc(14px*var(--k,1))!important;padding:9px 16px!important;box-shadow:0 1px 2px rgba(0,0,0,.10)!important;cursor:pointer;color:#0b4a5c!important}
+html body .btn.small{padding:7px 13px!important;font-size:calc(13.5px*var(--k,1))!important}
+html body .btn.tiny{padding:4px 10px!important;font-size:calc(12.5px*var(--k,1))!important;border-radius:8px!important}
+html body .btn.primary{background:#dbe7ff!important;color:#1e3a8a!important}
+html body .btn.danger,html body .btn.del,html body .btn.compDel,html body .btn.ganttDelete{background:#fbdcdc!important;color:#8f1d22!important}
+html body .btn.ok,html body .btn.restore,html body .btn.restoreBtn,html body .btn.backupBtn,html body .btn.exportAny,html body .btn.receiveStock,html body .btn.genFin{background:#d4f1e2!important;color:#065f46!important}
+html body .btn.edit,html body .btn.ganttEdit,html body .btn.fmt,html body .btn.ifmt{background:#ecdffb!important;color:#581c87!important}
+html body .btn.goAlert,html body .btn.focusWork,html body .btn.rpView{background:#fdebcf!important;color:#7c3a05!important}
+html body .btn.ganttZoom{background:#e6eaf0!important;color:#334155!important}
+html body .btn.ganttZoom.active{background:#ffdcc2!important;box-shadow:0 0 0 2px #f2b46b!important;color:#9a3412!important}
+html body .btn:hover:not(:disabled){filter:brightness(1.12);transform:translateY(-1px)}
+html body .btn:focus-visible{outline:3px solid #f2b46b!important;outline-offset:2px}
+html body .btn:disabled,html body .btn[disabled]{opacity:.45;cursor:not-allowed;box-shadow:none!important}
+html body .badge{font-weight:700!important;border:0!important;border-radius:8px!important;padding:5px 11px!important;font-size:calc(13px*var(--k,1))!important;background:#e6eaf0!important;color:#334155!important}
+html body .badge.ok{background:#d4f1e2!important;color:#065f46!important}
+html body .badge.warn{background:#fdebcf!important;color:#7c3a05!important}
+html body .badge.bad{background:#fbdcdc!important;color:#8f1d22!important}
+html body .badge.info{background:#dbe7ff!important;color:#1e3a8a!important}
+/* menu lateral */
+html body #sidebar .navbtn{height:auto!important;min-height:42px;margin:5px 10px!important;width:calc(100% - 20px)!important;padding:10px 14px!important;border-radius:10px!important;font-weight:700!important;font-size:calc(14.5px*var(--k,1))!important;background:#e6eaf0!important;box-shadow:0 1px 2px rgba(0,0,0,.10);border:0;color:#334155!important}
+html body #sidebar .navbtn .navico{color:currentColor!important;opacity:.85}
+html body #sidebar .navbtn[data-g="0"]{background:#dbe7ff!important;color:#1e3a8a!important}
+html body #sidebar .navbtn[data-g="1"]{background:#d4f1e2!important;color:#065f46!important}
+html body #sidebar .navbtn[data-g="2"]{background:#ecdffb!important;color:#581c87!important}
+html body #sidebar .navbtn[data-g="3"]{background:#d3eef4!important;color:#0b4a5c!important}
+html body #sidebar .navbtn[data-g="4"]{background:#fdebcf!important;color:#7c3a05!important}
+html body #sidebar .navbtn[data-g="5"]{background:#fcdde6!important;color:#9f1239!important}
+html body #sidebar .navbtn[data-g="6"]{background:#e1e3fb!important;color:#3730a3!important}
+html body #sidebar .navbtn[data-g="7"]{background:#e6eaf0!important;color:#334155!important}
+html body #sidebar .navbtn:hover{filter:brightness(1.12);color:#334155!important}
+html body #sidebar .navbtn.active{background:#ffdcc2!important;box-shadow:0 0 0 2px #f2b46b,0 1px 3px rgba(0,0,0,.12)!important;color:#9a3412!important}
+html body #sidebar .navbtn.active .navico{color:currentColor!important}
+html body #sidebar .navbtn.active::before{display:none}
+html body #sidebar .navgroup{font-weight:800!important;color:var(--f-text)!important;font-size:calc(12.5px*var(--k,1))!important;margin:18px 12px 2px!important}
+/* contraste dos botões da faixa de versão */
+html body #releaseBar #fsBtn{background:#d4f1e2!important;color:#065f46!important}
+html body #releaseBar .releaseIdentity span:not(.envTag){background:#d3eef4!important;color:#0b4a5c!important}
+html body #releaseBar #updBtn.updateAvail{background:#ffdcc2!important;color:#9a3412!important}
+html body #releaseBar .releaseIdentity .envTag.hom{background:#fdebcf!important;color:#7c3a05!important}
+@media print{html body .btn{box-shadow:none!important}}
+
+/* ===== V3.39.1 — demais botões (alternadores, abas, chips) no mesmo visual colorido ===== */
+html body #content button:not(.btn):not(.kpilink):not(.pinBtn):not(.iconbtn):not(.bnItem),html body .tabs button.tab,html body .filtersToggle,html body .segmented button,html body .financialMode button,html body .subtab,html body .plSegBtn,html body .engProjectTab,html body .man-chip,html body .ganttToggle{appearance:none;background:#d3eef4!important;border:0!important;border-radius:10px!important;font-family:inherit;font-weight:700!important;font-size:calc(14px*var(--k,1))!important;padding:9px 16px!important;box-shadow:0 1px 2px rgba(0,0,0,.10)!important;cursor:pointer;margin:2px 3px;color:#0b4a5c!important}
+html body .subtab,html body .plSegBtn,html body .engProjectTab{margin:3px 4px;border-bottom:0!important}
+html body #content button:not(.btn):not(.kpilink):not(.pinBtn):not(.iconbtn):not(.bnItem):hover:not(:disabled),html body .tabs button.tab:hover,html body .subtab:hover,html body .plSegBtn:hover,html body .segmented button:hover,html body .financialMode button:hover,html body .man-chip:hover,html body .ganttToggle:hover,html body .engProjectTab:hover{filter:brightness(1.12);color:#334155!important}
+html body #content button.active:not(.btn):not(.kpilink):not(.pinBtn):not(.iconbtn):not(.bnItem),html body #content button[aria-pressed="true"]:not(.btn):not(.kpilink):not(.pinBtn):not(.iconbtn):not(.bnItem),html body #content button[aria-selected="true"]:not(.btn):not(.kpilink):not(.pinBtn):not(.iconbtn):not(.bnItem),html body #content .subtab.active:not(.btn):not(.kpilink):not(.pinBtn):not(.iconbtn):not(.bnItem),html body #content .plSegBtn.active:not(.btn):not(.kpilink):not(.pinBtn):not(.iconbtn):not(.bnItem),html body #content .engProjectTab.active:not(.btn):not(.kpilink):not(.pinBtn):not(.iconbtn):not(.bnItem),html body .tabs button.tab.active{background:#ffdcc2!important;box-shadow:0 0 0 2px #f2b46b,0 1px 3px rgba(0,0,0,.12)!important;color:#9a3412!important}
+html body #content button:not(.btn):not(.kpilink):not(.pinBtn):disabled{opacity:.45;cursor:not-allowed}
+html body .segmented,html body .financialMode{background:transparent!important;border:0!important;box-shadow:none!important;gap:6px}
+@media print{html body #content button{box-shadow:none!important}}
+
+/* V3.39.2 — tons pastel: menos poluição visual */
+html body .btn:hover:not(:disabled),html body #sidebar .navbtn:hover{filter:brightness(.97)}
+html body #sidebar .navbtn,html body .btn,html body .badge{font-weight:600!important}
+html body #releaseBar .pinBtn{font-weight:600!important}
