@@ -5,7 +5,7 @@ import pandas as pd
 import py7zr
 import sys, zipfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import sinapi_reader
+import sinapi_reader, sicro_reader
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 DOCS=ROOT/"docs"; BASES=DOCS/"bases"; BASES.mkdir(parents=True,exist_ok=True)
@@ -96,36 +96,57 @@ def parse_generic_xlsx(path,source,uf,reference,regime=""):
                 rows.append({"code":str(r.get(ccode,"") or "").strip() if ccode else "","description":d,"unit":u,"price":p,"sheet":sheet})
     return rows
 
+def ingest_sicro_7z(arc,source_url,entries,official_url=""):
+    """Lê o pacote mensal do SICRO (.7z com os 'Relatórios Sintéticos' em XLSX) e grava uma base por regime."""
+    with tempfile.TemporaryDirectory() as td:
+        ext=pathlib.Path(td)/"x";ext.mkdir()
+        with py7zr.SevenZipFile(arc,"r") as z:z.extractall(ext)
+        uf,ref,res,seen=sicro_reader.read_sicro_folder(ext)
+    if not {"comp","mat","mo","eq"}<=seen:
+        raise ValueError(f"pacote SICRO incompleto: faltam {sorted({'comp','mat','mo','eq'}-seen)}")
+    year,mm=ref.split("-");ok=0
+    for regime,rows in res.items():
+        sheets={r["sheet"] for r in rows}
+        if len(rows)<2000 or len(sheets)<3:
+            print("SICRO descartado (poucos itens)",uf,regime,len(rows),sorted(sheets));continue
+        meta={"id":f"SICRO3-{uf}-{year}-{mm}-{norm(regime).replace(' ','-')}","source":"SICRO3","uf":uf,"year":int(year),"month":mm,"reference":ref,"regime":regime,"type":"mixed","officialUrl":official_url or SICRO_ROOT,"publishedAt":"","sourceFile":source_url}
+        e=save_base(meta,rows)
+        if e:entries.append(e);ok+=1
+    print(f"SICRO {uf} {ref}: {ok} base(s) gravada(s)")
+    return ok
+
+def update_sicro_local(entries):
+    """Fonte manual: pacotes .7z do SICRO colocados em fontes/ (ex.: ba-07-2026.7z)."""
+    folder=ROOT/"fontes"
+    if not folder.exists():return 0
+    n=0
+    for z in sorted(folder.glob("*.7z")):
+        try:n+=ingest_sicro_7z(z,f"fontes/{z.name}",entries)
+        except Exception as e:print("SICRO local",z.name,e)
+    return n
+
 def update_sicro(entries):
-    # DNIT has reliable UF/year/month folder structure; discover actual published periods from each state's 2026 page.
-    year=str(datetime.datetime.now().year)
-    for uf in UFS:
-        year_url=f"{SICRO_ROOT}/{REGION[uf]}/{STATE[uf]}/{year}"
-        try: html,ls=links(year_url)
-        except Exception: continue
-        for mm,mname in MONTH.items():
-            month_url=next((u for t,u in ls if re.search(fr"/{re.escape(mname)}(?:/|$)",u,re.I)),None)
-            if not month_url: continue
-            try:
-                h2,l2=links(month_url)
-                target=next((u for t,u in l2 if re.search(fr"{uf}[-.]?{mm}[.-]{year}\.7z",t+" "+u,re.I)),None)
-                if not target:continue
-                target=re.sub(r"/view(?:\?.*)?$","",target)
-                with tempfile.TemporaryDirectory() as td:
-                    arc=pathlib.Path(td)/f"{uf}-{mm}.{year}.7z"
-                    arc.write_bytes(get(target).content)
-                    ext=pathlib.Path(td)/"x";ext.mkdir()
-                    with py7zr.SevenZipFile(arc,"r") as z:z.extractall(ext)
-                    allrows=[]
-                    for f in ext.rglob("*"):
-                        if f.suffix.lower() in [".xlsx",".xls"]:
-                            try: allrows.extend(parse_generic_xlsx(f,"SICRO3",uf,f"{year}-{mm}"))
-                            except Exception: pass
-                    meta={"id":f"SICRO3-{uf}-{year}-{mm}","source":"SICRO3","uf":uf,"year":int(year),"month":mm,"reference":f"{year}-{mm}","regime":"","type":"mixed","officialUrl":month_url,"publishedAt":"","sourceFile":target}
-                    e=save_base(meta,allrows)
-                    if e:entries.append(e)
-            except Exception as e:
-                print("SICRO",uf,mm,e)
+    """Descoberta automática no site do DNIT: <região>/<estado>/<ano>/<mês>/<uf>-<mm>-<ano>.7z (trimestral)."""
+    now=datetime.datetime.now();got=0
+    for year in (str(now.year),str(now.year-1)):
+        for uf in UFS:
+            year_url=f"{SICRO_ROOT}/{REGION[uf]}/{STATE[uf]}/{year}"
+            try:html,ls=links(year_url)
+            except Exception:continue
+            for mm,mname in MONTH.items():
+                month_url=next((u for t,u in ls if re.search(fr"/{re.escape(mname)}(?:/|$)",u,re.I) and not u.endswith(".7z")),None)
+                if not month_url:continue
+                try:
+                    h2,l2=links(month_url)
+                    target=next((u for t,u in l2 if re.search(fr"{uf}[-.]?{mm}[.-]{year}\.7z",t+" "+u,re.I)),None)
+                    if not target:continue
+                    target=re.sub(r"/view(?:\?.*)?$","",target)
+                    with tempfile.TemporaryDirectory() as td:
+                        arc=pathlib.Path(td)/f"{uf}-{mm}-{year}.7z";arc.write_bytes(get(target).content)
+                        got+=ingest_sicro_7z(arc,target,entries,month_url)
+                except Exception as e:
+                    print("SICRO",uf,year,mm,e)
+    return got
 
 def discover_sinapi_files():
     # CAIXA currently exposes a central 'Relatórios mensais - a partir de 2025' listing.
@@ -242,6 +263,7 @@ def main():
         if x.get("status")=="ready" and x.get("file") and (DOCS/x["file"]).exists():entries.append(x)
     update_sinapi_local(entries)
     update_sinapi(entries)
+    update_sicro_local(entries)
     update_sicro(entries)
     update_orse(entries)
     entries=dedupe(entries)
