@@ -1442,6 +1442,26 @@
       "sha256": "9df5726558f21443b8e192ea519248821f19efd60ee0b212d2afe55ce67d51b0",
       "normalizedSha256": "1e5d794c7e90392fa1e4b9b3b776c0acd4e87fa5f34dd81f613cae6fddb5ece4",
       "generatedAt": "2026-10-10T13:51:16.907589+00:00"
+    },
+    {
+      "id": "SICRO3-AL-2026-07-desonerado",
+      "source": "SICRO3",
+      "uf": "AL",
+      "year": 2026,
+      "month": "07",
+      "reference": "2026-07",
+      "regime": "Desonerado",
+      "type": "mixed",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "publishedAt": "",
+      "sourceFile": "fontes/al-07-2026.7z",
+      "status": "ready",
+      "count": 2351,
+      "file": "bases/SICRO3-AL-2026-07-desonerado.json.gz",
+      "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AL-2026-07-desonerado.json.gz",
+      "sha256": "4f40a78780adf85b64382512bb6bd7a8f48cd1e524637e317d9dd4bb447c95d3",
+      "normalizedSha256": "160aae2b40cebcd6c5a190bd19984668cbc6005ffd67154f1070205aa459154b",
+      "generatedAt": "2026-10-10T13:00:00+00:00"
     }
   ]
 }
