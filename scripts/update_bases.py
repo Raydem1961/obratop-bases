@@ -5,7 +5,7 @@ import pandas as pd
 import py7zr
 import sys, zipfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import sinapi_reader, sicro_reader
+import sinapi_reader, sicro_reader, orse_reader
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 DOCS=ROOT/"docs"; BASES=DOCS/"bases"; BASES.mkdir(parents=True,exist_ok=True)
@@ -218,6 +218,22 @@ def update_sinapi(entries):
                 if zipfile.is_zipfile(f):ingest_sinapi_zip(f,url,entries)
         except Exception as e:print("SINAPI",url,e)
 
+def update_orse_local(entries):
+    """Fonte manual: planilha exportada do programa ORSE colocada em fontes/ (ORSE*.xlsx)."""
+    folder=ROOT/"fontes"
+    if not folder.exists():return 0
+    n=0
+    for x in sorted(folder.glob("ORSE*.xlsx")):
+        try:
+            ref,rows=orse_reader.read_orse_xlsx(x)
+            if len(rows)<3000:raise ValueError(f"poucos itens com preço ({len(rows)})")
+            year,mm=ref.split("-")
+            meta={"id":f"ORSE-SE-{year}-{mm}","source":"ORSE-SE","uf":"SE","year":int(year),"month":mm,"reference":ref,"regime":"","type":"mixed","officialUrl":ORSE_HOME,"publishedAt":"","sourceFile":f"fontes/{x.name}"}
+            e=save_base(meta,rows)
+            if e:entries.append(e);n+=1;print(f"ORSE {ref}: {e['count']} itens")
+        except Exception as ex:print("ORSE local",x.name,ex)
+    return n
+
 def update_orse(entries):
     # The updater discovers ORSE publications but does not publish prices unless the downloaded file is safely parseable.
     # This prevents invented/corrupted values from proprietary .ORSE formats.
@@ -234,6 +250,7 @@ def dedupe(entries):
     d={}
     for x in entries:
         old=d.get(x["id"])
+        # a entrada mais nova (gerada nesta execução) substitui a preservada; 'ready' nunca é trocada por não-pronta
         if not old or x.get("status")=="ready" or old.get("status")!="ready":d[x["id"]]=x
     return sorted(d.values(),key=lambda x:(x.get("source",""),x.get("uf",""),x.get("reference","")),reverse=True)
 
@@ -265,6 +282,7 @@ def main():
     update_sinapi(entries)
     update_sicro_local(entries)
     update_sicro(entries)
+    update_orse_local(entries)
     update_orse(entries)
     entries=dedupe(entries)
     entries=prune(entries)
