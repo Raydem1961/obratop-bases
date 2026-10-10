@@ -24,6 +24,16 @@ for b in c["bases"]:
         if not rows or not any(float(x.get("price") or 0)>0 for x in rows):
             errors.append(f"{b.get('id')}: sem preços positivos")
     except Exception as e: errors.append(f"{b.get('id')}: gzip/json inválido {e}")
+    ar=b.get("analiticoFile")
+    if ar:
+        ap=root/"docs"/ar
+        if not ap.exists(): errors.append(f"{b.get('id')}: {ar} não existe")
+        elif hashlib.sha256(ap.read_bytes()).hexdigest()!=b.get("analiticoSha256"): errors.append(f"{b.get('id')}: analiticoSha256 diverge")
+        else:
+            try:
+                an=json.loads(gzip.decompress(ap.read_bytes()))
+                if not an: errors.append(f"{b.get('id')}: analítico vazio")
+            except Exception as e: errors.append(f"{b.get('id')}: analítico inválido {e}")
 if errors:
     print("\n".join(errors)); sys.exit(1)
 ready=[b for b in c["bases"] if b.get("status")=="ready"]

@@ -218,6 +218,22 @@ def update_sinapi(entries):
                 if zipfile.is_zipfile(f):ingest_sinapi_zip(f,url,entries)
         except Exception as e:print("SINAPI",url,e)
 
+def save_json_gz(name,obj,prefix):
+    """Arquivo auxiliar (ex.: composições analíticas): devolve campos <prefix>File/Url/Sha256 para o catálogo."""
+    raw=json.dumps(obj,ensure_ascii=False,separators=(",",":")).encode()
+    gz=gzip.compress(raw,compresslevel=9,mtime=0)
+    rel=f"bases/{re.sub(r'[^A-Za-z0-9_.-]+','-',name)}.json.gz"; (DOCS/rel).write_bytes(gz)
+    return {f"{prefix}File":rel,f"{prefix}Url":f"https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/{rel}",f"{prefix}Sha256":hashlib.sha256(gz).hexdigest()}
+
+def _sinapi_desc(uf,ref):
+    """{'I':{código:(descrição,unidade)},'C':{...}} a partir da base SINAPI já publicada (se existir)."""
+    p=DOCS/f"bases/SINAPI-{uf}-{ref}-nao-desonerado.json.gz"
+    out={"I":{},"C":{}}
+    if not p.exists():return out
+    for r in json.loads(gzip.decompress(p.read_bytes()))["rows"]:
+        out["C" if str(r.get("sheet","")).startswith("C") else "I"][str(r["code"])]=(r["description"],r["unit"])
+    return out
+
 def update_orse_local(entries):
     """Fonte manual: planilha exportada do programa ORSE colocada em fontes/ (ORSE*.xlsx)."""
     folder=ROOT/"fontes"
@@ -230,7 +246,12 @@ def update_orse_local(entries):
             year,mm=ref.split("-")
             meta={"id":f"ORSE-SE-{year}-{mm}","source":"ORSE-SE","uf":"SE","year":int(year),"month":mm,"reference":ref,"regime":"","type":"mixed","officialUrl":ORSE_HOME,"publishedAt":"","sourceFile":f"fontes/{x.name}"}
             e=save_base(meta,rows)
-            if e:entries.append(e);n+=1;print(f"ORSE {ref}: {e['count']} itens")
+            if e:
+                try:
+                    an=orse_reader.read_orse_analitico(x,sinapi_desc=_sinapi_desc("SE",ref),priced_codes={r["code"] for r in rows if r["sheet"]=="Composições"})
+                    e.update(save_json_gz(f"ORSE-SE-{year}-{mm}.analitico",an,"analitico"));e["analiticoCount"]=len(an)
+                except Exception as ex:print("ORSE analítico",x.name,ex)
+                entries.append(e);n+=1;print(f"ORSE {ref}: {e['count']} itens; {e.get('analiticoCount',0)} composições analíticas")
         except Exception as ex:print("ORSE local",x.name,ex)
     return n
 

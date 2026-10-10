@@ -36,3 +36,42 @@ def read_orse_xlsx(path):
             rows.append({"code":code,"description":desc,"unit":unit,"price":price,"sheet":label,"group":str(r[4] or "").strip()})
     scan("Composições",6,"Composições"); scan("Insumos",7,"Insumos")
     return ref,rows
+
+
+CAT={"Mão de obra":"MO","Material":"MAT","Equipamento":"EQ","Serviço de terceiros":"OUT"}
+
+def read_orse_analitico(path, sinapi_desc=None, priced_codes=None):
+    """Composição analítica do ORSE: {código_da_composição: [[tipo,código,coef,cat,preço_efetivo(,desc,un)], ...]}.
+    tipo 0 = insumo, 1 = composição auxiliar.  coef = quantidade / produção da equipe (quando houver);
+    preço_efetivo = custo total c/ encargos / quantidade, de modo que coef × preço = custo da linha por unidade
+    da composição (a soma reproduz o preço da composição, ±2%).
+    Itens de origem SINAPI recebem o código 'SINAPI-<n>' e, se conhecida, descrição e unidade
+    (sinapi_desc: {'I'|'C': {código: (descrição, unidade)}})."""
+    wb=openpyxl.load_workbook(path,read_only=True,data_only=True)
+    prod={}
+    it=wb["Composições"].iter_rows(values_only=True); next(it)
+    for r in it:
+        if r and r[1] not in (None,""):
+            prod[str(int(r[1])) if isinstance(r[1],(int,float)) else str(r[1])]=float(r[12] or 0)
+    out={}
+    it=wb["Composição analítica"].iter_rows(values_only=True); h=next(it)
+    if "Cód. composição" not in str(h[0]) or "Quantidade" not in str(h[9]): raise ValueError("cabeçalho inesperado na aba analítica")
+    for r in it:
+        if not r or r[0] in (None,""): continue
+        cc=str(int(r[0])) if isinstance(r[0],(int,float)) else str(r[0])
+        if priced_codes is not None and cc not in priced_codes: continue
+        q=r[9]; tot=r[17]
+        if not isinstance(q,(int,float)) or q<=0 or not isinstance(tot,(int,float)) or tot<=0: continue
+        p=prod.get(cc,0.0); coef=q/p if p>0 else q
+        price=round(tot/q,4)
+        aux=(r[3]=="Serviço auxiliar") or r[4]=="Composição auxiliar"
+        t=1 if aux else 0
+        cat="COMP" if aux else CAT.get(r[4],"MAT")
+        code=str(int(r[6])) if isinstance(r[6],(int,float)) else str(r[6])
+        line=[t,code,round(coef,6),cat,price]
+        if r[5]!="ORSE":
+            line[1]="SINAPI-"+code
+            d=(sinapi_desc or {}).get("C" if aux else "I",{}).get(code)
+            line+= [d[0],d[1]] if d else [f"SINAPI {code}",""]
+        out.setdefault(cc,[]).append(line)
+    return out
