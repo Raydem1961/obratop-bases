@@ -13,8 +13,11 @@ CATALOG=DOCS/"catalog.json"
 NOW=datetime.datetime.now(datetime.timezone.utc).isoformat()
 
 S=requests.Session()
-S.headers.update({"User-Agent":"ObraTop-Bases/3.22 (+public cost-reference updater)"})
+# O DNIT devolve 403 para clientes que não se identificam como navegador.
+S.headers.update({"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 ObraTop-Bases/3.54","Accept-Language":"pt-BR,pt;q=0.9"})
 TIMEOUT=60
+SINAPI_ZIP="https://www.caixa.gov.br/Downloads/sinapi-relatorios-mensais/SINAPI-{year}-{mm}-formato-xlsx.zip"
+LOOKBACK=12  # meses procurados para trás nas fontes oficiais
 
 SINAPI_HOME="https://www.caixa.gov.br/poder-publico/modernizacao-gestao/sinapi/Paginas/default.aspx"
 SICRO_ROOT="https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro"
@@ -125,27 +128,53 @@ def update_sicro_local(entries):
         except Exception as e:print("SICRO local",z.name,e)
     return n
 
+def recent_months(n=LOOKBACK):
+    """[(ano,mm)] do mês atual para trás."""
+    d=datetime.date.today().replace(day=1);out=[]
+    for _ in range(n):
+        out.append((str(d.year),f"{d.month:02d}"));d=(d-datetime.timedelta(days=1)).replace(day=1)
+    return out
+
+def ready_refs(entries,source,uf=None):
+    return {x["reference"] for x in entries if x.get("source")==source and x.get("status")=="ready" and (uf is None or x.get("uf")==uf)}
+
+def download(url,dest):
+    """Baixa para arquivo; devolve False se o mês ainda não foi publicado (404, ou a CAIXA
+    redirecionando para o próprio endereço em loop — seguir o loop termina em 429)."""
+    r=S.get(url,timeout=TIMEOUT,allow_redirects=False,stream=True)
+    if r.is_redirect:
+        loc=urllib.parse.urljoin(url,r.headers.get("location",""));r.close()
+        if loc==url:return False
+        r=S.get(loc,timeout=TIMEOUT,allow_redirects=True,stream=True)
+    if r.status_code==404:return False
+    r.raise_for_status()
+    with open(dest,"wb") as f:
+        for ch in r.iter_content(1<<20):f.write(ch)
+    return True
+
 def update_sicro(entries):
-    """Descoberta automática no site do DNIT: <região>/<estado>/<ano>/<mês>/<uf>-<mm>-<ano>.7z (trimestral)."""
-    now=datetime.datetime.now();got=0
-    for year in (str(now.year),str(now.year-1)):
-        for uf in UFS:
-            year_url=f"{SICRO_ROOT}/{REGION[uf]}/{STATE[uf]}/{year}"
-            try:html,ls=links(year_url)
-            except Exception:continue
-            for mm,mname in MONTH.items():
-                month_url=next((u for t,u in ls if re.search(fr"/{re.escape(mname)}(?:/|$)",u,re.I) and not u.endswith(".7z")),None)
-                if not month_url:continue
-                try:
-                    h2,l2=links(month_url)
-                    target=next((u for t,u in l2 if re.search(fr"{uf}[-.]?{mm}[.-]{year}\.7z",t+" "+u,re.I)),None)
-                    if not target:continue
-                    target=re.sub(r"/view(?:\?.*)?$","",target)
-                    with tempfile.TemporaryDirectory() as td:
-                        arc=pathlib.Path(td)/f"{uf}-{mm}-{year}.7z";arc.write_bytes(get(target).content)
-                        got+=ingest_sicro_7z(arc,target,entries,month_url)
-                except Exception as e:
-                    print("SICRO",uf,year,mm,e)
+    """Descoberta automática no site do DNIT. A página do ano não lista os meses, então a página
+    de cada mês é acessada direto: <região>/<estado>/<ano>/<mês>/<uf>-<mm>-<ano>.7z.
+    Para cada UF busca só meses mais novos que o último já publicado (o mais recente primeiro)."""
+    got=0
+    for uf in UFS:
+        have=ready_refs(entries,"SICRO3",uf);last=max(have,default="")
+        for year,mm in recent_months():
+            ref=f"{year}-{mm}"
+            if ref<=last:break
+            month_url=f"{SICRO_ROOT}/{REGION[uf]}/{STATE[uf]}/{year}/{MONTH[mm]}"
+            target=f"{month_url}/{uf.lower()}-{mm}-{year}.7z"
+            try:
+                with tempfile.TemporaryDirectory() as td:
+                    arc=pathlib.Path(td)/f"{uf}-{mm}-{year}.7z"
+                    if not download(target,arc):continue
+                    if arc.read_bytes()[:6]!=b"7z\xbc\xaf\x27\x1c":
+                        print("SICRO",uf,ref,"resposta não é um pacote 7z");continue
+                    n=ingest_sicro_7z(arc,target,entries,month_url);got+=n
+                    if n:break
+            except Exception as e:
+                print("SICRO",uf,ref,e)
+    print(f"SICRO automático: {got} base(s) nova(s)")
     return got
 
 def discover_sinapi_files():
@@ -203,14 +232,28 @@ def update_sinapi_local(entries):
     return n
 
 def update_sinapi(entries):
-    """Descoberta automática no portal da CAIXA (relatórios mensais a partir de 2025)."""
+    """Descoberta automática: a CAIXA publica o ZIP mensal num endereço previsível
+    (SINAPI-AAAA-MM-formato-xlsx.zip). Baixa só o mês mais novo ainda não publicado."""
+    last=max(ready_refs(entries,"SINAPI"),default="")
+    for year,mm in recent_months():
+        ref=f"{year}-{mm}"
+        if ref<=last:break
+        url=SINAPI_ZIP.format(year=year,mm=mm)
+        try:
+            with tempfile.TemporaryDirectory() as td:
+                f=pathlib.Path(td)/"sinapi.zip"
+                if not download(url,f):continue
+                if not zipfile.is_zipfile(f):print("SINAPI",ref,"resposta não é ZIP");continue
+                if ingest_sinapi_zip(f,url,entries):return
+        except Exception as e:print("SINAPI",ref,e)
+    # Plano B: raspar o portal (caso a CAIXA mude o padrão do nome do arquivo).
     try:files=discover_sinapi_files()
     except Exception as e:
         print("SINAPI: portal indisponível",e);return
     seen=set()
     for title,url,page in files:
         m=re.search(r"(20\d{2})\D?(0[1-9]|1[0-2])",title+" "+url)
-        if not m or int(m.group(1))<2025 or "xlsx" not in norm(title+" "+url) or url in seen:continue
+        if not m or int(m.group(1))<2025 or f"{m.group(1)}-{m.group(2)}"<=last or "xlsx" not in norm(title+" "+url) or url in seen:continue
         seen.add(url)
         try:
             with tempfile.TemporaryDirectory() as td:
