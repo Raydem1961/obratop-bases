@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-19T16:31:38.963910+00:00",
+  "generatedAt": "2026-11-20T02:01:15.834930+00:00",
   "policy": "Only validated positive-price bases are marked ready. Last valid base is preserved on source outages.",
   "bases": [
     {
@@ -101,7 +101,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-TO-2026-08-desonerado.json.gz",
       "sha256": "7b51f1e2628b2cd9aebaa500f57a54511a1ae46753507cda910a56a7cf849ac9",
       "normalizedSha256": "f24b6bef6bbc584ab70bc1d73b5513a9bcf420e3294b7ffc46b9925d07ae535c",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-TO-2026-08-nao-desonerado",
@@ -121,7 +121,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-TO-2026-08-nao-desonerado.json.gz",
       "sha256": "db0f5802f723530451a450d31f2da7135c117ee286cc822855e67b123581ba29",
       "normalizedSha256": "9f57d54f5d7494f646a3c150d51533a094dea081e224c09cc1531a0875d64b04",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-SP-2026-10-desonerado",
@@ -221,7 +221,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SP-2026-08-desonerado.json.gz",
       "sha256": "dbe3acd484d0980dfc44bbbf487e177528527d4239c6bcc5fda3a8857585aab9",
       "normalizedSha256": "371c3543bbf9203b7336092c188c47e57afc7b00eb7ede7adfc7f7ab22738c11",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-SP-2026-08-nao-desonerado",
@@ -241,7 +241,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SP-2026-08-nao-desonerado.json.gz",
       "sha256": "0d93dfdf628cb11cd3e238cb355272a4d8ce0111e9789d83139376950a5bacbc",
       "normalizedSha256": "566f8ed614072f51a87b8f255ebb69342449647dedc9a1d6c06fc9255fa0584d",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-SE-2026-10-desonerado",
@@ -341,7 +341,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SE-2026-08-desonerado.json.gz",
       "sha256": "8866878c784428eab207b9f0f3cdb6a2383bd89ce9b7dbd3411014bb092acb9d",
       "normalizedSha256": "57722609c3a35dc3cf0d4146bd213207596722a23980772db53520d93333bb38",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-SE-2026-08-nao-desonerado",
@@ -361,7 +361,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SE-2026-08-nao-desonerado.json.gz",
       "sha256": "db83a438340b56374a297f35048eb1725930c5fbe878c3a045c8dc3f5ce1cf53",
       "normalizedSha256": "faab17c18c3d3d705d9b267f80a519d3347444d46f4270dcd4a61b1a4fdeaf7d",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-SC-2026-10-desonerado",
@@ -461,7 +461,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SC-2026-08-desonerado.json.gz",
       "sha256": "09a05f889438ad39a07db1628f78c45168f8dd941aad2164ea7f10373cfdd79e",
       "normalizedSha256": "bf18d1771f3a614c941248d8c9aae9d0fa726e1250ee144f55113029440df79a",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-SC-2026-08-nao-desonerado",
@@ -481,7 +481,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-SC-2026-08-nao-desonerado.json.gz",
       "sha256": "5103b3363a397d6d7faa00c215c17083f5616f6ac917291a1ecc1549fe238310",
       "normalizedSha256": "99b81b058ad273ad3d4d4563f663f8b566dd394b30ade76f02e97af360849c62",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-RS-2026-10-desonerado",
@@ -581,7 +581,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RS-2026-08-desonerado.json.gz",
       "sha256": "52933cc3673a5734204bbd51ac044746573ad9137dec75abe9bc84e148dc3eac",
       "normalizedSha256": "4b74dd5c8e16844020927127a902fc7ee9a5928e8a5ea2ac715412b9fca89c1c",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-RS-2026-08-nao-desonerado",
@@ -601,7 +601,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RS-2026-08-nao-desonerado.json.gz",
       "sha256": "a28d32f52ccbebab48bacfee5fb85832a4e7d0605ff1dea2975b0b185d674b9d",
       "normalizedSha256": "817fcdd4edc11b1a80ef7b2399baca3be86cc86206ba4a57a84f52273b897c46",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-RR-2026-10-desonerado",
@@ -701,7 +701,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RR-2026-08-desonerado.json.gz",
       "sha256": "9de0e67d8300469417d12b2aab6c0f818a4f1891ef21db24899f1c30786dfaf2",
       "normalizedSha256": "f2351c84cfd359f3173eff766587fec935a29716e1abf5c150d8b642074e5c42",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-RR-2026-08-nao-desonerado",
@@ -721,7 +721,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RR-2026-08-nao-desonerado.json.gz",
       "sha256": "6e83562e4db8710117b64ba5946067afe853fee2519c4094260e7cb7191d0871",
       "normalizedSha256": "f81d5fe57807db34684814ec81ee8dd0066c0f3775dab544d51142e67cc2c34b",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-RO-2026-10-desonerado",
@@ -821,7 +821,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RO-2026-08-desonerado.json.gz",
       "sha256": "2ac4346abc46d45df65c5010440901fd0d1799892a2ac4bcca9427b6272c0439",
       "normalizedSha256": "677b84d6d5e8618271dbc61619a1d8674e625f7e544d3a8ad4b2e7d397f97856",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-RO-2026-08-nao-desonerado",
@@ -841,7 +841,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RO-2026-08-nao-desonerado.json.gz",
       "sha256": "c98e8d8aaae56702b0e33fbdbe1d44b294ce3a28cea346b0e720482fa1a10ca6",
       "normalizedSha256": "30f010e8a7d5b57b2c8c236ba0892ffd418169ef70e1d4743ad9b897275e11ff",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-RN-2026-10-desonerado",
@@ -941,7 +941,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RN-2026-08-desonerado.json.gz",
       "sha256": "d6ed3ce893d6e1ae3fb8449541b9d741ce88575016d8197cf8c058e13fab09b3",
       "normalizedSha256": "07b264441bf4dcf94ba3b50e57d4617e23adc5c912b1ab7e1d3cd7820108ff34",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-RN-2026-08-nao-desonerado",
@@ -961,7 +961,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RN-2026-08-nao-desonerado.json.gz",
       "sha256": "abd831ce134f7588fcde3ebd445955a2844a749bdc88754b89bf528844757699",
       "normalizedSha256": "293a106aceef86293a5ce33c3b34dde6c8f2a9a90b454a3dca14460e9f9a0847",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-RJ-2026-10-desonerado",
@@ -1061,7 +1061,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RJ-2026-08-desonerado.json.gz",
       "sha256": "4582b55a76ef32ff1323aa42f6910ec7012b12ab298794839f21da151fc790c9",
       "normalizedSha256": "c6267af72dd625e79a632eeacc1c587ad93f0b007a0053f7258dcc47a182af25",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-RJ-2026-08-nao-desonerado",
@@ -1081,7 +1081,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-RJ-2026-08-nao-desonerado.json.gz",
       "sha256": "233e5054d0ca6babf53e048ea5dc2915473fcaba6bf7c698bbb6dc7e476b44ce",
       "normalizedSha256": "1f16e150c5e1caa6c043e56a7c25012672d08d86d4e816185edf4ae82aaae858",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-PR-2026-10-desonerado",
@@ -1181,7 +1181,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PR-2026-08-desonerado.json.gz",
       "sha256": "06819928f76b6c1908b0c8f415de2a0739a247f39a2f33482e04f65347b0b39f",
       "normalizedSha256": "e29b62be2241e64be44b1e6b0ccbba9bd9c3d40b0c6f576e132fff83be7aa932",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-PR-2026-08-nao-desonerado",
@@ -1201,7 +1201,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PR-2026-08-nao-desonerado.json.gz",
       "sha256": "e0afb3863b4200772fd47fa5b126a21815d8706008c9f5314ec6d85279e1d259",
       "normalizedSha256": "5c143507b0ae5836f085fda063f33dbee0a0d1d3608b96a68204af3bb23dd30a",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-PI-2026-10-desonerado",
@@ -1301,7 +1301,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PI-2026-08-desonerado.json.gz",
       "sha256": "ec30767ef36602ba22ffeeebe904607efe80d1a5aa5188b45256c217f0673cc0",
       "normalizedSha256": "7c4e6fffb01fa998a07bb11fcfc5007f4c0b5f4222930808b2cc1f4d252297af",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-PI-2026-08-nao-desonerado",
@@ -1321,7 +1321,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PI-2026-08-nao-desonerado.json.gz",
       "sha256": "5e6e5df5b5cd0279af32cd24712826e1e849544d4ce90fff23d017da67867c23",
       "normalizedSha256": "ff83e7dc2a35999b1877960ff2d3ed4d8c8ba331c954890ec92ae788b7f9d171",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-PE-2026-10-desonerado",
@@ -1421,7 +1421,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PE-2026-08-desonerado.json.gz",
       "sha256": "bdb54a3e084e02c6afff9dadfb55f40cca05f2bfdb45c4509c0aa85c677d1deb",
       "normalizedSha256": "f18ddb7901d26c36bcbcb56d915f138da0715cbf5350e2bfdc0b00123b473070",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-PE-2026-08-nao-desonerado",
@@ -1441,7 +1441,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PE-2026-08-nao-desonerado.json.gz",
       "sha256": "86e31b2b09975ee75ed91695151b7f33a1e3d795e944eeb97ff80f57a003191c",
       "normalizedSha256": "f76fa82fbb038e5560524f08ad744fde27d400bb731f02d13c66e830b4794ac2",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-PB-2026-10-desonerado",
@@ -1541,7 +1541,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PB-2026-08-desonerado.json.gz",
       "sha256": "396b15ea717d2d32df6fda0dc11cefe707cd0fa4e0b045c4c49aa21f2ba6d79d",
       "normalizedSha256": "39ae0847df1baea015f7942c0c8ced62a28f0769c93b8d9550f4f03eb236a675",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-PB-2026-08-nao-desonerado",
@@ -1561,7 +1561,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PB-2026-08-nao-desonerado.json.gz",
       "sha256": "91661ccde414def8f7bb9a6e68ee9dd175efd9adf30b172beaec5962a11cb8b0",
       "normalizedSha256": "aebb777441e099fb66aafd5b6033072fbe4e03bb435369df05281cbbafb31124",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-PA-2026-10-desonerado",
@@ -1661,7 +1661,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PA-2026-08-desonerado.json.gz",
       "sha256": "225c0790d9c7621c415ccce5df4fb5d1efe53ff9df1c73dbc7a6629ec8320de0",
       "normalizedSha256": "95fbf098730857878f218799e3f304ec638a40b4cd481d11e27ef76a62b23500",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-PA-2026-08-nao-desonerado",
@@ -1681,7 +1681,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-PA-2026-08-nao-desonerado.json.gz",
       "sha256": "7d3de44308af1cd54c1a00f07fa40456b8653dbdd887ec8fc1a549cd53fa5cda",
       "normalizedSha256": "d4d4782b4e76f6275f83ff82cdacc8a8dbf4a4b01f38e67eefc7a3bce94b6537",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-MT-2026-10-desonerado",
@@ -1781,7 +1781,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MT-2026-08-desonerado.json.gz",
       "sha256": "e85e2d24acc8ec742427a7e85067a95a910560ffa1239b62bee5b1925bb0c4c5",
       "normalizedSha256": "fc53f0bc65a4d328e1a766bbc796cd231f0d683eeca15d352c0c1d01cf3240b7",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-MT-2026-08-nao-desonerado",
@@ -1801,7 +1801,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MT-2026-08-nao-desonerado.json.gz",
       "sha256": "fca34123612c01ce978d2b19c68ee3ecb7c52094e41ca3ae704be0eeec3ea48f",
       "normalizedSha256": "3970d73311bd94323095c9f424f20a5f8a3a1f3ecb92aabb517ab68228f5f22a",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-MS-2026-10-desonerado",
@@ -1901,7 +1901,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MS-2026-08-desonerado.json.gz",
       "sha256": "36ed8e5a05d38b74d5c7eb5a8e63e3157a89a5c810a8606f382f5bc739592780",
       "normalizedSha256": "17c4767616cdf1623fd67f742c350b06162d33af069ee9fd4f040f5c53f57c25",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-MS-2026-08-nao-desonerado",
@@ -1921,7 +1921,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MS-2026-08-nao-desonerado.json.gz",
       "sha256": "0af32cf2c2c2efc5c80f2d8229170e7990320344f33b8c04579e70a47630ad55",
       "normalizedSha256": "5e94960d9febb6a622b83a44d32af08f9f18c73dc5024e9a3df8d9bcbfc65ff5",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-MG-2026-10-desonerado",
@@ -2021,7 +2021,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MG-2026-08-desonerado.json.gz",
       "sha256": "40ba59eca883540eacc5ef072492b83a60304d39f04b294cad85a32234cc58ef",
       "normalizedSha256": "e8bf4c03e86409b413255d6599e3debbd9b78edf2c115d73bde535e4120c33c6",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-MG-2026-08-nao-desonerado",
@@ -2041,7 +2041,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MG-2026-08-nao-desonerado.json.gz",
       "sha256": "7df2799876d874d19b9fb04f988fd94f9d4ea73e0744dffeea8236d8c9071988",
       "normalizedSha256": "ecda9332e354a75d21bd1bac88c29854d38774ef76d4d62f73d3065e7b7d19b7",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-MA-2026-10-desonerado",
@@ -2141,7 +2141,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MA-2026-08-desonerado.json.gz",
       "sha256": "3b7cf1965c60e6b2b4cd9f9c0bef6a95edc5cb3d3675faee3972be4f6b93920b",
       "normalizedSha256": "3dcd280cbcbe96e24560b4a9227bc036277fc5d372962d7e6b664541d8c15f82",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-MA-2026-08-nao-desonerado",
@@ -2161,7 +2161,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-MA-2026-08-nao-desonerado.json.gz",
       "sha256": "df40a7a3a6b4c399b8fce6d5df1e0a79226940fea7b57cdd886056c0d957e643",
       "normalizedSha256": "b6a28d98a49c7dae4263171ed616c63258abc730dfa52a014ea59d7644537b2d",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-GO-2026-10-desonerado",
@@ -2261,7 +2261,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-GO-2026-08-desonerado.json.gz",
       "sha256": "11eb49a6c8715ebf03207f1693761c07cf847c32d6558e98aa9ff924d0bf15e0",
       "normalizedSha256": "484559dd2d80ac51e7472f602cf8ef4a786ae0482fedbac3a8006164234c111c",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-GO-2026-08-nao-desonerado",
@@ -2281,7 +2281,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-GO-2026-08-nao-desonerado.json.gz",
       "sha256": "f2048aab1959c55cfc218bcb9ca06dd321a61a7ed11d435217a586db152a1acc",
       "normalizedSha256": "c68b83482a95c4d57c06161e32939865372fc058bb40052ca65869bc86af2371",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-ES-2026-10-desonerado",
@@ -2381,7 +2381,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-ES-2026-08-desonerado.json.gz",
       "sha256": "242a6eb0e9e08349d3a07e2cb30f606ae268a91001786b5d19826f2f53e12f05",
       "normalizedSha256": "b08337882d8051fc0c43615b054867fe93a1a2426c6216cf70febbea16c902f5",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-ES-2026-08-nao-desonerado",
@@ -2401,7 +2401,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-ES-2026-08-nao-desonerado.json.gz",
       "sha256": "99bc98dc2a2350891dcd6ca1a036efca439d61f3eadaa6a357ec83df9196138a",
       "normalizedSha256": "e9e849f1262c850538c149b02d63ba6890796fcd420cc96f69b75c8d9cd6378d",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-DF-2026-10-desonerado",
@@ -2501,7 +2501,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-DF-2026-08-desonerado.json.gz",
       "sha256": "b31407b3174ac47f04cb5db01300c4e8593b3e397a7d506bbb9e201596aaa2b7",
       "normalizedSha256": "75d6960e7c4fbe0eeb3407f322bbd0a1a5d44c44444463e0c55e3187143a984e",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-DF-2026-08-nao-desonerado",
@@ -2521,7 +2521,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-DF-2026-08-nao-desonerado.json.gz",
       "sha256": "91e1c1fa2518e1a694bf88b0680ab569ec52cf0ae00b86810c332225d600c552",
       "normalizedSha256": "326dd0bfbd5b3dc5bc50ed848617cb305323b07e95f2d843ed96300a394920d5",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-CE-2026-10-desonerado",
@@ -2621,7 +2621,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-CE-2026-08-desonerado.json.gz",
       "sha256": "f9b1217a9069ea20e71688036eb11877f71dab14d362c77b102bc2a2049eb7bf",
       "normalizedSha256": "ff579e79218a3a7ff98eabb0643f4412d25a27791d6adf6cd17b1c1065756423",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-CE-2026-08-nao-desonerado",
@@ -2641,7 +2641,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-CE-2026-08-nao-desonerado.json.gz",
       "sha256": "a1e6c29f10c521b103e67401c7c7709ef6c68faa4ae2fe70ae05c66cb24a82fc",
       "normalizedSha256": "8d20f9c33ec358ca0a54bb9cebd6e225084d7c97239808bc9387901198456446",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-BA-2026-10-desonerado",
@@ -2741,7 +2741,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-BA-2026-08-desonerado.json.gz",
       "sha256": "d12c1da70f436abfea1aa1ba4c44b7c69752ac5dbfe08d5222af3040c3ab565f",
       "normalizedSha256": "36bd7f87f5280a74e0901e425f23f0dd17143c0f82bf67c82e42200340773464",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-BA-2026-08-nao-desonerado",
@@ -2761,7 +2761,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-BA-2026-08-nao-desonerado.json.gz",
       "sha256": "2f981d0a0bb24c8f5b7d43cf3f30dfdb82a148dd190e905fce9bd857de596fec",
       "normalizedSha256": "749856f334c119e8a60bf4077c593aa98d84737f7b94b5b9169513edb6044cec",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-AP-2026-10-desonerado",
@@ -2861,7 +2861,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AP-2026-08-desonerado.json.gz",
       "sha256": "1629aa1dff65b16df305d11761c764719817a91ab158c1cb756bd7aa97cb2289",
       "normalizedSha256": "882c27124e0ba1064e933b8b0723a3d973fc2891bad903c5a087b7ec9fc6d842",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-AP-2026-08-nao-desonerado",
@@ -2881,7 +2881,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AP-2026-08-nao-desonerado.json.gz",
       "sha256": "b5a18354b67162a0e64b92cb7c22301bff52b5e4c9a80b8c4287c507e616cc8f",
       "normalizedSha256": "a8f23be56250420326ba430c521c766f6345ded552d1c5178c124393fb8e30f4",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-AM-2026-10-desonerado",
@@ -2981,7 +2981,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AM-2026-08-desonerado.json.gz",
       "sha256": "b3df3ff9cd144700549b4fb0c47dcc2819eb48809856e98592dca85e5b64facd",
       "normalizedSha256": "910244d0209bed2d0c65b22626cc1e6d28f74b186dca144d69a0bab6d4c7f4d8",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-AM-2026-08-nao-desonerado",
@@ -3001,7 +3001,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AM-2026-08-nao-desonerado.json.gz",
       "sha256": "25b4dacc28195dec9d3b02547b4a6c1ccad174bb1819ce09b3bfc001d8b45b6d",
       "normalizedSha256": "c37cf327ae48761203a4dbda3353f1c1e93aecb8ab39f88f697884c027e819d8",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-AL-2026-10-desonerado",
@@ -3101,7 +3101,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AL-2026-08-desonerado.json.gz",
       "sha256": "a4cf63b504e32e8231c17c0bc3463d0d1015f266002ce5121ff869bf5b78c486",
       "normalizedSha256": "bc8d1749800c60af71a9565b33f7dae72bc625a4dee81f877b8374aefd7f0b2a",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-AL-2026-08-nao-desonerado",
@@ -3121,7 +3121,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AL-2026-08-nao-desonerado.json.gz",
       "sha256": "89e34485abcba518bb496a2b2c71388107a57dbf32085b2fa7e4ce1e58002472",
       "normalizedSha256": "d69d0a166761d17af67f2b82b96be2926868f7e5e8b3846331311409eeb5075b",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-AC-2026-10-desonerado",
@@ -3221,7 +3221,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AC-2026-08-desonerado.json.gz",
       "sha256": "8523828f30a47630495a93e8db49d06c70677fa0f73ab22e6bfc92641190b40e",
       "normalizedSha256": "7c00b6f2fd000e0f8cb7e746185f4d32fadef1d2d0b3b4b7622ee91d80e0d4dd",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SINAPI-AC-2026-08-nao-desonerado",
@@ -3241,7 +3241,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SINAPI-AC-2026-08-nao-desonerado.json.gz",
       "sha256": "fec07db0f60533d7e88cc2acac8863f3e5f9459ac8625307c2469f98fedf23ee",
       "normalizedSha256": "28977a394740808860d368f2cb30a37fe1b6a13d3dd7ebe5a2b56f5ea2ba8e67",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00"
     },
     {
       "id": "SICRO3-TO-2026-07-nao-desonerado",
@@ -3261,7 +3261,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-TO-2026-07-nao-desonerado.json.gz",
       "sha256": "aec3416a2a94cbfe35a0f5e6c2c1994fcd786a23d0b7ec130364931f8c267a06",
       "normalizedSha256": "573c63c3bd28cfb05c4ce0ab7f66d2f98fdc1875df0c878a099ba629aacc6ca5",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-TO-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-TO-2026-07.analitico.json.gz",
+      "analiticoSha256": "a942c18c9973d5fd2450db853416ff4f254cdc42846b3f65f9c3dbd42079b198",
+      "analiticoCount": 6619,
+      "conferencia": "6609/6619"
     },
     {
       "id": "SICRO3-TO-2026-07-desonerado",
@@ -3275,13 +3280,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/tocantins/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/tocantins/2026/julho/to-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-TO-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-TO-2026-07-desonerado.json.gz",
-      "sha256": "0134f0d15fd5d829c9fc8276d7687c5334ee3a345b195248cb384c00a3e74900",
-      "normalizedSha256": "f57fff792fcf4a7deea0c64eb8957c3f855171f1d1479677614e61189014277b",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "988419b880e45c4d2f4bb640d2388011b03977916f7f910488c375932b1251f3",
+      "normalizedSha256": "a13dfbdf8bf4af881043cf44d8c373565a7dcdc80b507dac8a67531bb3745ac7",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-TO-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-TO-2026-07.analitico.json.gz",
+      "analiticoSha256": "a942c18c9973d5fd2450db853416ff4f254cdc42846b3f65f9c3dbd42079b198",
+      "analiticoCount": 6619,
+      "conferencia": "6609/6619"
     },
     {
       "id": "SICRO3-SP-2026-07-nao-desonerado",
@@ -3301,7 +3312,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SP-2026-07-nao-desonerado.json.gz",
       "sha256": "cdf31d356d0856fa40d0fabbd4919e73f3fba26c60a68a371040f7a79ae024ff",
       "normalizedSha256": "edccd83ecc31a8099c49c63efbb3d2a307ddeea077d8c84b48e43ea0ffa8e15e",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-SP-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SP-2026-07.analitico.json.gz",
+      "analiticoSha256": "98fe2513979ab8a8caba33628b3c25f0da9f9a71c879c4e47d9df45f43eba3e1",
+      "analiticoCount": 6619,
+      "conferencia": "6611/6619"
     },
     {
       "id": "SICRO3-SP-2026-07-desonerado",
@@ -3315,13 +3331,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/sao-paulo/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/sao-paulo/2026/julho/sp-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-SP-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SP-2026-07-desonerado.json.gz",
-      "sha256": "e6a29b5f681ecabdb0fe1fa7423f9b093207cfb77aa1bc13fdb8a1cc17e7bb50",
-      "normalizedSha256": "3878f62399e84ea26e5a580eaf4148919cc5db1d9d3586ac9f1d65fec64b7ce4",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "373fe7c6b25cb4103f24d3d4aae38757aff5a037e997f76a45b1ee9aca3be20e",
+      "normalizedSha256": "df916843f89c46d4014d1499336e1f050cda0f5fb5b464f3b07566e1c9970ea7",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-SP-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SP-2026-07.analitico.json.gz",
+      "analiticoSha256": "98fe2513979ab8a8caba33628b3c25f0da9f9a71c879c4e47d9df45f43eba3e1",
+      "analiticoCount": 6619,
+      "conferencia": "6611/6619"
     },
     {
       "id": "SICRO3-SE-2026-07-nao-desonerado",
@@ -3332,16 +3354,21 @@
       "reference": "2026-07",
       "regime": "Não desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/sergipe/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/se-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/sergipe/2026/julho/se-07-2026.7z",
       "status": "ready",
       "count": 8966,
       "file": "bases/SICRO3-SE-2026-07-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SE-2026-07-nao-desonerado.json.gz",
-      "sha256": "cadccd6b9a7b669f0cd019a9063373cc71e1468aaadcb2f8173b4b9cc9302739",
-      "normalizedSha256": "7bfea56922d30900895f81b0f377ae25f14160ab4377c8f615c776d7dbe0ec72",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "6012ad48db867e297f55a1164eb67f443a7204ea3e99b2dda996c9043af9df70",
+      "normalizedSha256": "d28764fbc6473afa262b335136a583589a7b01e0eff9a76dc20c19f41a323096",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-SE-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SE-2026-07.analitico.json.gz",
+      "analiticoSha256": "902c17b1d1140c147d7891a14f88e82432076332885618750ad168d31aa24c3d",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-SE-2026-07-desonerado",
@@ -3352,16 +3379,22 @@
       "reference": "2026-07",
       "regime": "Desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/sergipe/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/se-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/sergipe/2026/julho/se-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-SE-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SE-2026-07-desonerado.json.gz",
-      "sha256": "910e43eb7d65e8f8f54de7ebdbf0157b4a791b1680467aa66f571e79834ddc0f",
-      "normalizedSha256": "6ec744f4a3471a6b86e0fc050a70f3367886b212c26ad6b7e09f5694a72b3d70",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "51a6711319eabf1b0f8f0a0ca9b532343073948099c26160eb7d16f163765a32",
+      "normalizedSha256": "390c19660ce70d9692218f39d5921b6591629d24ea015de551c2d4379e9e1cf7",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-SE-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SE-2026-07.analitico.json.gz",
+      "analiticoSha256": "902c17b1d1140c147d7891a14f88e82432076332885618750ad168d31aa24c3d",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-SC-2026-07-nao-desonerado",
@@ -3381,7 +3414,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SC-2026-07-nao-desonerado.json.gz",
       "sha256": "085804d47449c51849682938dd4baac96ff75109dcb510d1b6159029d7299d51",
       "normalizedSha256": "d79d1c62f4f8bfd46885423a276c0a2f5fa7c9b209b1d307fe0411e2211d6f38",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-SC-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SC-2026-07.analitico.json.gz",
+      "analiticoSha256": "a669066ebfbf0e0ca17e96557e7b2348abc47f6cf0504aeec34bcec09ef6258e",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-SC-2026-07-desonerado",
@@ -3395,13 +3433,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sul/santa-catarina/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sul/santa-catarina/2026/julho/sc-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-SC-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SC-2026-07-desonerado.json.gz",
-      "sha256": "221da1aca5b8cbadda76c9ee12377ebfa238970c875a41272e76892cbde1653a",
-      "normalizedSha256": "78240bc35fbdc3d3b0b5fd97f8ae08f804983d2416c7ff52f3a84ebd5b10bebe",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "e9b79071e0de43fa13f8d8c4d67f28380d682edc03e907c95149890f208c205e",
+      "normalizedSha256": "7ed8a7319dd51b903c23952bf03334f3c7a6e87d653c9037539ce5a631707ac1",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-SC-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-SC-2026-07.analitico.json.gz",
+      "analiticoSha256": "a669066ebfbf0e0ca17e96557e7b2348abc47f6cf0504aeec34bcec09ef6258e",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-RS-2026-07-nao-desonerado",
@@ -3421,7 +3465,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RS-2026-07-nao-desonerado.json.gz",
       "sha256": "0a5e59679795654b4d06ce6a978ba216c71656bbd93910df18547c3896d16479",
       "normalizedSha256": "8cfa58d21f1dacdd75497c2cda215543514d5ddaab3cb2913d1aafd5c787420e",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-RS-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RS-2026-07.analitico.json.gz",
+      "analiticoSha256": "5503c31f35d8a4dd7b97c7baafdcbdc14ac0978cb98ba7ad578dd04cadff6add",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-RS-2026-07-desonerado",
@@ -3435,13 +3484,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sul/rio-grande-do-sul/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sul/rio-grande-do-sul/2026/julho/rs-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-RS-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RS-2026-07-desonerado.json.gz",
-      "sha256": "9ddc447f8dbf1ef9afcb6992a30bb037009dc45a222d5043840134a31a946413",
-      "normalizedSha256": "915581b21fd5ea24f7c8e55c9dd604689cd18964b237f6f969a61d8558f3c839",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "c71c47921bf770e4f98741a40d21c36d68bf54b71c085d08df86408aa5669747",
+      "normalizedSha256": "b47f2723d4d2b1f5e3b783906e799e62b1cb7bff03f6584bb0f1ee1302bf1bf4",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-RS-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RS-2026-07.analitico.json.gz",
+      "analiticoSha256": "5503c31f35d8a4dd7b97c7baafdcbdc14ac0978cb98ba7ad578dd04cadff6add",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-RR-2026-07-nao-desonerado",
@@ -3461,7 +3516,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RR-2026-07-nao-desonerado.json.gz",
       "sha256": "a13b83664b9b982a96387406dff36f16b93de5a266ec2bd16d1aeabca28aa5f6",
       "normalizedSha256": "d7a8b49c0df53df1332aeac3d0b98889b0c2d1a17568da9d64bd83441c59c3b3",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-RR-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RR-2026-07.analitico.json.gz",
+      "analiticoSha256": "18db18630ffece8d4d9f25c1a58043bb13181fe922c9924fe2ac21ee80b6333e",
+      "analiticoCount": 6619,
+      "conferencia": "6610/6619"
     },
     {
       "id": "SICRO3-RR-2026-07-desonerado",
@@ -3475,13 +3535,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/roraima/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/roraima/2026/julho/rr-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-RR-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RR-2026-07-desonerado.json.gz",
-      "sha256": "2c1f2fe10bd0474081b7535dc2a56940bb671e921ff1ccda3f58a3dc1661a37a",
-      "normalizedSha256": "d1e57ed8fb0248bccd2cc0ee91b63729a6b67865cb50199faf6ef5f9bc54d3a6",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "9206a95604026b03157342620ac8f917406d5d63372651b6b78bffeb6c003256",
+      "normalizedSha256": "705a1590f330621c78cb758b8281e1d5ff2ee10e8e7f542c62d3458ea6305e9e",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-RR-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RR-2026-07.analitico.json.gz",
+      "analiticoSha256": "18db18630ffece8d4d9f25c1a58043bb13181fe922c9924fe2ac21ee80b6333e",
+      "analiticoCount": 6619,
+      "conferencia": "6610/6619"
     },
     {
       "id": "SICRO3-RO-2026-07-nao-desonerado",
@@ -3501,7 +3567,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RO-2026-07-nao-desonerado.json.gz",
       "sha256": "1d607fb75ccc69995308f45d29d54545c8d2ba6ed776f4deb858041e7cd0007f",
       "normalizedSha256": "6523c36576c6f1ef3b1560ae888e332e5630721397dfd768cdf944680d5da069",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-RO-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RO-2026-07.analitico.json.gz",
+      "analiticoSha256": "e3de4880fc995483daa1402bf5f2ef0e751ab53d2a00c1d1646ee4914aeba65f",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-RO-2026-07-desonerado",
@@ -3515,13 +3586,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/rondonia/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/rondonia/2026/julho/ro-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-RO-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RO-2026-07-desonerado.json.gz",
-      "sha256": "2d305a013cc21499272cde8b160c2b6911a5c5f51d20bcdb14128c7bd42be231",
-      "normalizedSha256": "da7bd1d827bcfd2b0476355449bdcdb5c8813fe8f2e3740148f45ce823a37061",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "72502cc16869af97653eb824e9e879e8ac64bb471e34d236817288aa888234c4",
+      "normalizedSha256": "5bcf560e0c2ce9074e73952db2a285635188ef9acbeb64da89e264d87725d8cb",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-RO-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RO-2026-07.analitico.json.gz",
+      "analiticoSha256": "e3de4880fc995483daa1402bf5f2ef0e751ab53d2a00c1d1646ee4914aeba65f",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-RN-2026-07-nao-desonerado",
@@ -3532,16 +3609,21 @@
       "reference": "2026-07",
       "regime": "Não desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/rio-grande-do-norte/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/rn-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/rio-grande-do-norte/2026/julho/rn-07-2026.7z",
       "status": "ready",
       "count": 8966,
       "file": "bases/SICRO3-RN-2026-07-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RN-2026-07-nao-desonerado.json.gz",
-      "sha256": "6449f3863dedcc4185ac815772d3f9639c084c06579e2f520ee652800365c388",
-      "normalizedSha256": "a2d001d7f39cb3ebd0d64a36ee0182cf66d4c2ff378a2e4bd02fc624b822a456",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "a8ef16c180ac83dd104ac2a3396a03a8ae454419be13de51a6315b58118ce1be",
+      "normalizedSha256": "841733601ce83ba55819adb9a6363442b8b772cb67b348c253c94921b5c5f06d",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-RN-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RN-2026-07.analitico.json.gz",
+      "analiticoSha256": "ecd4b9394a8c0b5daed23d5357dcec292b2315e2619cb7b5a99fe2a14f7e4d47",
+      "analiticoCount": 6619,
+      "conferencia": "6580/6619"
     },
     {
       "id": "SICRO3-RN-2026-07-desonerado",
@@ -3552,16 +3634,22 @@
       "reference": "2026-07",
       "regime": "Desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/rio-grande-do-norte/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/rn-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/rio-grande-do-norte/2026/julho/rn-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-RN-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RN-2026-07-desonerado.json.gz",
-      "sha256": "05c4bf672021b27557bd1fcbdb51b1defa45c987bd8c3fdfc3e83a2640df7bd4",
-      "normalizedSha256": "0e7508e4adc53acd24102f43892a575fc5774d5444a0f635213b247e0c77792f",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "ee3905caba7881d8eb2ccc67c19ec9d83bc06d1f27c0a79ebd577fa063a1a399",
+      "normalizedSha256": "d4ff36d070a390208953bd5b06bfa3af55debb8a88df7da94ab0add700722a15",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-RN-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RN-2026-07.analitico.json.gz",
+      "analiticoSha256": "ecd4b9394a8c0b5daed23d5357dcec292b2315e2619cb7b5a99fe2a14f7e4d47",
+      "analiticoCount": 6619,
+      "conferencia": "6580/6619"
     },
     {
       "id": "SICRO3-RJ-2026-07-nao-desonerado",
@@ -3581,7 +3669,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RJ-2026-07-nao-desonerado.json.gz",
       "sha256": "e6a670ffc4c42e2dc76e3f11ae24b694ece79d5e898d05d4c18502f5e5396337",
       "normalizedSha256": "803e7e49681ea05c8228097492bc9114c00d381c3a7277632117700774855f2e",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-RJ-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RJ-2026-07.analitico.json.gz",
+      "analiticoSha256": "ed1d9324d11701edc3ef3980fdae16c76114c843c41a3d182033f150d4032dc6",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-RJ-2026-07-desonerado",
@@ -3595,13 +3688,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/rio-de-janeiro/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/rio-de-janeiro/2026/julho/rj-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-RJ-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RJ-2026-07-desonerado.json.gz",
-      "sha256": "ebb767cb527e09009a7e1dc50c670e46fe100abb5c818942e70866634046588d",
-      "normalizedSha256": "56f09bffbd4707738e407aefc0205995e0a50057af94d9fa3fb9981948746cfb",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "102038e8a5c1864d3e091c6354a80c2004162ecba1cce4e02c74f51927b43267",
+      "normalizedSha256": "26ab60c208f4940b0fe7412f20e49a503e269ea5cf5a1f6698cff0d2ace1dce8",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-RJ-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-RJ-2026-07.analitico.json.gz",
+      "analiticoSha256": "ed1d9324d11701edc3ef3980fdae16c76114c843c41a3d182033f150d4032dc6",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-PR-2026-07-nao-desonerado",
@@ -3621,7 +3720,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PR-2026-07-nao-desonerado.json.gz",
       "sha256": "ae81ad0adb0794c771681fbafe1edef2cbd1b21daf1ce11986d87ad4dbfce7bf",
       "normalizedSha256": "2753b832382cf2ba23a37df8c6df1fff508f404dd1a1705f52ffa103c88d3099",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-PR-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PR-2026-07.analitico.json.gz",
+      "analiticoSha256": "b093e64f305e8f1bc8737fb4a6f5f417a560413c3c3c28abdf7c2a2af85d3819",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-PR-2026-07-desonerado",
@@ -3635,13 +3739,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sul/parana/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sul/parana/2026/julho/pr-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-PR-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PR-2026-07-desonerado.json.gz",
-      "sha256": "4190688c688f3369d3353b86204d9ae625c8cdd6065ae98b0bb5503a41344b06",
-      "normalizedSha256": "d5454bed33067de966fcd5523f113d63a2ff2e07d6a5e0e6e33aa53c075332ed",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "57128161e21670c9d4449d29aa7509433aa2f3cb8a858642f957a952b2dc4b1b",
+      "normalizedSha256": "a658a3b176b3ae961116ffcda6a0d1d02f43190f950087ce18aa4cc02c02922d",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-PR-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PR-2026-07.analitico.json.gz",
+      "analiticoSha256": "b093e64f305e8f1bc8737fb4a6f5f417a560413c3c3c28abdf7c2a2af85d3819",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-PI-2026-07-nao-desonerado",
@@ -3652,16 +3762,21 @@
       "reference": "2026-07",
       "regime": "Não desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/piaui/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/pi-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/piaui/2026/julho/pi-07-2026.7z",
       "status": "ready",
       "count": 8966,
       "file": "bases/SICRO3-PI-2026-07-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PI-2026-07-nao-desonerado.json.gz",
-      "sha256": "94220627a971b4fc2be2340c48807c320e35bfe202eaf50aabd62e60128db504",
-      "normalizedSha256": "fce8debd36d13bbd8d14e71439943740bb4f91f79e5888947f1e500eb4808348",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "b7e23624e649e0719e0d907c9c2d71cf8dd7a2eb0c5eb4a856503231b38c9a1a",
+      "normalizedSha256": "c3a7ceecbdedf8e66c4cee46c0c09a596a2bdb25f4a5549661a0a3f9f7695fc3",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-PI-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PI-2026-07.analitico.json.gz",
+      "analiticoSha256": "1e42a16da71b1604325a1b1d478c09d1321534c41fda65e86e3a86607a2ea5cb",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-PI-2026-07-desonerado",
@@ -3672,16 +3787,22 @@
       "reference": "2026-07",
       "regime": "Desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/piaui/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/pi-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/piaui/2026/julho/pi-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-PI-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PI-2026-07-desonerado.json.gz",
-      "sha256": "0ce6039c7feae954c89ea2c6475dd409a10c90e0796696c130ae83db7f3d3ffb",
-      "normalizedSha256": "fbda4c16fa4a988adf12e3f09ba236507fde2b1f9d4e8c5d0ef795b2d34fb3e0",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "a3d9e04a5573c34ffbd5270f4152bcb004be962cc19f64bd5a1d8f4bad574990",
+      "normalizedSha256": "64964a50887d5f33f21ad32d94a8e4503b7736d40a70e55a25739233b0ffd21f",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-PI-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PI-2026-07.analitico.json.gz",
+      "analiticoSha256": "1e42a16da71b1604325a1b1d478c09d1321534c41fda65e86e3a86607a2ea5cb",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-PE-2026-07-nao-desonerado",
@@ -3692,16 +3813,21 @@
       "reference": "2026-07",
       "regime": "Não desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/pernambuco/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/pe-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/pernambuco/2026/julho/pe-07-2026.7z",
       "status": "ready",
       "count": 8966,
       "file": "bases/SICRO3-PE-2026-07-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PE-2026-07-nao-desonerado.json.gz",
-      "sha256": "6f32a5caa7676a3d9b600ba63679e0762207708968a57c59fa319a562a0cb7e3",
-      "normalizedSha256": "d6986463aca947e119c57c447ce29bae95f77bf934d6aa6bb492900dbb9593be",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "598a6efd4858d8d3d422fcfc8919d471b606c8cf15b02ece2fa46fb5eb97eef0",
+      "normalizedSha256": "02c0ba7e2fb241244f01bc9ed33351b28bd51b2841ee3f1af48fff35d332f93b",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-PE-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PE-2026-07.analitico.json.gz",
+      "analiticoSha256": "1052666ddce94a7aef4bc3654d5895f7958177bb7e528ee43a2cf30e94e81670",
+      "analiticoCount": 6619,
+      "conferencia": "6607/6619"
     },
     {
       "id": "SICRO3-PE-2026-07-desonerado",
@@ -3712,16 +3838,22 @@
       "reference": "2026-07",
       "regime": "Desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/pernambuco/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/pe-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/pernambuco/2026/julho/pe-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-PE-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PE-2026-07-desonerado.json.gz",
-      "sha256": "c7f61eaa26e67b8ccccd21c3b65faccebcd70fa38c1ef000296a8a83ba1ced64",
-      "normalizedSha256": "1bac65e92bc90f0c0a7ee90e5a5dd4ed18070a380e75a02cf021f94a5e05d2ca",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "7f85e1f56d6e944eb5db9f5cf689c573f87cc265cb1b5b6f3ebf9442a7957c8a",
+      "normalizedSha256": "a5cb3b0b31df4a72f87b14e9b4a8606c1421d658b650dadb0a731d6aa0eb253f",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-PE-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PE-2026-07.analitico.json.gz",
+      "analiticoSha256": "1052666ddce94a7aef4bc3654d5895f7958177bb7e528ee43a2cf30e94e81670",
+      "analiticoCount": 6619,
+      "conferencia": "6607/6619"
     },
     {
       "id": "SICRO3-PB-2026-07-nao-desonerado",
@@ -3732,16 +3864,21 @@
       "reference": "2026-07",
       "regime": "Não desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/paraiba/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/pb-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/paraiba/2026/julho/pb-07-2026.7z",
       "status": "ready",
       "count": 8966,
       "file": "bases/SICRO3-PB-2026-07-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PB-2026-07-nao-desonerado.json.gz",
-      "sha256": "4f3d7130760ee827d8986e05273515c853863ad36380a1dba16dab9ce64915f0",
-      "normalizedSha256": "36330ca67f115dd6a2fe67f8b04a658e8c3a34ffe84d89772ae5d539fb90e388",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "f8ec251b6c8ca21ba8e08978dbaf00a3387cc76d1f605157b7266440d8688e57",
+      "normalizedSha256": "1acf46569af4017ffce4ba053bb16b83a9642ef2f194dd545e86922ba6af1c51",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-PB-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PB-2026-07.analitico.json.gz",
+      "analiticoSha256": "a086deb1cf29602d5e3d2765ac95f736c304db8f4312e47efc9ea727d461b6be",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-PB-2026-07-desonerado",
@@ -3752,16 +3889,22 @@
       "reference": "2026-07",
       "regime": "Desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/paraiba/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/pb-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/paraiba/2026/julho/pb-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-PB-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PB-2026-07-desonerado.json.gz",
-      "sha256": "51e2274f335c44f71b73aa5a579bdb12e05d6823c3e26641ed299a93559e85de",
-      "normalizedSha256": "027a95879d40c233ed376382f47cc62b6fbd3924d8efc07e126dbb9ad35fa98f",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "449ecf13bebb27b67888c59dda6274746b62d1a55f29ff0ab0ee213df145270b",
+      "normalizedSha256": "260b91cda34ee56c4b1f5fa65cc3c4e5ef348adccbafe6e20bc1e400520f7460",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-PB-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PB-2026-07.analitico.json.gz",
+      "analiticoSha256": "a086deb1cf29602d5e3d2765ac95f736c304db8f4312e47efc9ea727d461b6be",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-PA-2026-07-nao-desonerado",
@@ -3781,7 +3924,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PA-2026-07-nao-desonerado.json.gz",
       "sha256": "c5577f42e919ceca0e74855a710b967f634bef64efdb1249ce36d4647254f28d",
       "normalizedSha256": "22826432ae5e257de026fe898c02451d2af089dc6d5ad706672befa6a7648da3",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-PA-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PA-2026-07.analitico.json.gz",
+      "analiticoSha256": "79ee17fa73648f464125f4a81238a618b7453d6583d790af43f024ac23829035",
+      "analiticoCount": 6619,
+      "conferencia": "6610/6619"
     },
     {
       "id": "SICRO3-PA-2026-07-desonerado",
@@ -3795,13 +3943,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/para/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/para/2026/julho/pa-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-PA-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PA-2026-07-desonerado.json.gz",
-      "sha256": "caa9a1b5e72b7680a1bf0216ee19c365a7deb37141e524cd040bdcde3321fe40",
-      "normalizedSha256": "aa30d6974503329513e88c54d3444920250a82481b54b7220c3c364b3f1bf496",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "0f89e12115c3c1e1ae82438108712d8c5dbcb5aa9c26696c74aa0feb484feaba",
+      "normalizedSha256": "1166ee45fc2ec2f5cfbf5c3e44948cbadfa926a1223131df2bf0319d87390192",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-PA-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-PA-2026-07.analitico.json.gz",
+      "analiticoSha256": "79ee17fa73648f464125f4a81238a618b7453d6583d790af43f024ac23829035",
+      "analiticoCount": 6619,
+      "conferencia": "6610/6619"
     },
     {
       "id": "SICRO3-MT-2026-07-nao-desonerado",
@@ -3821,7 +3975,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MT-2026-07-nao-desonerado.json.gz",
       "sha256": "da357a0632fbf457b598295600cb5fca134f60bfa2c5c867e4d54912e6c29892",
       "normalizedSha256": "5deaf82f8a3ffa374e8f8aad7f0721592c84277a6fd0358eec5ac1d107e547ce",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-MT-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MT-2026-07.analitico.json.gz",
+      "analiticoSha256": "a94ae06f6e91862b877fde9239ceb10428fa14962fbc2d605a21d06f16c4c5f4",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-MT-2026-07-desonerado",
@@ -3835,13 +3994,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/centro-oeste/mato-grosso/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/centro-oeste/mato-grosso/2026/julho/mt-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-MT-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MT-2026-07-desonerado.json.gz",
-      "sha256": "27d3e044e5ed970c298982ef460e963e1604308ede05e08cf5350847d6719761",
-      "normalizedSha256": "06ba886585f854767053933568a40d7fe4a0028ed1ea8651aaa9acd89df5dd12",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "a3530d76dd3aa086adc7feb06c3d2145d99b40768823c14853ffd15b0be6ae57",
+      "normalizedSha256": "9553a5867e412a928a9f5766e4e0052a7266107b06d3f9d9f5e49f7ee80e5374",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-MT-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MT-2026-07.analitico.json.gz",
+      "analiticoSha256": "a94ae06f6e91862b877fde9239ceb10428fa14962fbc2d605a21d06f16c4c5f4",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-MS-2026-07-nao-desonerado",
@@ -3861,7 +4026,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MS-2026-07-nao-desonerado.json.gz",
       "sha256": "1d99cdd337d036a0c4574e50fd833d722174b67b5f5f645ac77ca30201117489",
       "normalizedSha256": "303a9a79221499f09ee4106c88b9f935e3764deb6d599190b4ea216d7ed270b0",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-MS-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MS-2026-07.analitico.json.gz",
+      "analiticoSha256": "b81fe1902a145723630bf1edabc4a59d4757735b0a0b83dc5b7e51f60e710f1e",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-MS-2026-07-desonerado",
@@ -3875,13 +4045,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/centro-oeste/mato-grosso-do-sul/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/centro-oeste/mato-grosso-do-sul/2026/julho/ms-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-MS-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MS-2026-07-desonerado.json.gz",
-      "sha256": "375ebba3f049efc94ed069204d78e6efa7710ca0ab112bdb708fb2c1436350b4",
-      "normalizedSha256": "dd30ae8c55465f893a61eb586931421cebf388788a24f28016fb873129fec227",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "bf3b8bc79cb7759545740829a9212bbbe8c1fb5fc2f50082200e41b239b7e6b8",
+      "normalizedSha256": "679d3060e52dcdf7a6c2bcfae56aa6bdf1886c8462c70c9a44d2710c1c63ebc5",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-MS-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MS-2026-07.analitico.json.gz",
+      "analiticoSha256": "b81fe1902a145723630bf1edabc4a59d4757735b0a0b83dc5b7e51f60e710f1e",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-MG-2026-07-nao-desonerado",
@@ -3901,7 +4077,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MG-2026-07-nao-desonerado.json.gz",
       "sha256": "68f6973d61dfcfdb85ddb5d7e583744c0e12ccce2389248b6dfc60fd1f3a1ba2",
       "normalizedSha256": "9a6e0ea75b6b7d1ae858beff454e487c28a8105c1f878e5fae10af72a05d698b",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-MG-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MG-2026-07.analitico.json.gz",
+      "analiticoSha256": "727a4233f3edac00be2a599e0603f8200dbbdf9ce3e29f813cb2e6f167c296dc",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-MG-2026-07-desonerado",
@@ -3915,13 +4096,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/minas-gerais/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/minas-gerais/2026/julho/mg-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-MG-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MG-2026-07-desonerado.json.gz",
-      "sha256": "87ead5c2a1de685cebc3505ca2ee87ba365f62e5971ff09e0f6aa58608e4fe4e",
-      "normalizedSha256": "b80753f9bd3de0360d65a3fe5adda1a0feae80b73ebc20b680267b3c0aad0120",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "6d321e9eac05b635e6b89e58ac66eae25c8624d57c17753da20828e093f34e7c",
+      "normalizedSha256": "2a90f455e42876129f0f21c48186ce166b405c7d44c6cc4cc1e3b68193a47753",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-MG-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MG-2026-07.analitico.json.gz",
+      "analiticoSha256": "727a4233f3edac00be2a599e0603f8200dbbdf9ce3e29f813cb2e6f167c296dc",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-MA-2026-07-nao-desonerado",
@@ -3932,16 +4119,21 @@
       "reference": "2026-07",
       "regime": "Não desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/maranhao/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/ma-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/maranhao/2026/julho/ma-07-2026.7z",
       "status": "ready",
       "count": 8966,
       "file": "bases/SICRO3-MA-2026-07-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MA-2026-07-nao-desonerado.json.gz",
-      "sha256": "5b1121940985ed70c86881f15e98be7b1d6f6257aa7501fad732fa1b3160aa3a",
-      "normalizedSha256": "a857841b5012d3f0492601d3030998ea0d5066470d176966007b4767f39cdc26",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "8058ffefe743b46feb84ff3e16b4f6019f0fdb47981c1898674432a6cdb8d8ff",
+      "normalizedSha256": "30f5f5e288e06a90bc4a885c356a051c6a154e50c602411d88c7fe8b20ea1c34",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-MA-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MA-2026-07.analitico.json.gz",
+      "analiticoSha256": "a53434a730cc0775c15b5c33f96bbd613376940c2f04b12774f1f79d0cc69e4b",
+      "analiticoCount": 6619,
+      "conferencia": "6610/6619"
     },
     {
       "id": "SICRO3-MA-2026-07-desonerado",
@@ -3952,16 +4144,22 @@
       "reference": "2026-07",
       "regime": "Desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/maranhao/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/ma-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/maranhao/2026/julho/ma-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-MA-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MA-2026-07-desonerado.json.gz",
-      "sha256": "87f61f59fc479c487381e8c361d6e0101c9561d85dd0edc4fc2b50af932e0268",
-      "normalizedSha256": "6a990f85c0f45f875ebffd63a8efa5f5352f8dc39f9ffb21228b13756471832a",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "55b43eccdee58864cefd11367b550c766edd3044385190c339636e061e241a4b",
+      "normalizedSha256": "a2c9311b5b106b1e0c5a99094a22975b01ce1294b4e9c26c9d61efa7f533517e",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-MA-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-MA-2026-07.analitico.json.gz",
+      "analiticoSha256": "a53434a730cc0775c15b5c33f96bbd613376940c2f04b12774f1f79d0cc69e4b",
+      "analiticoCount": 6619,
+      "conferencia": "6610/6619"
     },
     {
       "id": "SICRO3-GO-2026-07-nao-desonerado",
@@ -3981,7 +4179,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-GO-2026-07-nao-desonerado.json.gz",
       "sha256": "12097a70b9d06bf487de85ed3678c454d28bdbf2fc129fc6b4394a6f020642d7",
       "normalizedSha256": "fd210ea58c773d54cde6082e0ca093c9689d9d9fd6b6ab2ea2431cd3f3923f84",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-GO-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-GO-2026-07.analitico.json.gz",
+      "analiticoSha256": "ac505ba45fae79b87d6fb0b570d8b5772e6ce96d6d597ff46ef1354b3d7b54de",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-GO-2026-07-desonerado",
@@ -3995,13 +4198,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/centro-oeste/goias/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/centro-oeste/goias/2026/julho/go-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-GO-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-GO-2026-07-desonerado.json.gz",
-      "sha256": "07d6e6537fc3d10609255e1899920e5d29e1d302f3555be0395a1a111b21a53f",
-      "normalizedSha256": "ba54dd57122aaa529954d32f742886309cd647d2c67597cc3a07f622e357877c",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "2167459906b192e973be5d3195f70c0e4d35979227e078bbdb8f7a4c333bf318",
+      "normalizedSha256": "c6107183be2868fbb9aa8c3648c3e96c3277b1439d2ab0e59eb621e5cabd83df",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-GO-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-GO-2026-07.analitico.json.gz",
+      "analiticoSha256": "ac505ba45fae79b87d6fb0b570d8b5772e6ce96d6d597ff46ef1354b3d7b54de",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-ES-2026-07-nao-desonerado",
@@ -4021,7 +4230,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-ES-2026-07-nao-desonerado.json.gz",
       "sha256": "b8a794e3648b5bccf0205d2f089e377ae71fe8249dbf6d6ce4110c7d56eeb4da",
       "normalizedSha256": "3919b6603a2aebaadd1309ce4db29102a3ce6c7f885566d7a62f95a3784f7082",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-ES-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-ES-2026-07.analitico.json.gz",
+      "analiticoSha256": "5d8fed52e6eacd0ef14d9cf27603e01a48e0fc7bf117efb0536e179e0f9fbe72",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-ES-2026-07-desonerado",
@@ -4035,13 +4249,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/espirito-santo/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/sudeste/espirito-santo/2026/julho/es-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-ES-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-ES-2026-07-desonerado.json.gz",
-      "sha256": "1b4abf5fc15ace264b332f01214f82c198ec738dc2dabf9c4e9465f23ef9ddcb",
-      "normalizedSha256": "16285f4e81e8113d2dc012620da84ba00b25c26726752a1127f487f6fc441ba3",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "5843ec3bb3b948c08af846ca14c9f387a9649644d76b18336da36c8c3969371f",
+      "normalizedSha256": "ddae3367f641a1eaaaaf35116b1bd77fff23d27c2296bdeebda95c5b08d7d705",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-ES-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-ES-2026-07.analitico.json.gz",
+      "analiticoSha256": "5d8fed52e6eacd0ef14d9cf27603e01a48e0fc7bf117efb0536e179e0f9fbe72",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-DF-2026-07-nao-desonerado",
@@ -4061,7 +4281,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-DF-2026-07-nao-desonerado.json.gz",
       "sha256": "b6f8c769d97bebc5510d4a1e3922b676c1d90d6ad0e7ba3aae7870ea3b5edf4a",
       "normalizedSha256": "703bb8a79446080e802f69ffcd0767d349df3bb49421c9cf6f247f2e4701a54e",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-DF-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-DF-2026-07.analitico.json.gz",
+      "analiticoSha256": "6c81fb5cf2a48449630500c1f2f2749df45a2faf23ab21f19e6dd2ef3326a116",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-DF-2026-07-desonerado",
@@ -4075,13 +4300,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/centro-oeste/distrito-federal/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/centro-oeste/distrito-federal/2026/julho/df-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-DF-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-DF-2026-07-desonerado.json.gz",
-      "sha256": "f5151f6a3696d866f1312d9e018a2644839536b34d0067b0de5ada2e89eafd50",
-      "normalizedSha256": "68534be7ffca9191bc3681ea62476c9b456702af0197f76bf0d60b0c0864dcc2",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "c56b0a4bb81d24a1d2d072fa5dcb673556ed0ab5f88ec6dffcb2f495e21ebbae",
+      "normalizedSha256": "96c5b20908525e73c11064de5fca06c02f4267b22424cc2c1ba20e2c83921120",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-DF-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-DF-2026-07.analitico.json.gz",
+      "analiticoSha256": "6c81fb5cf2a48449630500c1f2f2749df45a2faf23ab21f19e6dd2ef3326a116",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-CE-2026-07-nao-desonerado",
@@ -4092,16 +4323,21 @@
       "reference": "2026-07",
       "regime": "Não desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/ceara/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/ce-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/ceara/2026/julho/ce-07-2026.7z",
       "status": "ready",
       "count": 8966,
       "file": "bases/SICRO3-CE-2026-07-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-CE-2026-07-nao-desonerado.json.gz",
-      "sha256": "acdb09649f94834a1b88dca6a2374344f5ecf3879b36148f982825bb12937545",
-      "normalizedSha256": "94082819bf8a45ef4b1fd0788995eb43125ced9b5c21dda804a6e04012820cba",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "791c5de9214c14d5b0b38324b9da97a74d0aa9d63a33520923c221a2ee5fc57c",
+      "normalizedSha256": "da14ad69a8766eb1e609a222faa61774a425d9942cac91310c2572aba4a386b7",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-CE-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-CE-2026-07.analitico.json.gz",
+      "analiticoSha256": "5dd44ec0652b08b1599ce1ead40bc6f2b0a4dd8754e721fd3e594ec87e45b9bc",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-CE-2026-07-desonerado",
@@ -4112,16 +4348,22 @@
       "reference": "2026-07",
       "regime": "Desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/ceara/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/ce-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/ceara/2026/julho/ce-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-CE-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-CE-2026-07-desonerado.json.gz",
-      "sha256": "ac8af03846b8181ea88ffddceb4ecf9b0f10542a31d653806c94fab0581ed9e3",
-      "normalizedSha256": "fa6f20851b0f7e3a6b78c031dcccd167ff8d9b9a1015a8e38f9fcc978c6970db",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "6783a21d3e357b2fa8e120b1f57da57b62a213e31b68c95948bff59507f87167",
+      "normalizedSha256": "3c7ca56dcc69dd77680fa0ff0096e70d2e2f403afc6eca195a2b309cda62b4b1",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-CE-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-CE-2026-07.analitico.json.gz",
+      "analiticoSha256": "5dd44ec0652b08b1599ce1ead40bc6f2b0a4dd8754e721fd3e594ec87e45b9bc",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-BA-2026-07-nao-desonerado",
@@ -4139,12 +4381,12 @@
       "count": 8966,
       "file": "bases/SICRO3-BA-2026-07-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-BA-2026-07-nao-desonerado.json.gz",
-      "sha256": "1ee1fa09b5f59e651737be42c8442de904bbfc1283247f756080ed9c7ac99bf8",
+      "sha256": "f473f1b97ed1e6ca71e421e40d555f786a2ef54168648d17b82279b522734714",
       "normalizedSha256": "9a385b11b04c12c3e2a790c63fe3c3d322e2b692473c6a15232095edd4a9d203",
-      "generatedAt": "2026-11-20T01:41:42.316456+00:00",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
       "analiticoFile": "bases/SICRO3-BA-2026-07.analitico.json.gz",
       "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-BA-2026-07.analitico.json.gz",
-      "analiticoSha256": "baf2876c135d1a3d8b6469ea414a1db8a77e3545b9d7be4ba15e8b2abbb31db6",
+      "analiticoSha256": "78caab10be6a736102ed03c2847d38679788b89ba19e2e18df78957d5a2c9636",
       "analiticoCount": 6619,
       "conferencia": "6608/6619"
     },
@@ -4165,12 +4407,12 @@
       "count": 8966,
       "file": "bases/SICRO3-BA-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-BA-2026-07-desonerado.json.gz",
-      "sha256": "e5dadccc99cf09aaed217b62dc0f6d16073264ab78fdf9c5de3528254b9d29fa",
+      "sha256": "6480773a43cd499394245cd0a6a5c13786ed5df8a56cdf5e2e2821b96031c030",
       "normalizedSha256": "a02e7b78eebf15e6c703d4ab5c0796a16aae58b1744db9f9178ea1a196281737",
-      "generatedAt": "2026-11-20T01:41:42.316456+00:00",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
       "analiticoFile": "bases/SICRO3-BA-2026-07.analitico.json.gz",
       "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-BA-2026-07.analitico.json.gz",
-      "analiticoSha256": "baf2876c135d1a3d8b6469ea414a1db8a77e3545b9d7be4ba15e8b2abbb31db6",
+      "analiticoSha256": "78caab10be6a736102ed03c2847d38679788b89ba19e2e18df78957d5a2c9636",
       "analiticoCount": 6619,
       "conferencia": "6608/6619"
     },
@@ -4192,7 +4434,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AP-2026-07-nao-desonerado.json.gz",
       "sha256": "f93090c655484ee375f3f784d8de456590aee6ebac9784eb367486d0001d4d93",
       "normalizedSha256": "38c2c80b7918e880ec5277e029cadb9d03874bee5752755a5283230255ece038",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-AP-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AP-2026-07.analitico.json.gz",
+      "analiticoSha256": "bb2210eded8c7b1fe96b9f4cfc638c2194e21c97c598edc15fa10b979ec79f1d",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-AP-2026-07-desonerado",
@@ -4206,13 +4453,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/amapa/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/amapa/2026/julho/ap-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-AP-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AP-2026-07-desonerado.json.gz",
-      "sha256": "d9e95b5adb28d440b9306c882ee0bac132a5389495d106844da98836ebb81b85",
-      "normalizedSha256": "bf82c34318102a62cd1cf216f7dea23d49b04f9a53a7fb55a616659d1da2a66b",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "fbe4432536b50e2f7fb6fde3fcb6d0425194dd984a94ca2a0db8638f0b48d3da",
+      "normalizedSha256": "b1e41f34139ac13a66b33ce23681e4605ea028d9390595c0f35086d7a8ae61ed",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-AP-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AP-2026-07.analitico.json.gz",
+      "analiticoSha256": "bb2210eded8c7b1fe96b9f4cfc638c2194e21c97c598edc15fa10b979ec79f1d",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-AM-2026-07-nao-desonerado",
@@ -4232,7 +4485,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AM-2026-07-nao-desonerado.json.gz",
       "sha256": "128449ef4c56e4a188542ec143bdd21758a6cb1dfbd37c9fccc95ad74f4641fa",
       "normalizedSha256": "6c99305ece9e29f6142983dc0e5c7a7b5f182cc21a7fe6f80b38a3b9eac09461",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-AM-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AM-2026-07.analitico.json.gz",
+      "analiticoSha256": "34f0ea739e862f5b921f19850774fa10d66771bf940f83272518dbafd3debbe6",
+      "analiticoCount": 6619,
+      "conferencia": "6608/6619"
     },
     {
       "id": "SICRO3-AM-2026-07-desonerado",
@@ -4246,13 +4504,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/amazonas/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/amazonas/2026/julho/am-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-AM-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AM-2026-07-desonerado.json.gz",
-      "sha256": "39cf71c17b7ebcc3d82585ae72b1ea341bb67d3d3be6be5cadcafe3bb34ff5db",
-      "normalizedSha256": "02269989bd709be4ceb8f97ea0a5167b95ca274a5a69f6e3d6da992174532b6e",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "b0de7585ef03e0547969353863e523f151f79e2bdd4b03aa54f8cff8997fcad7",
+      "normalizedSha256": "2584a1b7521bd2325f5f60206b812b47c662a4925483562be7f96deb267a010d",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-AM-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AM-2026-07.analitico.json.gz",
+      "analiticoSha256": "34f0ea739e862f5b921f19850774fa10d66771bf940f83272518dbafd3debbe6",
+      "analiticoCount": 6619,
+      "conferencia": "6608/6619"
     },
     {
       "id": "SICRO3-AL-2026-07-nao-desonerado",
@@ -4263,16 +4527,21 @@
       "reference": "2026-07",
       "regime": "Não desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/alagoas/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/al-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/alagoas/2026/julho/al-07-2026.7z",
       "status": "ready",
       "count": 8966,
       "file": "bases/SICRO3-AL-2026-07-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AL-2026-07-nao-desonerado.json.gz",
-      "sha256": "345da84ff02e30b8a909d42802f834e7971541b69cbd435b2c74e8639c05577a",
-      "normalizedSha256": "e5a21a3d9845cb9340d32aee0693a7493604869adae3d119f9284ab4d83b9be7",
-      "generatedAt": "2026-10-09T17:28:10.107246+00:00"
+      "sha256": "36f8056e371abe3d775673b40a0953717cc4de465371933f26f1e85fe8dc65d4",
+      "normalizedSha256": "3645d1171cf8a62dbf51e8f63ec796ae8ea6b3dc187a699910bec6ed4e65b607",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-AL-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AL-2026-07.analitico.json.gz",
+      "analiticoSha256": "fafc379984f711756a401b1600edfed193ed55bda683cf255187d7fe3d086325",
+      "analiticoCount": 6619,
+      "conferencia": "6611/6619"
     },
     {
       "id": "SICRO3-AL-2026-07-desonerado",
@@ -4283,16 +4552,22 @@
       "reference": "2026-07",
       "regime": "Desonerado",
       "type": "mixed",
-      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
+      "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/alagoas/2026/julho",
       "publishedAt": "",
-      "sourceFile": "fontes/al-07-2026.7z",
+      "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/nordeste/alagoas/2026/julho/al-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-AL-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AL-2026-07-desonerado.json.gz",
-      "sha256": "4f40a78780adf85b64382512bb6bd7a8f48cd1e524637e317d9dd4bb447c95d3",
-      "normalizedSha256": "160aae2b40cebcd6c5a190bd19984668cbc6005ffd67154f1070205aa459154b",
-      "generatedAt": "2026-10-10T13:00:00+00:00"
+      "sha256": "ec4c8a47cb2c99c5aed79d055acd56ae92af0ca969f7166c6cdd067331955b73",
+      "normalizedSha256": "9283047ba3a2cb478b62651fdb3d1990ac81acfa81aea38bc0d6aa2c472bd52b",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-AL-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AL-2026-07.analitico.json.gz",
+      "analiticoSha256": "fafc379984f711756a401b1600edfed193ed55bda683cf255187d7fe3d086325",
+      "analiticoCount": 6619,
+      "conferencia": "6611/6619"
     },
     {
       "id": "SICRO3-AC-2026-07-nao-desonerado",
@@ -4312,7 +4587,12 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AC-2026-07-nao-desonerado.json.gz",
       "sha256": "baddd4d80f8969033056c04b67035417895494ccca3fa777eef7956d9e02601b",
       "normalizedSha256": "9a001e0a013fda5d7f59adc2bac5c9bb4d626ab8b4447ed4f4265051aa972f47",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-AC-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AC-2026-07.analitico.json.gz",
+      "analiticoSha256": "31140b0319743b3485cdefc374122fe1ef1d82bad367b58a7527034feec5f110",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "SICRO3-AC-2026-07-desonerado",
@@ -4326,13 +4606,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/acre/2026/julho",
       "publishedAt": "",
       "sourceFile": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro/norte/acre/2026/julho/ac-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-AC-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AC-2026-07-desonerado.json.gz",
-      "sha256": "c586d048079d9dd3337c9e5c18e9c7fc4bb0edff7b5c32a3ed95dfc218aa3e1c",
-      "normalizedSha256": "e1bae6eff347e90ebfa6911d00b822a14b023eb0939ca6195fc4b53a1dedf7c7",
-      "generatedAt": "2026-10-16T13:35:14.120441+00:00"
+      "sha256": "dfa61709e6997f0f1251f094adc1e04b6badd55273a69d47be836fbf9f3c53f5",
+      "normalizedSha256": "b1e89bc604fd46246f4062e9cbf6a45905e1d5dfd1d63e98141acd77687a4e0b",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
+      "analiticoFile": "bases/SICRO3-AC-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-AC-2026-07.analitico.json.gz",
+      "analiticoSha256": "31140b0319743b3485cdefc374122fe1ef1d82bad367b58a7527034feec5f110",
+      "analiticoCount": 6619,
+      "conferencia": "6612/6619"
     },
     {
       "id": "ORSE-SE-2026-08",
@@ -4352,7 +4638,7 @@
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/ORSE-SE-2026-08.json.gz",
       "sha256": "d2428b04dfa4b8b5e878a6e1c7815f77eba1f69cd940ae264b530eb9a4cf82a7",
       "normalizedSha256": "88c717e1f7252449347ddeaf4088f8e9980732aa2dd7e5787cdce3e35d61bc59",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00",
+      "generatedAt": "2026-11-20T02:01:15.834930+00:00",
       "analiticoFile": "bases/ORSE-SE-2026-08.analitico.json.gz",
       "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/ORSE-SE-2026-08.analitico.json.gz",
       "analiticoSha256": "49c0f7ae675bba0ef81784ab00a27599bcec25056b6095749dd18719110b35bf",
