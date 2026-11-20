@@ -4139,9 +4139,14 @@
       "count": 8966,
       "file": "bases/SICRO3-BA-2026-07-nao-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-BA-2026-07-nao-desonerado.json.gz",
-      "sha256": "f473f1b97ed1e6ca71e421e40d555f786a2ef54168648d17b82279b522734714",
+      "sha256": "1ee1fa09b5f59e651737be42c8442de904bbfc1283247f756080ed9c7ac99bf8",
       "normalizedSha256": "9a385b11b04c12c3e2a790c63fe3c3d322e2b692473c6a15232095edd4a9d203",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "generatedAt": "2026-11-20T01:40:09.694421+00:00",
+      "analiticoFile": "bases/SICRO3-BA-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-BA-2026-07.analitico.json.gz",
+      "analiticoSha256": "7eee550b46a13678b294e19da691c0dc1658647eae84f4f55737ca9082edaa80",
+      "analiticoCount": 6619,
+      "conferencia": "6608/6619"
     },
     {
       "id": "SICRO3-BA-2026-07-desonerado",
@@ -4155,13 +4160,19 @@
       "officialUrl": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/custos-referenciais/sistemas-de-custos/sicro/relatorios/relatorios-sicro",
       "publishedAt": "",
       "sourceFile": "fontes/ba-07-2026.7z",
+      "composicoes": "recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)",
       "status": "ready",
-      "count": 2351,
+      "count": 8966,
       "file": "bases/SICRO3-BA-2026-07-desonerado.json.gz",
       "url": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-BA-2026-07-desonerado.json.gz",
-      "sha256": "ec48a6a31cc373ff9b57983fa6845d31859debaa92e9eddd232a291a9589b871",
-      "normalizedSha256": "93e15ad77bb3172dcc967209841278951bfe1bbdbd7e2df40d80f66c379081f9",
-      "generatedAt": "2026-11-19T16:31:38.963910+00:00"
+      "sha256": "e5dadccc99cf09aaed217b62dc0f6d16073264ab78fdf9c5de3528254b9d29fa",
+      "normalizedSha256": "a02e7b78eebf15e6c703d4ab5c0796a16aae58b1744db9f9178ea1a196281737",
+      "generatedAt": "2026-11-20T01:40:09.694421+00:00",
+      "analiticoFile": "bases/SICRO3-BA-2026-07.analitico.json.gz",
+      "analiticoUrl": "https://raw.githubusercontent.com/Raydem1961/obratop-bases/main/docs/bases/SICRO3-BA-2026-07.analitico.json.gz",
+      "analiticoSha256": "7eee550b46a13678b294e19da691c0dc1658647eae84f4f55737ca9082edaa80",
+      "analiticoCount": 6619,
+      "conferencia": "6608/6619"
     },
     {
       "id": "SICRO3-AP-2026-07-nao-desonerado",

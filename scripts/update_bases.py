@@ -5,7 +5,7 @@ import pandas as pd
 import py7zr
 import sys, zipfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import sinapi_reader, sicro_reader, orse_reader
+import sinapi_reader, sicro_reader, orse_reader, sicro_analitico
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 DOCS=ROOT/"docs"; BASES=DOCS/"bases"; BASES.mkdir(parents=True,exist_ok=True)
@@ -100,21 +100,36 @@ def parse_generic_xlsx(path,source,uf,reference,regime=""):
     return rows
 
 def ingest_sicro_7z(arc,source_url,entries,official_url=""):
-    """Lê o pacote mensal do SICRO (.7z com os 'Relatórios Sintéticos' em XLSX) e grava uma base por regime."""
+    """Lê o pacote mensal do SICRO (.7z) e grava uma base por regime. O DNIT publica o custo das
+    composições só sem desoneração; no regime desonerado elas são recalculadas a partir do
+    Relatório Analítico (ver sicro_analitico.py), que também é gravado para abrir as composições."""
     with tempfile.TemporaryDirectory() as td:
         ext=pathlib.Path(td)/"x";ext.mkdir()
         with py7zr.SevenZipFile(arc,"r") as z:z.extractall(ext)
         uf,ref,res,seen=sicro_reader.read_sicro_folder(ext)
+        try:an=sicro_analitico.composicoes_por_regime(ext)
+        except Exception as ex:print("SICRO analítico",uf,ref,ex);an=None
     if not {"comp","mat","mo","eq"}<=seen:
         raise ValueError(f"pacote SICRO incompleto: faltam {sorted({'comp','mat','mo','eq'}-seen)}")
-    year,mm=ref.split("-");ok=0
+    year,mm=ref.split("-");ok=0;extra={}
+    if an:
+        estrutura,desonerado,(batem,total)=an
+        # Só publica o recálculo se ele reproduz o custo oficial (sem desoneração) em ao menos 98% das composições.
+        if total and batem/total>=0.98:
+            oficiais={r["code"]:r for r in res[sicro_reader.ND] if r["group"]=="Composição"}
+            res[sicro_reader.DS]+=[{**oficiais[k],"price":v} for k,v in desonerado.items() if k in oficiais]
+            extra=save_json_gz(f"SICRO3-{uf}-{year}-{mm}.analitico",estrutura,"analitico")
+            extra.update({"analiticoCount":len(estrutura["comps"]),"conferencia":f"{batem}/{total}"})
+            print(f"SICRO {uf} {ref}: recálculo confere {batem}/{total}; {len(desonerado)} composições desoneradas")
+        else:print(f"SICRO {uf} {ref}: recálculo não conferiu ({batem}/{total}); composições desoneradas não publicadas")
     for regime,rows in res.items():
         sheets={r["sheet"] for r in rows}
         if len(rows)<2000 or len(sheets)<3:
             print("SICRO descartado (poucos itens)",uf,regime,len(rows),sorted(sheets));continue
         meta={"id":f"SICRO3-{uf}-{year}-{mm}-{norm(regime).replace(' ','-')}","source":"SICRO3","uf":uf,"year":int(year),"month":mm,"reference":ref,"regime":regime,"type":"mixed","officialUrl":official_url or SICRO_ROOT,"publishedAt":"","sourceFile":source_url}
+        if extra and regime==sicro_reader.DS:meta["composicoes"]="recalculadas a partir do Relatório Analítico do DNIT (o DNIT publica o custo só sem desoneração)"
         e=save_base(meta,rows)
-        if e:entries.append(e);ok+=1
+        if e:entries.append({**e,**extra});ok+=1
     print(f"SICRO {uf} {ref}: {ok} base(s) gravada(s)")
     return ok
 
@@ -158,7 +173,10 @@ def update_sicro(entries):
     Para cada UF busca só meses mais novos que o último já publicado (o mais recente primeiro)."""
     got=0
     for uf in UFS:
-        have=ready_refs(entries,"SICRO3",uf);last=max(have,default="")
+        # Meses já publicados sem o relatório analítico são baixados de novo (uma vez) para ganhar
+        # as composições desoneradas.
+        have={x["reference"] for x in entries if x.get("source")=="SICRO3" and x.get("uf")==uf and x.get("status")=="ready" and x.get("analiticoFile")}
+        last=max(have,default="")
         for year,mm in recent_months():
             ref=f"{year}-{mm}"
             if ref<=last:break
@@ -327,8 +345,9 @@ def prune(entries,keep=6):
     out=[]
     for x in entries:
         if x.get("status")=="ready" and x["reference"] in drop.get(x["source"],set()):
-            try:(DOCS/x["file"]).unlink()
-            except Exception:pass
+            for f in (x.get("file"),x.get("analiticoFile")):
+                try:(DOCS/f).unlink()
+                except Exception:pass
             continue
         out.append(x)
     return out
