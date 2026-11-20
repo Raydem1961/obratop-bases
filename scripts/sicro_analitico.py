@@ -133,11 +133,16 @@ def conferir(comps: dict, calculado: dict, tolerancia=0.011):
     return ok, n, dif
 
 
-def compactar(comps: dict, insumos: dict) -> dict:
-    """Formato gravado em <base>.analitico.json.gz (lido pelo ObraTop 4)."""
+def compactar(comps: dict, insumos: dict, precos: dict | None = None, custos: dict | None = None) -> dict:
+    """Formato gravado em <base>.analitico.json.gz (lido pelo ObraTop 4): estrutura das composições,
+    insumos {cod: [descrição, unidade]}, preços por regime ("nd"/"ds": mão de obra e materiais
+    {cod: preço}; equipamentos {cod: [produtivo, improdutivo]}) e custo de cada composição
+    {cod: [sem desoneração (oficial), com desoneração (recalculado)]}."""
     return {
         "schema": 1,
         "insumos": insumos,
+        "precos": precos or {},
+        "custos": custos or {},
         "comps": {k: [c["d"], c["u"], c["fic"], c["prod"], c["eq"], c["mo"], c["mat"], c["aux"], c["tf"], c.get("obs", "")]
                   for k, c in comps.items() if c["prod"]},
     }
@@ -203,4 +208,7 @@ def composicoes_por_regime(folder):
         of, a, b = c.get("of"), nd.get(k), ds.get(k)
         if of is None or of <= 0 or b is None: continue
         des[k] = b if a is not None and abs(a - of) <= max(0.011, of * 1e-4) else (round(of * b / a, 2) if a else None)
-    return compactar(comps, insumos), {k: v for k, v in des.items() if v}, (ok, n)
+    des = {k: v for k, v in des.items() if v}
+    precos = {r: {"pu": {**mat, **reg[r]["mo"]}, "eq": {k: list(v) for k, v in reg[r]["eq"].items()}} for r in ("nd", "ds")}
+    custos = {k: [c["of"], des.get(k, 0)] for k, c in comps.items() if c.get("of")}
+    return compactar(comps, insumos, precos, custos), des, (ok, n)
